@@ -1,12 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import {
-  BookCheck,
-  ChartPie,
-  FolderSync,
-  Goal,
-  Users,
-  Zap,
-} from "lucide-react";
+import { BookCheck, ChartPie, FolderSync, Goal } from "lucide-react";
 
 const solutions = [
   {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 export const Logo = () => (
   // <svg
   //   id="logo-7"
@@ -24,7 +24,9 @@ export const Logo = () => (
   //   height={32}                  // your desired height
   // />
   <div className="px-2 py-2 border border-none inline-flex items-center gap-2">
-    <div className="bg-black dark:bg-white dark:text-black text-white font-bold rounded px-2 py-1 inline-block">DORII</div>
+    <div className="bg-black dark:bg-white dark:text-black text-white font-bold rounded px-2 py-1 inline-block">
+      DORII
+    </div>
     <div className="font-bold">SOFTWARE</div>
   </div>
 );
