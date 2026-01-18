@@ -1,40 +1,27 @@
 import { Separator } from "@/components/ui/separator";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  TwitchIcon,
-  TwitterIcon,
-} from "lucide-react";
+import { Linkedin, X } from "lucide-react";
 import Link from "next/link";
 import { Logo } from "./navbar/logo";
 
 const footerSections = [
   {
-    title: "Product",
+    title: "Solutions",
     links: [
       {
-        title: "Overview",
-        href: "#",
+        title: "Transport Management Software",
+        href: "/solutions/transport-management",
       },
       {
-        title: "Features",
-        href: "#",
+        title: "Stock & Inventory Management",
+        href: "/solutions/stock-inventory",
       },
       {
-        title: "Solutions",
-        href: "#",
+        title: "Warehouse Management Software",
+        href: "/solutions/warehouse-management",
       },
       {
-        title: "Tutorials",
-        href: "#",
-      },
-      {
-        title: "Pricing",
-        href: "#",
-      },
-      {
-        title: "Releases",
-        href: "#",
+        title: "Housing Society ERP",
+        href: "/solutions/housing-society",
       },
     ],
   },
@@ -42,28 +29,20 @@ const footerSections = [
     title: "Company",
     links: [
       {
-        title: "About us",
-        href: "#",
+        title: "About Dorii Software",
+        href: "/about",
       },
       {
-        title: "Careers",
-        href: "#",
+        title: "Contact Us",
+        href: "/contact",
       },
       {
-        title: "Press",
-        href: "#",
+        title: "Privacy Policy",
+        href: "/privacy-policy",
       },
       {
-        title: "News",
-        href: "#",
-      },
-      {
-        title: "Media kit",
-        href: "#",
-      },
-      {
-        title: "Contact",
-        href: "#",
+        title: "Terms of Service",
+        href: "/terms",
       },
     ],
   },
@@ -72,90 +51,15 @@ const footerSections = [
     links: [
       {
         title: "Blog",
-        href: "#",
+        href: "/blog",
       },
       {
-        title: "Newsletter",
-        href: "#",
-      },
-      {
-        title: "Events",
-        href: "#",
-      },
-      {
-        title: "Help centre",
-        href: "#",
-      },
-      {
-        title: "Tutorials",
-        href: "#",
-      },
-      {
-        title: "Support",
-        href: "#",
-      },
-    ],
-  },
-  {
-    title: "Social",
-    links: [
-      {
-        title: "Twitter",
-        href: "#",
-      },
-      {
-        title: "LinkedIn",
-        href: "#",
-      },
-      {
-        title: "Facebook",
-        href: "#",
-      },
-      {
-        title: "GitHub",
-        href: "#",
-      },
-      {
-        title: "AngelList",
-        href: "#",
-      },
-      {
-        title: "Dribbble",
-        href: "#",
-      },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      {
-        title: "Terms",
-        href: "#",
-      },
-      {
-        title: "Privacy",
-        href: "#",
-      },
-      {
-        title: "Cookies",
-        href: "#",
-      },
-      {
-        title: "Licenses",
-        href: "#",
-      },
-      {
-        title: "Settings",
-        href: "#",
-      },
-      {
-        title: "Contact",
-        href: "#",
+        title: "Career",
+        href: "/careers",
       },
     ],
   },
 ];
-
 const Footer = () => {
   return (
     <footer className="mt-12 xs:mt-20 dark bg-background border-t">
@@ -188,14 +92,22 @@ const Footer = () => {
         </div>
 
         {footerSections.map(({ title, links }) => (
-          <div key={title} className="xl:justify-self-end">
+          <div
+            key={title}
+            className={
+              title === "Solutions"
+                ? "col-span-2 xl:col-span-3 min-w-[260px]"
+                : "min-w-[180px]"
+            }
+          >
             <h6 className="font-semibold text-foreground">{title}</h6>
-            <ul className="mt-6 space-y-4">
+
+            <ul className="mt-6 space-y-3">
               {links.map(({ title, href }) => (
                 <li key={title}>
                   <Link
                     href={href}
-                    className="text-muted-foreground hover:text-foreground"
+                    className="text-sm text-muted-foreground hover:text-foreground break-words"
                   >
                     {title}
                   </Link>
@@ -208,26 +120,27 @@ const Footer = () => {
       <Separator />
       <div className="max-w-(--breakpoint-xl) mx-auto py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6">
         {/* Copyright */}
+        <div className="text-muted-foreground">
+          Scalable ERP and business automation solutions for modern enterprises.
+        </div>
         <span className="text-muted-foreground text-center xs:text-start">
           &copy; {new Date().getFullYear()}{" "}
-          <Link href="https://shadcnui-blocks.com" target="_blank">
+          <Link href="https://dorii.in" target="_blank">
             Dorii Software
           </Link>
           . All rights reserved.
         </span>
 
         <div className="flex items-center gap-5 text-muted-foreground">
-          <Link href="#" target="_blank">
-            <TwitterIcon className="h-5 w-5" />
+          <Link href="https://twitter.com/doriisoftware" target="_blank">
+            <X className="h-5 w-5" />
           </Link>
-          <Link href="#" target="_blank">
-            <DribbbleIcon className="h-5 w-5" />
-          </Link>
-          <Link href="#" target="_blank">
-            <TwitchIcon className="h-5 w-5" />
-          </Link>
-          <Link href="#" target="_blank">
-            <GithubIcon className="h-5 w-5" />
+
+          <Link
+            href="https://linkedin.com/company/doriisoftware"
+            target="_blank"
+          >
+            <Linkedin className="h-5 w-5" />
           </Link>
         </div>
       </div>

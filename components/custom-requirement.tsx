@@ -114,7 +114,11 @@ const CustomRequirement = () => {
 
             <button
               type="submit"
-              className="w-full md:w-auto rounded-full px-6 py-2.5 bg-primary text-white font-medium"
+              className="w-full md:w-auto rounded-full px-6 py-2.5
+             bg-primary text-primary-foreground
+             font-medium
+             hover:bg-primary/90
+             transition-colors"
             >
               Submit Requirement
             </button>

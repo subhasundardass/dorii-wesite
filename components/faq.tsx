@@ -46,14 +46,14 @@ const FAQ = () => {
       id="faq"
       className="w-full max-w-(--breakpoint-xl) mx-auto py-8 xs:py-16 px-6"
     >
-      <h2 className="md:text-center text-3xl xs:text-4xl md:text-5xl leading-[1.15]! font-bold tracking-tighter">
+      <h2 className="md:text-center text-2xl xs:text-3xl md:text-4xl leading-[1.15]! font-bold tracking-tighter">
         Frequently Asked Questions
       </h2>
-      <p className="mt-1.5 md:text-center xs:text-lg text-muted-foreground">
+      <p className="mt-1.5 md:text-center xs:text-lg ">
         Quick answers to common questions about our products and services.
       </p>
 
-      <div className="min-h-[550px] md:min-h-[320px] xl:min-h-[300px]">
+      <div className="min-h-137.5 md:min-h-80 xl:min-h-75">
         <Accordion
           type="single"
           collapsible
@@ -69,11 +69,11 @@ const FAQ = () => {
                 <AccordionPrimitive.Trigger
                   className={cn(
                     "flex flex-1 items-center justify-between py-4 font-semibold tracking-tight transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
-                    "text-start text-lg"
+                    "text-start text-lg",
                   )}
                 >
                   {question}
-                  <PlusIcon className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200" />
+                  <PlusIcon className="h-5 w-5 shrink-0  transition-transform duration-200" />
                 </AccordionPrimitive.Trigger>
               </AccordionPrimitive.Header>
               <AccordionContent className="text-[15px]">

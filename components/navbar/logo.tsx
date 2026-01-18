@@ -23,10 +23,19 @@ export const Logo = () => (
   //   width={124}                  // your desired width
   //   height={32}                  // your desired height
   // />
-  <div className="px-2 py-2 border border-none inline-flex items-center gap-2">
-    <div className="bg-black dark:bg-white dark:text-black text-white font-bold rounded px-2 py-1 inline-block">
-      DORII
-    </div>
-    <div className="font-bold">SOFTWARE</div>
+  <div className="inline-flex items-center select-none">
+    <a
+      href="/"
+      className="inline-flex items-center gap-2 font-bold text-foreground hover:opacity-90 transition"
+      aria-label="Dorii Software Home"
+    >
+      {/* DORII badge */}
+      <span className="rounded px-2 py-1 bg-foreground text-background">
+        DORII
+      </span>
+
+      {/* SOFTWARE text */}
+      <span>SOFTWARE</span>
+    </a>
   </div>
 );

@@ -3,6 +3,8 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
+import { Navbar } from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -177,12 +179,22 @@ export default function RootLayout({
                   contactType: "customer support",
                 },
               ],
+              foundingLocation: {
+                "@type": "Place",
+                name: "Siliguri, West Bengal, India",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "India",
+              },
               softwareProducts: solutionsJSONLD, // attach solutions
             }),
           }}
         />
       </head>
       <body className={`${geistSans.className} antialiased`}>
+        {/* Global Navbar */}
+
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {/* Google Analytics 4 */}
           <Script
@@ -202,7 +214,10 @@ export default function RootLayout({
         `,
             }}
           />
+
+          <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

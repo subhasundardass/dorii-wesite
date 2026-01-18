@@ -4,6 +4,7 @@ import Solutions from "@/components/solutions-offer";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
+import About from "@/components/about-us";
 // import Pricing from "@/components/pricing";
 // import Testimonial from "@/components/testimonial";
 
@@ -13,14 +14,10 @@ export const generateMetadata = () => ({
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Solutions />
-      <CustomRequirement />
+      <About />
       <FAQ />
-      {/* <Testimonial /> */}
-      {/* <Pricing /> */}
-      <Footer />
     </>
   );
 }

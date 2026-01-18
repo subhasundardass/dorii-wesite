@@ -38,13 +38,13 @@ const Hero = () => {
             </Button> */}
           </div>
         </div>
-        <div className="relative lg:max-w-lg xl:max-w-xl w-full bg-accent rounded-xl">
+        <div className="relative lg:max-w-lg xl:max-w-xl w-full rounded-xl">
           <Image
-            src="/hero1.png"
-            width={800}
-            height={600}
+            src="/hero1.svg"
+            width={384}
+            height={351}
             alt="Custom ERP and business automation software dashboard by Dorii Software"
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain "
           />
         </div>
       </div>
