@@ -13,11 +13,11 @@ export const generateMetadata = () => ({
 });
 export default function Home() {
   return (
-    <>
+    <main className="mt-6">
       <Hero />
       <Solutions />
       <About />
       <FAQ />
-    </>
+    </main>
   );
 }
