@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dorii.in
+
+# Sitemaps
+Sitemap: https://dorii.in/sitemap.xml
