@@ -13,7 +13,7 @@ const footerSections = [
       },
       {
         title: "Stock & Inventory Management",
-        href: "/solutions/stock-inventory",
+        href: "/solutions/stock-inventory-management",
       },
       {
         title: "Warehouse Management Software",

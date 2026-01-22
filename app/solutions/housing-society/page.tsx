@@ -32,7 +32,7 @@ export const generateMetadata = (): Metadata => ({
 
 export default function HousingSocietyPage() {
   return (
-    <main className="max-w-(--breakpoint-xl) mx-auto px-6 py-12 xs:py-20">
+    <main className="mt-6 max-w-(--breakpoint-xl) mx-auto px-6 py-12 xs:py-20">
       <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-center">
         Housing Society Management Software
       </h1>
