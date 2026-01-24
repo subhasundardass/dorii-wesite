@@ -73,6 +73,9 @@ export default async function BlogSlugPage({
         prose-h2:font-bold
         prose-h2:mt-12
         prose-h2:mb-6
+        md:text-[17px]
+        lg:text-[18px]
+        
       "
     >
       <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
@@ -115,8 +118,10 @@ export default async function BlogSlugPage({
             <ol className="my-6 ml-6 list-decimal space-y-2">{children}</ol>
           ),
           li: ({ children }) => (
-            <li className="my-2 relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:rounded-full before:bg-blue-600 list-none">
-              <span className="pl-5">{children}</span>
+            <li className="relative my-2 pl-6 list-none">
+              {/* Custom bullet */}
+              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-blue-800"></span>
+              <span>{children}</span>
             </li>
           ),
 
