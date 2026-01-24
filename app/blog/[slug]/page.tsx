@@ -75,12 +75,12 @@ export default async function BlogSlugPage({
         prose-h2:mb-6
       "
     >
-      <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+      <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
         {post.meta.title}
       </h1>
 
       {post.meta.date && (
-        <p className="mt-4 text-sm text-muted-foreground">{post.meta.date}</p>
+        <p className="text-sm text-muted-foreground mb-4">{post.meta.date}</p>
       )}
 
       <ReactMarkdown
@@ -104,7 +104,7 @@ export default async function BlogSlugPage({
           ),
           /* ---------------- Paragraph ---------------- */
           p: ({ children }) => (
-            <p className="my-4 leading-7 text-muted-foreground">{children}</p>
+            <p className="my-4 leading-7 text-subtle">{children}</p>
           ),
 
           /* ---------------- Lists ---------------- */
