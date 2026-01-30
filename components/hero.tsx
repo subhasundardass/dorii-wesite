@@ -11,7 +11,7 @@ const Hero = () => {
           <Badge className="rounded-full py-1 border-none">
             End-to-End Business Automation & ERP Solutions
           </Badge>
-          <h1 className="mt-6 max-w-[20ch] text-2xl xs:text-3xl sm:text-4xl lg:text-[1.75rem] xl:text-4xl font-bold leading-[1.2]! tracking-tight">
+          <h1 className="mt-6 max-w-[20ch] text-3xl xs:text-3xl sm:text-4xl lg:text-[1.75rem] xl:text-4xl font-bold leading-[1.2]! tracking-tight">
             Business Automation & ERP Software Development for Growing
             Businesses
           </h1>

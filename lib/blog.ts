@@ -25,8 +25,8 @@ export function getAllSlugs(): string[] {
 
   return fs
     .readdirSync(BLOG_DIR)
-    .filter((file) => file.endsWith(".mdx"))
-    .map((file) => file.replace(/\.mdx$/, ""));
+    .filter((file) => file.endsWith(".md"))
+    .map((file) => file.replace(/\.md$/, ""));
 }
 
 /* -----------------------------------------------------
@@ -35,10 +35,10 @@ export function getAllSlugs(): string[] {
 export function getPostBySlug(slug: string): BlogPost | null {
   if (!slug) return null;
 
-  const fullPath = path.join(BLOG_DIR, `${slug}.mdx`);
+  const fullPath = path.join(BLOG_DIR, `${slug}.md`);
 
   if (!fs.existsSync(fullPath)) {
-    console.error(`MDX file not found: ${fullPath}`);
+    console.error(`Markdown file not found: ${fullPath}`);
     return null;
   }
 

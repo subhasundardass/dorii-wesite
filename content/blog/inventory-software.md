@@ -8,6 +8,7 @@ author: "Dorii Software"
 ## Why Warehouse Management Matters
 
 Efficient warehouse management reduces operational costs and improves delivery speed.
+OK Subha
 
 ### Key Benefits
 

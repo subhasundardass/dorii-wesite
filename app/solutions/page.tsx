@@ -10,6 +10,7 @@ const solutions = [
       "A comprehensive housing society ERP solution to manage maintenance billing, online payments, accounting, notices, complaints, member records, and daily society operations from a single platform.",
     href: "/solutions/housing-society",
     alt: "Housing Society Management Software – Dorii Software",
+    image: "/images/hero-housing-society.png",
   },
   {
     icon: BookCheck,
@@ -18,6 +19,7 @@ const solutions = [
       "An end-to-end transport management system (TMS) for trip planning, LR and challan generation, billing, accounting, vehicle tracking, and streamlined transport operations.",
     href: "/solutions/transport-management",
     alt: "Transport & Logistics Management Software – Dorii Software",
+    image: "/images/hero-transport.png",
   },
   {
     icon: FolderSync,
@@ -34,6 +36,7 @@ const solutions = [
       "Gain full visibility of your inventory with automated stock management, low-stock alerts, batch tracking, product categorization, and seamless integration with sales and purchase operations.",
     href: "/solutions/stock-inventory-management",
     alt: "Stock & Inventory Management Software – Dorii Software",
+    image: "/images/hero-stock-inventory.png",
   },
 ];
 
@@ -100,8 +103,19 @@ export default function SolutionsPage() {
                 {solution.description}
               </p>
             </CardHeader>
-            <CardContent className="mt-auto px-0 pb-0">
+            {/* <CardContent className="mt-auto px-0 pb-0">
               <div className="bg-muted h-52 ml-6 rounded-tl-xl" />
+            </CardContent> */}
+            <CardContent className="mt-auto px-0 pb-0">
+              {solution.image ? (
+                <img
+                  src={solution.image}
+                  alt={solution.alt}
+                  className="w-full h-52 object-cover rounded-tl-xl ml-8"
+                />
+              ) : (
+                <div className="bg-muted h-52 w-full rounded-tl-xl" />
+              )}
             </CardContent>
           </Card>
         ))}

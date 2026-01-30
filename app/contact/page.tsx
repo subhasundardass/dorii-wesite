@@ -107,7 +107,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-semibold mb-2">Our Office</h2>
               <p className="text-muted-foreground">
-                Dorii Software Pvt. Ltd. <br />
+                Dorii Software <br />
                 Siliguri, West Bengal, India <br />
                 Phone: <Link href="tel:+919732939123">+91-9732939123</Link>{" "}
                 <br />
