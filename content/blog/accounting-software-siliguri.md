@@ -145,4 +145,4 @@ Dorii Software is a Siliguri-based ERP and software development firm helping loc
 
 ## Internal Links
 
-- [How to Manage Your Business with All in One Software in Siliguri](how-to-manage-your-business-with-simple-software-siliguri.md)
+- [How to Manage Your Business with All in One Software in Siliguri](/blog/manage-business-software-siliguri)

@@ -103,9 +103,7 @@ export default function SolutionsPage() {
                 {solution.description}
               </p>
             </CardHeader>
-            {/* <CardContent className="mt-auto px-0 pb-0">
-              <div className="bg-muted h-52 ml-6 rounded-tl-xl" />
-            </CardContent> */}
+
             <CardContent className="mt-auto px-0 pb-0">
               {solution.image ? (
                 <img
@@ -140,7 +138,7 @@ export default function SolutionsPage() {
             contactPoint: [
               {
                 "@type": "ContactPoint",
-                telephone: "+91-XXXXXXXXXX",
+                telephone: "+91-9732939123",
                 contactType: "customer support",
               },
             ],
