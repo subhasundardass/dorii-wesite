@@ -52,7 +52,7 @@ export default function TransportManagementPage() {
             Transport & Logistics Management Software
           </h1>
 
-          <p className="mt-6 text-lg sm:text-xl text-gray-700 dark:text-gray-200 max-w-md">
+          <p className="mt-6 text-lg sm:text-xl text-gray-800 dark:text-gray-200 max-w-md">
             Simplify your transport operations with Dorii TMS — plan trips,
             generate LR/challans, manage billing & accounting, track vehicles in
             real time, and streamline daily operations from one platform.
@@ -90,7 +90,7 @@ export default function TransportManagementPage() {
           Common Transport Challenges We Solve
         </h2>
 
-        <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
+        <p className="mt-4 max-w-3xl mx-auto text-center text-gray-800">
           Daily transport operations can be challenging — delays, errors, and
           hidden costs can reduce profitability. Our TMS addresses these pain
           points with smart, easy-to-use features.
@@ -147,7 +147,7 @@ export default function TransportManagementPage() {
                 <span className="mt-2 h-2 w-2 rounded-full bg-blue-600" />
                 <h3 className="text-lg font-semibold">{item.title}</h3>
               </div>
-              <p className="mt-3 text-gray-700">{item.desc}</p>
+              <p className="mt-3 text-gray-800">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -160,7 +160,7 @@ export default function TransportManagementPage() {
             Why Choose Our Transport & Logistics Software?
           </h2>
 
-          <p className="mt-4 max-w-3xl mx-auto text-gray-700">
+          <p className="mt-4 max-w-3xl mx-auto text-gray-800">
             Dorii TMS is built for real-world transport businesses, helping you
             save time, reduce errors, and increase profits.
           </p>
@@ -213,7 +213,7 @@ export default function TransportManagementPage() {
                 className="p-6 rounded-xl shadow-sm hover:shadow-md transition"
               >
                 <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="mt-3 text-gray-700">{item.desc}</p>
+                <p className="mt-3 text-gray-800">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -226,7 +226,7 @@ export default function TransportManagementPage() {
           Powerful Features for Modern Transport Businesses
         </h2>
 
-        <p className="mt-4 max-w-3xl mx-auto text-gray-700">
+        <p className="mt-4 max-w-3xl mx-auto text-gray-800">
           Dorii TMS offers a full set of features to streamline operations,
           improve efficiency, and boost profitability.
         </p>
@@ -287,7 +287,7 @@ export default function TransportManagementPage() {
               className="border rounded-xl p-6 hover:shadow-md transition"
             >
               <h3 className="text-lg font-semibold">{f.title}</h3>
-              <p className="mt-3 text-gray-700">{f.desc}</p>
+              <p className="mt-3 text-gray-800">{f.desc}</p>
             </div>
           ))}
         </div>
@@ -299,7 +299,7 @@ export default function TransportManagementPage() {
           Who Can Use This Transport Management System?
         </h2>
 
-        <p className="mt-4 max-w-3xl mx-auto text-gray-700">
+        <p className="mt-4 max-w-3xl mx-auto text-gray-800">
           Dorii TMS is designed for any business involved in transport and
           logistics. Small fleet or multi-hub operators — our system adapts to
           your workflow to save time and reduce costs.
@@ -345,7 +345,7 @@ export default function TransportManagementPage() {
               className="p-5 rounded-lg shadow-sm hover:shadow-md transition"
             >
               <h3 className="font-semibold">{item.title}</h3>
-              <p className="mt-2 text-gray-700 text-sm">{item.desc}</p>
+              <p className="mt-2 text-gray-800 text-sm">{item.desc}</p>
             </div>
           ))}
         </div>

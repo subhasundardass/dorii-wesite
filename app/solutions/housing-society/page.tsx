@@ -1,18 +1,46 @@
 import { CTA } from "@/components/CTA";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Housing Society Management Software | Smart Society Management",
+export const generateMetadata = (): Metadata => ({
+  title: "Housing Society Management Software | Dorii Software",
   description:
-    "Simple and powerful housing society management software to manage maintenance, billing, complaints, visitors, and accounts. Easy, transparent, and secure.",
+    "Manage your housing society efficiently with Dorii's all-in-one Housing Society Management Software for maintenance billing, online payments, accounting, complaints, notices, visitor management, and resident communication.",
+  openGraph: {
+    title: "Housing Society Management Software | Dorii Software",
+    description:
+      "An all-in-one Housing Society Management System to manage maintenance billing, online payments, accounting, complaints, notices, visitor tracking, and transparent society operations.",
+    url: "https://www.dorii.in/solutions/housing-society-management",
+    siteName: "Dorii Software",
+    images: [
+      {
+        url: "/images/hero-housing-society.png",
+        width: 1200,
+        height: 630,
+        alt: "Housing Society Management Software – Dorii Software",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Housing Society Management Software | Dorii Software",
+    description:
+      "Smart Housing Society Management Software for maintenance billing, accounting, online payments, complaints, notices, and resident communication.",
+    images: ["/images/hero-housing-society.png"],
+  },
   keywords: [
-    "housing society management software",
-    "apartment management system",
-    "society maintenance software",
-    "residential society software",
-    "housing society ERP",
+    "Housing Society Management Software",
+    "Society Management System",
+    "Apartment Management Software",
+    "Residential Society ERP",
+    "HOA Management Software",
+    "Maintenance Billing Software",
+    "Society Accounting Software",
+    "Apartment Management System",
+    "Housing Society ERP",
+    "Resident Management Software",
   ],
-};
+});
 
 export default function HousingSocietyPage() {
   return (
