@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "Custom business automation and ERP software solutions designed to scale operations across sales, inventory, HR, accounts, supply chain, and manufacturing.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og/dorii-home.png",
         width: 1200,
         height: 630,
         alt: "Dorii Software – Business Automation & ERP Solutions",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Dorii Software | Business Automation & ERP Solutions",
     description:
       "Custom ERP and business automation software for growing businesses across industries.",
-    images: ["/og-image.png"],
+    images: ["/og/dorii-home.png"],
   },
 
   authors: [
@@ -94,7 +94,7 @@ const solutionsJSONLD = [
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     url: "https://www.dorii.in/solutions/housing-society",
-    image: "https://www.dorii.in/og-image.png",
+    image: "https://www.dorii.in/og/dorii-home.png",
     offers: {
       "@type": "Offer",
       price: "Contact for Pricing",
@@ -109,7 +109,7 @@ const solutionsJSONLD = [
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     url: "https://www.dorii.in/solutions/transport-management",
-    image: "https://www.dorii.in/og-image.png",
+    image: "https://www.dorii.in/og/dorii-home.png",
     offers: {
       "@type": "Offer",
       price: "Contact for Pricing",
@@ -124,7 +124,7 @@ const solutionsJSONLD = [
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     url: "https://www.dorii.in/solutions/warehouse-management",
-    image: "https://www.dorii.in/og-image.png",
+    image: "https://www.dorii.in/og/dorii-home.png",
     offers: {
       "@type": "Offer",
       price: "Contact for Pricing",
@@ -139,7 +139,7 @@ const solutionsJSONLD = [
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     url: "https://www.dorii.in/solutions/stock-inventory-management",
-    image: "https://www.dorii.in/og-image.png",
+    image: "https://www.dorii.in/og/dorii-home.png",
     offers: {
       "@type": "Offer",
       price: "Contact for Pricing",
@@ -165,7 +165,7 @@ export default function RootLayout({
               "@type": "SoftwareCompany",
               name: "Dorii Software",
               url: "https://www.dorii.in",
-              logo: "https://www.dorii.in/og-image.png",
+              logo: "https://www.dorii.in/og/dorii-home.png",
               description:
                 "Custom business automation and ERP software for sales, inventory, supply chain, HR, accounts, and manufacturing.",
               sameAs: [
