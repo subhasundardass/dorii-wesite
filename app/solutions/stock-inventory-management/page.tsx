@@ -48,7 +48,7 @@ export default function StockInventoryPage() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="/demo"
+              href="/contact"
               className="px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition"
             >
               Request a Demo

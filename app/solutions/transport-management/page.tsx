@@ -60,7 +60,7 @@ export default function TransportManagementPage() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="/demo"
+              href="/contact"
               className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
             >
               Request a Demo
@@ -358,7 +358,7 @@ export default function TransportManagementPage() {
         secondaryDescription="Join hundreds of transporters already benefiting from faster dispatch, real-time tracking, and smarter decision-making."
         primaryText="Book a Free Demo"
         secondaryText="Talk to an Expert"
-        primaryUrl="/demo"
+        primaryUrl="/contact"
         secondaryUrl="/contact"
       />
     </main>

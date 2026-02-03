@@ -18,7 +18,7 @@ export const CTA: React.FC<CTAProps> = ({
   secondaryDescription,
   primaryText = "Book a Free Demo",
   secondaryText = "Talk to an Expert",
-  primaryUrl = "/demo",
+  primaryUrl = "/contact",
   secondaryUrl = "/contact",
 }) => {
   const router = useRouter();
