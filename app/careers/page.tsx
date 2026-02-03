@@ -74,7 +74,7 @@ export default function CareersPage() {
           }}
         />
 
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">Careers at Dorii Software</h1>
           <p className="text-muted-foreground text-lg">
             We are always looking for passionate, talented individuals to join

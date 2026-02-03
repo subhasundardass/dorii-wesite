@@ -13,7 +13,7 @@ export const generateMetadata = (): Metadata => ({
     siteName: "Dorii Software",
     images: [
       {
-        url: "/images/hero-housing-society.png",
+        url: "/images/og/housing-society-managemne-solution.png",
         width: 1200,
         height: 630,
         alt: "Housing Society Management Software – Dorii Software",
@@ -26,7 +26,7 @@ export const generateMetadata = (): Metadata => ({
     title: "Housing Society Management Software | Dorii Software",
     description:
       "Smart Housing Society Management Software for maintenance billing, accounting, online payments, complaints, notices, and resident communication.",
-    images: ["/images/hero-housing-society.png"],
+    images: ["/images/og/housing-society-managemne-solution.png"],
   },
   keywords: [
     "Housing Society Management Software",
@@ -61,7 +61,7 @@ export default function HousingSocietyPage() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="/demo"
+              href="/contact"
               className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
             >
               Request a Demo
@@ -78,7 +78,7 @@ export default function HousingSocietyPage() {
         {/* Right Side - Hero Image */}
         <div className="lg:w-1/2">
           <img
-            src="/images/hero-housing-society.png" // replace with your professional hero image
+            src="/images/hero-housing-society-management-solution.webp" // replace with your professional hero image
             alt="Transport & Logistics Management Software"
             className="w-full h-auto "
           />

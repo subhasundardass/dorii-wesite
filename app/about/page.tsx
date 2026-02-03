@@ -1,6 +1,5 @@
 // app/about/page.tsx
 
-import { Button } from "@/components/ui/button";
 import {
   Workflow,
   Layers,
@@ -15,18 +14,48 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Dorii Software | ERP & Business Automation Company in Siliguri",
   description:
-    "Dorii Software is a Siliguri-based ERP and business automation company delivering scalable software solutions for transport, inventory, warehouse, and enterprise operations across India.",
+    "Dorii Software is a Siliguri-based ERP and business automation company delivering scalable solutions for transport, inventory, warehouse, and enterprise operations across India.",
+
   keywords: [
     "Dorii Software",
     "ERP Software Company in Siliguri",
     "Business Automation India",
     "Custom ERP Development",
-    "Odoo Development Company",
-    "Inventory Management Software",
-    "Warehouse Management System",
     "Transport Management Software",
-    "Enterprise Software Solutions India",
+    "Warehouse Management System",
+    "Inventory Software",
+    "Odoo Development Company",
   ],
+
+  alternates: {
+    canonical: "https://dorii.in/about",
+  },
+
+  openGraph: {
+    title: "About Dorii Software | ERP & Business Automation Experts",
+    description:
+      "We build scalable ERP, transport, inventory, and warehouse software for growing businesses across India. Headquartered in Siliguri.",
+    url: "https://dorii.in/about",
+    siteName: "Dorii Software",
+    images: [
+      {
+        url: "https://dorii.in/og/about-dorii.png",
+        width: 1200,
+        height: 630,
+        alt: "Dorii Software – ERP & Business Automation Company",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "About Dorii Software | ERP & Automation Company",
+    description:
+      "ERP, transport, warehouse & business automation software built for real-world operations. Based in Siliguri, India.",
+    images: ["https://dorii.in/og/about-dorii.png"],
+  },
 };
 
 export default function AboutPage() {

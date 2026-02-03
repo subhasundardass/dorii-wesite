@@ -89,6 +89,12 @@ const Footer = () => {
             Design amazing digital experiences that create more happy in the
             world.
           </p>
+          <div className="mt-4 text-muted-foreground">
+            <ul>
+              <li>Recognized MSME by Govt. of India</li>
+              <li>DPIIT-recognized Startup</li>
+            </ul>
+          </div>
         </div>
 
         {footerSections.map(({ title, links }) => (
@@ -96,8 +102,8 @@ const Footer = () => {
             key={title}
             className={
               title === "Solutions"
-                ? "col-span-2 xl:col-span-3 min-w-[260px]"
-                : "min-w-[180px]"
+                ? "col-span-2 xl:col-span-3 min-w-65"
+                : "min-w-45"
             }
           >
             <h6 className="font-semibold text-foreground">{title}</h6>

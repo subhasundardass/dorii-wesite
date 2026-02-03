@@ -13,7 +13,7 @@ export const generateMetadata = (): Metadata => ({
     siteName: "Dorii Software",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og/transport-management-solution.png",
         width: 1200,
         height: 630,
         alt: "Transport & Logistics Management Software – Dorii Software",
@@ -26,7 +26,7 @@ export const generateMetadata = (): Metadata => ({
     title: "Transport & Logistics Management Software | Dorii Software",
     description:
       "An end-to-end TMS for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and daily transport operations.",
-    images: ["/og-image.png"],
+    images: ["/og/transport-management-solution.png"],
   },
   keywords: [
     "Transport Management Software",
@@ -77,9 +77,9 @@ export default function TransportManagementPage() {
         {/* Right Side - Hero Image */}
         <div className="lg:w-1/2">
           <img
-            src="/images/hero-transport.png" // replace with your professional hero image
+            src="/images/hero-transport-management-solution.webp" // replace with your professional hero image
             alt="Transport & Logistics Management Software"
-            className="w-full h-auto "
+            className="w-full h-auto"
           />
         </div>
       </section>
