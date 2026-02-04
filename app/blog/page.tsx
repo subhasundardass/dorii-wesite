@@ -1,6 +1,6 @@
 // app/blog/page.tsx
 import Link from "next/link";
-import { getAllPosts } from "@/lib/blog";
+import { getAllActivePosts, getAllPosts } from "@/lib/blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const posts = getAllPosts();
+  const posts = getAllActivePosts();
 
   if (!posts.length) {
     return (

@@ -4,6 +4,7 @@ description: "Simple accounting software that helps Siliguri businesses manage i
 date: "2026-01-22"
 author: "Dorii Software"
 showOnHome: true
+isActive: true
 keywords:
   - accounting software Siliguri
   - simple accounting software Siliguri

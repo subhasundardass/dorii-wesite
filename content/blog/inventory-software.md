@@ -4,6 +4,7 @@ description: "How warehouse automation improves inventory accuracy and fulfillme
 date: "2026-01-16"
 author: "Dorii Software"
 showOnHome: true
+isActive: true
 keywords:
   - accounting software Siliguri
   - simple accounting software Siliguri

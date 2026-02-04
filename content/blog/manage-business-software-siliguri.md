@@ -4,6 +4,7 @@ description: "A simple guide for Siliguri business owners to move from manual re
 date: "2026-01-31"
 author: "Dorii Software"
 showOnHome: true
+isActive: true
 keywords:
   - business software Siliguri
   - shop management software Siliguri

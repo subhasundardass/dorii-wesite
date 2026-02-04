@@ -61,7 +61,7 @@ export default async function BlogSlugPage({
   return (
     <article
       className="
-        mt-6 
+        mt-8 
         max-w-(--breakpoint-xl) 
         mx-auto 
         px-6 

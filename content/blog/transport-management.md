@@ -4,6 +4,7 @@ description: "How transport automation improves inventory accuracy, delivery eff
 date: "2026-02-01"
 author: "Dorii Software"
 showOnHome: true
+isActive: true
 keywords:
   - business software Siliguri
   - shop management software Siliguri

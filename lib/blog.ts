@@ -8,6 +8,7 @@ export type BlogMeta = {
   date?: string;
   keywords?: string[];
   showOnHome?: boolean;
+  isActive?: boolean;
 };
 
 export type BlogPost = {
@@ -57,6 +58,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       keywords: data.keywords ?? [],
       showOnHome:
         data.showOnHome === true || data.showOnHome === "true" ? true : false,
+      isActive:
+        data.isActive === true || data.isActive === "true" ? true : false,
     },
     content,
   };
@@ -71,48 +74,35 @@ export function getAllPosts(): BlogPost[] {
     .filter(Boolean) as BlogPost[];
 }
 
+export function getAllActivePosts(): BlogPost[] {
+  return getAllPosts()
+    .filter((post) => post.meta.isActive)
+    .sort((a, b) => {
+      const timeA = Date.parse(a.meta.date || "") || 0;
+      const timeB = Date.parse(b.meta.date || "") || 0;
+      return timeB - timeA; // newest first
+    });
+}
+
 /* -----------------------------------------------------
    Get showOnHome
 ----------------------------------------------------- */
 export function getHomePosts(limit?: number): BlogPost[] {
   const allPosts = getAllPosts();
-  console.log(
-    "All posts:",
-    allPosts.map((p) => ({
-      slug: p.slug,
-      showOnHome: p.meta.showOnHome,
-      date: p.meta.date,
-    })),
-  );
 
   // Filter featured posts
-  const featuredPosts = allPosts.filter((post) => {
-    const show = !!post.meta.showOnHome; // treat truthy as true
-    if (!show) console.log(`Skipping post (not featured): ${post.slug}`);
-    return show;
-  });
-
-  console.log(
-    "Featured posts after filter:",
-    featuredPosts.map((p) => p.slug),
-  );
-
-  // Sort by date descending (newest first)
-  const sortedPosts = featuredPosts.sort((a, b) => {
-    const timeA = Date.parse(a.meta.date || "") || 0;
-    const timeB = Date.parse(b.meta.date || "") || 0;
-    return timeB - timeA;
-  });
-
-  console.log(
-    "Featured posts after sort:",
-    sortedPosts.map((p) => ({ slug: p.slug, date: p.meta.date })),
-  );
+  const featuredPosts = allPosts
+    .filter((post) => post.meta.showOnHome && post.meta.isActive)
+    .sort((a, b) => {
+      const timeA = Date.parse(a.meta.date || "") || 0;
+      const timeB = Date.parse(b.meta.date || "") || 0;
+      return timeB - timeA; // newest first
+    });
 
   // Apply limit
   if (limit && limit > 0) {
-    return sortedPosts.slice(0, limit);
+    return featuredPosts.slice(0, limit);
   }
 
-  return sortedPosts;
+  return featuredPosts;
 }
