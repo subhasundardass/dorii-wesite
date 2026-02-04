@@ -60,61 +60,194 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="mt-8 max-w-(--breakpoint-xl) mx-auto w-full py-16 xs:py-24 px-6">
+    <main className="mt-6 max-w-(--breakpoint-xl) mx-auto w-full py-16 xs:py-20 px-6">
       {/* Hero */}
-      <section aria-labelledby="about-heading" className="text-center">
-        <h1
-          id="about-heading"
-          className="text-3xl xs:text-4xl md:text-5xl font-bold tracking-tight"
-        >
-          About Dorii Software
-        </h1>
-
-        <p className="mt-6  max-w-[100ch] sm:mx-auto sm:text-center">
-          Dorii Software is an India-based software development company
-          specializing in ERP systems, business automation, and custom
-          enterprise applications for transport, logistics, inventory, and
-          operational management.
-        </p>
-      </section>
-
+      <HeroSection />
       {/* Who We Are */}
-      <section className="mt-20 grid gap-12 md:grid-cols-2">
-        <div>
-          <h2 className="text-2xl font-semibold">Who We Work With</h2>
-          <p className="mt-4 leading-relaxed ">
-            We work with small and mid-sized businesses, startups, logistics
-            providers, warehouse operators, manufacturers, and service-based
-            enterprises that require reliable, scalable, and business-centric
-            software solutions.
-          </p>
-          <p className="mt-4 leading-relaxed ">
-            Our expertise spans transport management systems, inventory and
-            warehouse software, housing society platforms, and custom enterprise
-            applications. We emphasize long-term stability, performance, and
-            maintainability in every solution we deliver.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold">Where We Come From</h2>
-          <p className="mt-4 leading-relaxed ">
-            Headquartered in Siliguri, North Bengal, Dorii Software was founded
-            with a clear vision: to bridge the gap between academic engineering
-            knowledge and real-world enterprise software requirements.
-          </p>
-          <p className="mt-4 leading-relaxed ">
-            By combining disciplined engineering practices with practical
-            business insight, we help organizations adopt technology without
-            disrupting their existing workflows.
-          </p>
-        </div>
-      </section>
+      <WhoWeAre />
+      {/* Who We Work With */}
+      <WhoWeWorkWith />
 
       {/* Mission & Vision */}
-      <section className="mt-24 grid gap-12 md:grid-cols-2">
+      <MissionAndVission />
+
+      {/* Founder story - optional */}
+      <FounderStory />
+
+      {/* CTA */}
+      <ContactCTA />
+    </main>
+  );
+}
+
+export const HeroSection: React.FC = () => {
+  return (
+    <section className="text-center">
+      <h1 className="text-3xl xs:text-4xl md:text-5xl font-bold tracking-tight">
+        About Dorii Software
+      </h1>
+
+      <p className="mt-6 max-w-[100ch] sm:mx-auto sm:text-center text-muted-foreground text-lg">
+        Dorii Software is an India-based software development company
+        specializing in ERP systems, business automation, and custom enterprise
+        applications for transport, logistics, inventory, and operational
+        management.
+      </p>
+      <p className="mt-6 max-w-[100ch] sm:mx-auto sm:text-center text-lg">
+        Dorii was started with a simple but recurring observation — many
+        businesses work incredibly hard, yet struggle because their systems are
+        scattered. We’ve seen transporters tracking bookings on WhatsApp,
+        billing on Excel, accounts on paper, and follow-ups purely from memory.
+        For a while, this works. Then scale, errors, and confusion creep in.
+        Dorii exists to fix that gap. We build practical ERP and business
+        automation software for companies that want clarity, control, and
+        reliability in their daily operations — without unnecessary complexity.
+      </p>
+    </section>
+  );
+};
+
+export const WhoWeAre: React.FC = () => {
+  return (
+    <section className="mt-12 max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* Left Column */}
         <div>
-          <h2 className="text-2xl font-semibold">Our Mission</h2>
+          <h2 className="text-3xl font-semibold mb-4">What We Do</h2>
+
+          <p className="leading-relaxed">
+            We work with small and mid-sized businesses, startups, logistics
+            providers, warehouse operators, manufacturers, and service-based
+            enterprises that need reliable, business-centric software solutions.
+          </p>
+          <p className="mt-2">
+            At Dorii, we design and develop custom software solutions focused on
+            real business workflows, not theoretical models.
+          </p>
+
+          <p className="my-2 font-semibold">Our core areas include:</p>
+          <ul>
+            <li className="list-disc ml-4">
+              Transport & Logistics Management Systems (TMS)
+            </li>
+            <li className="list-disc ml-4">Custom ERP solutions</li>
+            <li className="list-disc ml-4">Inventory & Warehouse Management</li>
+            <li className="list-disc ml-4">
+              Billing, accounts, and operational automation
+            </li>
+            <li className="list-disc ml-4">
+              Odoo implementation and customization
+            </li>
+            <li className="list-disc ml-4">
+              Long-term support and system evolution
+            </li>
+          </ul>
+          <p className="mt-2">
+            Most of our work starts small — a module, a pain point, a manual
+            process — and grows as the business grows.
+          </p>
+        </div>
+
+        {/* Right Column */}
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">
+            How We Think About Software
+          </h2>
+
+          <p className="mt-2">
+            We don’t believe in one-size-fits-all software. Every business has
+            its own workflows, constraints, and decision-making processes.. A
+            transporter, a distributor, and a manufacturer may all need “ERP”,
+            but their workflows, decisions, and constraints are very different.
+            Software should adapt to the business, not force the business to
+            adapt to the software.
+          </p>
+          <p className="my-2 font-semibold">Our focus is always on:</p>
+          <ul>
+            <li className="list-disc ml-4">Simplicity over buzzwords</li>
+            <li className="list-disc ml-4">Stability over flashy features</li>
+            <li className="list-disc ml-4">
+              Systems that people actually use daily
+            </li>
+          </ul>
+          <p className="mt-4 max-w-3xl mx-auto">
+            We believe good software should fit the business, not force the
+            business to fit the software. Our approach is shaped by real
+            operational experience.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const WhoWeWorkWith: React.FC = () => {
+  return (
+    <section className="mt-12 max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* Left Column */}
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">Who We Work With</h2>
+
+          <p className="leading-relaxed">
+            At Dorii, we design and develop custom software solutions focused on
+            real business workflows, not theoretical models.
+          </p>
+
+          <p className="my-2 font-semibold">We primarily work with:</p>
+          <ul>
+            <li className="list-disc ml-4">Small and mid-sized businesses</li>
+            <li className="list-disc ml-4">
+              Transport and logistics companies
+            </li>
+            <li className="list-disc ml-4">Inventory-driven operations</li>
+            <li className="list-disc ml-4">
+              Service and operations-heavy organizations
+            </li>
+            <li className="list-disc ml-4">
+              Startups that need solid foundations
+            </li>
+          </ul>
+          <p className="mt-2">
+            Based in <strong>Siliguri, North Bengal</strong>, we work closely
+            with clients across India, often acting not just as developers but
+            as long-term technology partners.
+          </p>
+        </div>
+
+        {/* Right Column */}
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">Why Dorii</h2>
+          <p className="mt-2">
+            Dorii was founded to bridge the gap between engineering knowledge
+            and real-world business needs.
+          </p>
+          <p className="mt-2">
+            We’ve seen too many systems fail because they looked good on paper
+            but didn’t fit the ground reality. Our goal is to build software
+            that supports decision-making, reduces dependency on memory and
+            manual work, and brings visibility to operations.
+          </p>
+          <p>
+            If you’re looking for flashy dashboards and generic promises, we may
+            not be the right fit.
+          </p>
+          <p className="my-2 font-semibold">
+            If you’re looking for reliable, thoughtfully built systems that grow
+            with your business, Dorii is built for that.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const MissionAndVission: React.FC = () => {
+  return (
+    <section className="mt-12 max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div>
+          <h2 className="text-3xl font-semibold">Our Mission</h2>
 
           <p className="mt-4 leading-relaxed">
             At Dorii Software, our mission is to bridge the gap between academic
@@ -150,7 +283,7 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold">Our Vision</h2>
+          <h2 className="text-3xl font-semibold">Our Vision</h2>
 
           <p className="mt-4 leading-relaxed">
             Our vision at Dorii Software is to become a trusted technology
@@ -188,153 +321,84 @@ export default function AboutPage() {
             organization we work with.
           </p>
         </div>
-      </section>
-
-      {/* What We Do */}
-      <section className="mt-28">
-        <h2 className="text-3xl md:text-4xl font-bold text-center">
-          What We Do
-        </h2>
-
-        <p className="mt-4 max-w-3xl mx-auto text-center ">
-          We design, develop, and maintain software systems that support core
-          business operations across multiple industries.
-        </p>
-
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              title: "ERP Software Development",
-              desc: "End-to-end ERP systems customized to match your business workflows and reporting needs.",
-            },
-            {
-              title: "Business Process Automation",
-              desc: "Automation of repetitive and manual processes to improve efficiency and accuracy.",
-            },
-            {
-              title: "Transport Management Systems",
-              desc: "Fleet operations, delivery tracking, billing, and logistics management solutions.",
-            },
-            {
-              title: "Inventory & Warehouse Software",
-              desc: "Stock tracking, warehouse operations, inward–outward flows, and audit-ready reporting.",
-            },
-            {
-              title: "Odoo Customization & Optimization",
-              desc: "Odoo implementation, module customization, performance tuning, and integrations.",
-            },
-            {
-              title: "Technical Consulting & Architecture",
-              desc: "System design, scalability planning, and long-term technology consulting.",
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="rounded-xl border p-6 bg-background hover:bg-muted transition"
-            >
-              <h3 className="font-semibold text-lg">{item.title}</h3>
-              <p className="mt-3 text-sm ">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Why Dorii */}
-      <section className="mt-28">
-        <h2 className="text-3xl md:text-4xl font-bold text-center">
-          Why Choose Dorii Software
-        </h2>
-
-        <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground">
-          We combine business understanding with strong engineering practices to
-          deliver ERP and automation systems you can rely on long term.
-        </p>
-
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              icon: Workflow,
-              title: "Business-First Approach",
-              desc: "We design software around real operational workflows, not generic assumptions.",
-            },
-            {
-              icon: Layers,
-              title: "Scalable Architecture",
-              desc: "Our systems are built to grow with your business without performance bottlenecks.",
-            },
-            {
-              icon: Settings,
-              title: "ERP & Odoo Expertise",
-              desc: "Hands-on experience with custom ERP systems and deep Odoo customization.",
-            },
-            {
-              icon: ShieldCheck,
-              title: "Reliable & Secure",
-              desc: "Stable, secure, and well-tested software designed for daily enterprise use.",
-            },
-            {
-              icon: Users,
-              title: "Long-Term Partnership",
-              desc: "We focus on support, evolution, and continuous improvement — not one-time delivery.",
-            },
-            {
-              icon: CheckCircle,
-              title: "Transparent Delivery",
-              desc: "Clear communication, realistic timelines, and no hidden surprises.",
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="rounded-xl border bg-background p-6 hover:bg-muted transition"
-            >
-              <div className="flex items-start gap-4">
-                <div className="rounded-lg bg-primary/10 p-3">
-                  <item.icon className="h-6 w-6 text-primary" />
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* E-E-A-T */}
-      <section className="mt-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center">
-          Experience You Can Rely On
-        </h2>
-
-        <p className="mt-4 leading-relaxed text-center">
-          Dorii Software is guided by professionals with hands-on experience in
-          ERP implementation, business process design, and enterprise software
-          delivery. Our leadership ensures every project follows clean
-          architecture, security best practices, and long-term maintainability.
-          Our experience spans transport management systems, inventory control,
-          warehouse workflows, invoicing, reporting, and role-based access
-          systems used in real business environments.
-        </p>
-      </section>
-
-      {/* CTA */}
-      <section className="mt-32 text-center rounded-2xl border p-12 bg-muted">
-        <h2 className="text-3xl font-bold">
-          Your Technology Partner for the Long Term
-        </h2>
-        <p className="mt-4  max-w-3xl mx-auto">
-          Whether you need a custom ERP system, business automation, or expert
-          consulting, Dorii Software is ready to help you build software that
-          supports real growth.
-        </p>
-        <Link href="/solutions" className="text-primary underline">
-          Explore our ERP and automation solutions
-        </Link>
-      </section>
-    </main>
+      </div>
+      <p className="mt-6 text-lg">
+        Our vision is simple — to help businesses run better through clear
+        systems, honest technology, and long-term thinking. Technology should
+        not be a burden. It should quietly support the business while people
+        focus on what they do best.
+      </p>
+    </section>
   );
-}
+};
+
+export const FounderStory: React.FC = () => {
+  return (
+    <section className="mt-12 max-w-6xl mx-auto">
+      <h2 className="text-3xl font-semibold mb-4">Founder&apos;s Story</h2>
+      <p className="leading-relaxed">
+        Dorii was started with a simple belief: software should work for the
+        business, not the other way around.
+      </p>
+      <p className="mt-4 leading-relaxed">
+        After spending years working closely with businesses across logistics,
+        manufacturing, sales, and service operations, our founder saw the same
+        problem everywhere — teams struggling with rigid software, endless Excel
+        sheets, and manual processes that slowed growth instead of supporting
+        it.
+      </p>
+      <p className="mt-4 leading-relaxed">
+        Most off-the-shelf ERPs and CRMs were either too complex, too expensive,
+        or poorly aligned with how businesses actually operate on the ground.
+        Owners were forced to change their processes just to fit the software.
+      </p>
+      <p className="mt-4 leading-relaxed">Dorii was created to change that. </p>
+      <p className="mt-4 leading-relaxed">
+        Instead of selling generic solutions, we focus on understanding how a
+        business really runs — from daily operations to reporting and
+        decision-making. Every system we build is practical, purpose-driven, and
+        designed to grow along with the business.
+      </p>
+      <p className="mt-4 leading-relaxed">
+        Today, Dorii works with businesses that value clarity, efficiency, and
+        long-term partnership over flashy features. We don’t just deliver
+        software — we stay involved, improve continuously, and take
+        responsibility for making systems work in the real world.
+      </p>
+      <p className="mt-4 leading-relaxed font-semibold">
+        Our approach is simple:
+      </p>
+      <p>Listen carefully. Build thoughtfully. Support consistently.</p>
+      <p className="text-lg mt-6">
+        Built by a team with hands-on experience working with ERP systems,
+        logistics operations, accounting workflows, and business automation in
+        real-world environments.
+      </p>
+    </section>
+  );
+};
+
+export const ContactCTA = () => {
+  return (
+    <section className="mt-24 rounded-2xl border bg-muted/40 px-6 py-12 text-center">
+      <p className="text-lg md:text-xl font-medium">
+        If you’re exploring ERP, automation, or system improvements — we’re
+        happy to talk.
+      </p>
+
+      <p className="mt-4 text-sm md:text-base text-muted-foreground">
+        📩 Reach out to discuss your requirements or ask questions.
+      </p>
+
+      <div className="mt-8">
+        <Link
+          href="/contact"
+          className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition"
+        >
+          Get in touch
+          <span aria-hidden>→</span>
+        </Link>
+      </div>
+    </section>
+  );
+};
