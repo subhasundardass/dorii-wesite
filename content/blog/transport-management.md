@@ -1,8 +1,14 @@
 ---
 title: "Transport Management Software for Growing Businesses"
 description: "How transport automation improves inventory accuracy, delivery efficiency, and business scalability"
-date: "2026-01-16"
+date: "2026-02-01"
 author: "Dorii Software"
+showOnHome: true
+keywords:
+  - business software Siliguri
+  - shop management software Siliguri
+  - inventory software West Bengal
+  - billing software for small shops Siliguri
 ---
 
 ## Why Transport Management Is No Longer Optional

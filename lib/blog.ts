@@ -7,6 +7,7 @@ export type BlogMeta = {
   description: string;
   date?: string;
   keywords?: string[];
+  showOnHome?: boolean;
 };
 
 export type BlogPost = {
@@ -54,6 +55,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
         "Business automation, ERP, inventory and software insights by Dorii Software.",
       date: data.date ?? "",
       keywords: data.keywords ?? [],
+      showOnHome:
+        data.showOnHome === true || data.showOnHome === "true" ? true : false,
     },
     content,
   };
@@ -66,4 +69,50 @@ export function getAllPosts(): BlogPost[] {
   return getAllSlugs()
     .map((slug) => getPostBySlug(slug))
     .filter(Boolean) as BlogPost[];
+}
+
+/* -----------------------------------------------------
+   Get showOnHome
+----------------------------------------------------- */
+export function getHomePosts(limit?: number): BlogPost[] {
+  const allPosts = getAllPosts();
+  console.log(
+    "All posts:",
+    allPosts.map((p) => ({
+      slug: p.slug,
+      showOnHome: p.meta.showOnHome,
+      date: p.meta.date,
+    })),
+  );
+
+  // Filter featured posts
+  const featuredPosts = allPosts.filter((post) => {
+    const show = !!post.meta.showOnHome; // treat truthy as true
+    if (!show) console.log(`Skipping post (not featured): ${post.slug}`);
+    return show;
+  });
+
+  console.log(
+    "Featured posts after filter:",
+    featuredPosts.map((p) => p.slug),
+  );
+
+  // Sort by date descending (newest first)
+  const sortedPosts = featuredPosts.sort((a, b) => {
+    const timeA = Date.parse(a.meta.date || "") || 0;
+    const timeB = Date.parse(b.meta.date || "") || 0;
+    return timeB - timeA;
+  });
+
+  console.log(
+    "Featured posts after sort:",
+    sortedPosts.map((p) => ({ slug: p.slug, date: p.meta.date })),
+  );
+
+  // Apply limit
+  if (limit && limit > 0) {
+    return sortedPosts.slice(0, limit);
+  }
+
+  return sortedPosts;
 }

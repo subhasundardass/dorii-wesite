@@ -1,6 +1,9 @@
 ---
 title: "Easy Business Management Software for Siliguri Traders"
 description: "A simple guide for Siliguri business owners to move from manual registers to easy-to-use software for better profit tracking."
+date: "2026-01-31"
+author: "Dorii Software"
+showOnHome: true
 keywords:
   - business software Siliguri
   - shop management software Siliguri

@@ -3,6 +3,12 @@ title: "Warehouse Management Software for Growing Businesses"
 description: "How warehouse automation improves inventory accuracy and fulfillment"
 date: "2026-01-16"
 author: "Dorii Software"
+showOnHome: true
+keywords:
+  - business software Siliguri
+  - shop management software Siliguri
+  - inventory software West Bengal
+  - billing software for small shops Siliguri
 ---
 
 ## Why Warehouse Management Matters

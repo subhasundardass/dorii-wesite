@@ -1,6 +1,9 @@
 ---
 title: "Simple Accounting Software for your Businesses in Siliguri"
 description: "Simple accounting software that helps Siliguri businesses manage income, expenses, and payments easily without confusion."
+date: "2026-01-22"
+author: "Dorii Software"
+showOnHome: true
 keywords:
   - accounting software Siliguri
   - simple accounting software Siliguri

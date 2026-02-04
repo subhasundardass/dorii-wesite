@@ -8,6 +8,7 @@ import About from "@/components/about-us";
 import { Metadata } from "next";
 import ServicesWeOffer from "@/components/services";
 import { CTA } from "@/components/CTA";
+import Blogs from "@/components/blogs";
 // import Pricing from "@/components/pricing";
 // import Testimonial from "@/components/testimonial";
 
@@ -91,6 +92,7 @@ export default function Home() {
       <Solutions />
       <About />
       <ServicesWeOffer />
+      <Blogs />
       <FAQ />
       <CTA
         title="Let’s Build Software That Actually Works for Your Business"
