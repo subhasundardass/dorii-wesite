@@ -29,11 +29,11 @@ const footerSections = [
     title: "Company",
     links: [
       {
-        title: "About Dorii Software",
+        title: "About Us",
         href: "/about",
       },
       {
-        title: "Contact Us",
+        title: "Contact",
         href: "/contact",
       },
       {

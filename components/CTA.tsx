@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface CTAProps {
   title: string;
@@ -16,8 +17,8 @@ export const CTA: React.FC<CTAProps> = ({
   title,
   description,
   secondaryDescription,
-  primaryText = "Book a Free Demo",
-  secondaryText = "Talk to an Expert",
+  primaryText = "Talk to an Expert",
+  secondaryText = "WhatsApp Us",
   primaryUrl = "/contact",
   secondaryUrl = "/contact",
 }) => {
@@ -35,7 +36,7 @@ export const CTA: React.FC<CTAProps> = ({
   return (
     <section className=" px-6 py-20">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold">{title}</h2>
+        <h2 className="text-3xl sm:text-3xl font-bold">{title}</h2>
 
         <p className="mt-4 text-lg sm:text-xl mx-auto">{description}</p>
 
@@ -57,18 +58,24 @@ export const CTA: React.FC<CTAProps> = ({
             {primaryText}
           </button>
 
-          <button
-            onClick={handleSecondaryClick}
-            className="
+          <Link
+            href="https://wa.me/919732939123"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              onClick={handleSecondaryClick}
+              className="
               w-full sm:w-auto px-8 py-4 rounded-lg
               border border-gray-300 text-gray-700 font-semibold
               hover:bg-gray-100
               dark:border-gray-600 dark:text-gray-200
               dark:hover:bg-gray-800
               transition"
-          >
-            {secondaryText}
-          </button>
+            >
+              {secondaryText}
+            </button>
+          </Link>
         </div>
       </div>
     </section>

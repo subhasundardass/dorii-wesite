@@ -49,8 +49,9 @@ const FAQ = () => {
       <h2 className="md:text-center text-2xl xs:text-3xl md:text-4xl leading-[1.15]! font-bold tracking-tighter">
         Frequently Asked Questions
       </h2>
-      <p className="mt-1.5 md:text-center xs:text-lg ">
-        Quick answers to common questions about our products and services.
+      <p className="mt-3 md:text-center xs:text-lg ">
+        Have questions? Here are quick answers about our products, services, and
+        how we work.
       </p>
 
       <div className="min-h-137.5 md:min-h-80 xl:min-h-75">

@@ -45,22 +45,24 @@ const Solutions = () => {
     >
       <h2
         id="solutions-heading"
-        className="text-3xl xs:text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight sm:max-w-xl sm:text-center sm:mx-auto"
+        className="text-3xl xs:text-3xl md:text-4xl md:leading-14 font-bold tracking-tight sm:max-w-xl xs:text-center sm:mx-auto"
       >
         Solutions We Offer
       </h2>
 
-      <p className="mt-6 max-w-[60ch] xs:text-lg sm:max-w-xl sm:text-center sm:mx-auto">
-        Industry-focused business automation and ERP solutions designed to
-        simplify operations, improve visibility, and scale efficiently across
-        different business domains.
+      <p className="mt-6 max-w-6xl xs:text-lg  xs:text-center sm:mx-auto">
+        Our ERP and business automation solutions are built for how businesses
+        actually work. Whether it’s CRM, inventory, accounting, manufacturing,
+        or logistics, we help teams reduce manual work, improve control, and run
+        operations smoothly.
       </p>
 
       <div className="mt-8 xs:mt-14 w-full mx-auto grid md:grid-cols-2 gap-x-10 gap-y-12">
         {solutions.map((solution) => (
           <Card
             key={solution.title}
-            className="flex flex-col border rounded-xl overflow-hidden shadow-none"
+            className="flex flex-col border rounded-xl overflow-hidden shadow-none
+  w-full max-w-md md:max-w-none mx-auto"
           >
             <CardHeader>
               <solution.icon aria-hidden="true" />

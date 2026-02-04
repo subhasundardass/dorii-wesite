@@ -6,6 +6,8 @@ import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import About from "@/components/about-us";
 import { Metadata } from "next";
+import ServicesWeOffer from "@/components/services";
+import { CTA } from "@/components/CTA";
 // import Pricing from "@/components/pricing";
 // import Testimonial from "@/components/testimonial";
 
@@ -88,7 +90,12 @@ export default function Home() {
       <Hero />
       <Solutions />
       <About />
+      <ServicesWeOffer />
       <FAQ />
+      <CTA
+        title="Let’s Build Software That Actually Works for Your Business"
+        description="Whether you need a custom ERP, system integration, or process automation, our team works closely with you to understand your operations and deliver solutions that make day-to-day work easier—not more complicated."
+      />
     </main>
   );
 }

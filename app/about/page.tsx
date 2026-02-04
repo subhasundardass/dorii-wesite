@@ -113,7 +113,9 @@ export const WhoWeAre: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl font-semibold mb-4">What We Do</h2>
+          <h2 className="text-3xl font-semibold mb-4 tracking-tight">
+            What We Do
+          </h2>
 
           <p className="leading-relaxed">
             We work with small and mid-sized businesses, startups, logistics
@@ -150,7 +152,7 @@ export const WhoWeAre: React.FC = () => {
 
         {/* Right Column */}
         <div>
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-3xl font-semibold mb-4 tracking-tight">
             How We Think About Software
           </h2>
 
