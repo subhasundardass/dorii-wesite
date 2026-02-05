@@ -78,12 +78,14 @@ export default async function BlogSlugPage({
         
       "
     >
-      <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight pt-4">
         {post.meta.title}
       </h1>
 
       {post.meta.date && (
-        <p className="text-sm text-muted-foreground mb-4">{post.meta.date}</p>
+        <p className="text-md text-muted-foreground mb-12">
+          {post.meta.description}
+        </p>
       )}
 
       <ReactMarkdown
@@ -153,7 +155,7 @@ export default async function BlogSlugPage({
           },
 
           /* ---------------- Horizontal rule ---------------- */
-          hr: () => <hr className="my-12 border-muted" />,
+          hr: () => <hr className="my-8 border-muted" />,
 
           /* ---------------- Tables (remark-gfm) ---------------- */
           table: ({ children }) => (

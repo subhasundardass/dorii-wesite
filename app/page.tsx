@@ -92,12 +92,13 @@ export default function Home() {
       <Solutions />
       <About />
       <ServicesWeOffer />
-      <Blogs />
+
       <FAQ />
       <CTA
         title="Let’s Build Software That Actually Works for Your Business"
         description="Whether you need a custom ERP, system integration, or process automation, our team works closely with you to understand your operations and deliver solutions that make day-to-day work easier—not more complicated."
       />
+      <Blogs />
     </main>
   );
 }

@@ -16,15 +16,6 @@ const Navbar = () => {
         <NavMenu className="hidden md:block" />
 
         <div className="flex items-center gap-3">
-          {/* Phone Number */}
-          <a
-            href="tel:+919XXXXXXXXX"
-            className="hidden sm:flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary"
-            aria-label="Call Dorii Software"
-          >
-            <Phone className="h-4 w-4" />
-            +91 9732939123
-          </a>
           <ThemeToggle />
           {/* <Button variant="outline" className="hidden sm:inline-flex">
             Sign In

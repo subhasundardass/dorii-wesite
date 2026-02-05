@@ -52,10 +52,11 @@ const Hero = () => {
         </div>
         <div className="relative hidden lg:block lg:max-w-lg xl:max-w-xl w-full rounded-xl">
           <Image
-            src="/hero1.svg"
+            src="/hero2.svg"
+            loading="eager"
             width={384}
             height={351}
-            alt="Custom ERP and business automation software dashboard by Dorii Software"
+            alt="Custom ERP and business automation software by Dorii Software"
             className="w-full h-auto object-contain "
           />
         </div>

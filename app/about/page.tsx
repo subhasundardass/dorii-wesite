@@ -93,16 +93,6 @@ export const HeroSection: React.FC = () => {
         applications for transport, logistics, inventory, and operational
         management.
       </p>
-      <p className="mt-6 max-w-[100ch] sm:mx-auto sm:text-center text-lg">
-        Dorii was started with a simple but recurring observation — many
-        businesses work incredibly hard, yet struggle because their systems are
-        scattered. We’ve seen transporters tracking bookings on WhatsApp,
-        billing on Excel, accounts on paper, and follow-ups purely from memory.
-        For a while, this works. Then scale, errors, and confusion creep in.
-        Dorii exists to fix that gap. We build practical ERP and business
-        automation software for companies that want clarity, control, and
-        reliability in their daily operations — without unnecessary complexity.
-      </p>
     </section>
   );
 };
@@ -113,9 +103,7 @@ export const WhoWeAre: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl font-semibold mb-4 tracking-tight">
-            What We Do
-          </h2>
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">What We Do</h2>
 
           <p className="leading-relaxed">
             We work with small and mid-sized businesses, startups, logistics
@@ -152,7 +140,7 @@ export const WhoWeAre: React.FC = () => {
 
         {/* Right Column */}
         <div>
-          <h2 className="text-3xl font-semibold mb-4 tracking-tight">
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">
             How We Think About Software
           </h2>
 
@@ -189,12 +177,9 @@ export const WhoWeWorkWith: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl font-semibold mb-4">Who We Work With</h2>
-
-          <p className="leading-relaxed">
-            At Dorii, we design and develop custom software solutions focused on
-            real business workflows, not theoretical models.
-          </p>
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">
+            Who We Work With
+          </h2>
 
           <p className="my-2 font-semibold">We primarily work with:</p>
           <ul>
@@ -219,7 +204,7 @@ export const WhoWeWorkWith: React.FC = () => {
 
         {/* Right Column */}
         <div>
-          <h2 className="text-3xl font-semibold mb-4">Why Dorii</h2>
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">Why Dorii</h2>
           <p className="mt-2">
             Dorii was founded to bridge the gap between engineering knowledge
             and real-world business needs.
@@ -249,12 +234,9 @@ export const MissionAndVission: React.FC = () => {
     <section className="mt-12 max-w-6xl mx-auto ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
-          <h2 className="text-3xl font-semibold">Our Mission</h2>
-
-          <p className="mt-4 leading-relaxed">
-            At Dorii Software, our mission is to bridge the gap between academic
-            excellence and real-world software delivery.
-          </p>
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">
+            Our Mission
+          </h2>
 
           <p className="mt-4 leading-relaxed">
             We hand-pick highly skilled and passionate engineers from leading
@@ -285,7 +267,7 @@ export const MissionAndVission: React.FC = () => {
         </div>
 
         <div>
-          <h2 className="text-3xl font-semibold">Our Vision</h2>
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">Our Vision</h2>
 
           <p className="mt-4 leading-relaxed">
             Our vision at Dorii Software is to become a trusted technology
