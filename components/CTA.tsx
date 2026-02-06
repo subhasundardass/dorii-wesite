@@ -69,7 +69,7 @@ export const CTA: React.FC<CTAProps> = ({
               w-full sm:w-auto px-8 py-4 rounded-lg
               border border-gray-300 text-gray-700 font-semibold
               hover:bg-gray-100
-              dark:border-gray-600 dark:text-gray-200
+             dark:text-muted-foreground 
               dark:hover:bg-gray-800
               transition"
             >

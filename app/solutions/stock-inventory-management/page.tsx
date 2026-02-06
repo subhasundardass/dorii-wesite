@@ -40,7 +40,7 @@ export default function StockInventoryPage() {
             Stock & Inventory Management Software
           </h1>
 
-          <p className="mt-6 text-lg sm:text-xl text-gray-700  max-w-md">
+          <p className="mt-6 text-lg sm:text-xl dark:text-muted-foreground  max-w-md">
             A powerful, scalable inventory management solution designed to give
             complete control over stock movement, valuation, and availability
             across warehouses, stores, and branches.
@@ -78,7 +78,7 @@ export default function StockInventoryPage() {
             Common Inventory & Stock Management Problems We Solve
           </h2>
 
-          <p className="mt-4 text-lg text-gray-700 max-w-6xl mx-auto text-center">
+          <p className="mt-4 text-lg dark:text-muted-foreground max-w-6xl mx-auto text-center">
             Many businesses struggle with inventory control due to manual
             processes, disconnected systems, and lack of real-time visibility.
             Our Stock & Inventory Management Software is designed to eliminate
@@ -127,7 +127,7 @@ export default function StockInventoryPage() {
             Why Businesses Need Inventory Management Software
           </h2>
 
-          <p className="mt-6 text-lg text-gray-700 dark:text-gray-300 max-w-6xl mx-auto">
+          <p className="mt-6 text-lg dark:text-muted-foreground  max-w-6xl mx-auto">
             As businesses grow, managing inventory using Excel sheets, manual
             registers, or disconnected tools quickly becomes inefficient and
             risky. Lack of real-time visibility, frequent stock mismatches, and
@@ -167,7 +167,7 @@ export default function StockInventoryPage() {
           Key Features of Our Stock & Inventory Management Software
         </h2>
 
-        <p className="mt-6 text-center text-lg text-gray-700 dark:text-gray-300 max-w-4xl mx-auto">
+        <p className="mt-6 text-center text-lg dark:text-muted-foreground max-w-4xl mx-auto">
           Our inventory management software provides complete, end-to-end
           control over your stock — from procurement and storage to sales,
           dispatch, and reporting. Every feature is designed to improve
@@ -230,7 +230,7 @@ export default function StockInventoryPage() {
             Frequently Asked Questions
           </h2>
 
-          <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto">
+          <p className="mt-4 text-lg dark:text-muted-foreground text-center max-w-3xl mx-auto">
             Here are some common questions businesses ask before implementing a
             stock and inventory management system.
           </p>
@@ -283,7 +283,7 @@ function Feature({ title, desc }: { title: string; desc: string }) {
   return (
     <div className="p-6 rounded-xl border border-border bg-background hover:shadow-sm transition">
       <h3 className="font-semibold text-lg text-foreground">{title}</h3>
-      <p className="mt-2 text-gray-700">{desc}</p>
+      <p className="mt-2 dark:text-muted-foreground">{desc}</p>
     </div>
   );
 }
@@ -292,7 +292,7 @@ function Problem({ title, desc }: { title: string; desc: string }) {
   return (
     <div className="p-6 rounded-lg border border-border bg-background">
       <h3 className="font-semibold mb-2 text-foreground">{title}</h3>
-      <p className="text-gray-700">{desc}</p>
+      <p className="dark:text-muted-foreground">{desc}</p>
     </div>
   );
 }
@@ -301,7 +301,7 @@ function Benefit({ title, desc }: { title: string; desc: string }) {
   return (
     <div className="p-6 rounded-lg border border-border bg-background">
       <h3 className="font-semibold mb-2 text-foreground">{title}</h3>
-      <p className="text-gray-700">{desc}</p>
+      <p className="dark:text-muted-foreground">{desc}</p>
     </div>
   );
 }
@@ -310,7 +310,7 @@ function FAQ({ q, a }: { q: string; a: string }) {
   return (
     <div className="p-6 rounded-lg border border-border bg-background">
       <h3 className="font-semibold text-lg text-foreground">{q}</h3>
-      <p className="mt-2 text-gray-700">{a}</p>
+      <p className="mt-2 dark:text-muted-foreground">{a}</p>
     </div>
   );
 }

@@ -19,12 +19,37 @@ export async function generateStaticParams() {
 /* ----------------------------------------
    Metadata (params is async!)
 ---------------------------------------- */
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: Promise<{ slug: string }>;
+// }): Promise<Metadata> {
+//   const { slug } = await params; // ✅ REQUIRED
+//   const post = getPostBySlug(slug);
+
+//   if (!post) {
+//     return {
+//       title: "Blog | Dorii Software",
+//       description:
+//         "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
+//     };
+//   }
+
+//   return {
+//     title: post.meta.title,
+//     description: post.meta.description,
+//     keywords: post.meta.keywords,
+//     alternates: {
+//       canonical: `/blog/${slug}`,
+//     },
+//   };
+// }
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params; // ✅ REQUIRED
+  const { slug } = await params;
   const post = getPostBySlug(slug);
 
   if (!post) {
@@ -32,15 +57,72 @@ export async function generateMetadata({
       title: "Blog | Dorii Software",
       description:
         "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
+      keywords: [
+        "Dorii Software",
+        "ERP Software",
+        "Business Automation",
+        "Inventory Software",
+        "Warehouse Management",
+      ],
+      alternates: {
+        canonical: `/blog`,
+      },
+      openGraph: {
+        title: "Blog | Dorii Software",
+        description:
+          "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
+        url: "https://dorii.in/blog",
+        siteName: "Dorii Software",
+        images: [
+          {
+            url: "https://dorii.in/og/about-dorii.png",
+            width: 1200,
+            height: 630,
+            alt: "Dorii Software – ERP & Business Automation Company",
+          },
+        ],
+        locale: "en_IN",
+        type: "article",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Blog | Dorii Software",
+        description:
+          "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
+        images: ["https://dorii.in/og/about-dorii.png"],
+      },
     };
   }
 
+  // Dynamically generate About-styled metadata from blog post
   return {
     title: post.meta.title,
     description: post.meta.description,
     keywords: post.meta.keywords,
     alternates: {
       canonical: `/blog/${slug}`,
+    },
+    openGraph: {
+      title: post.meta.title,
+      description: post.meta.description,
+      url: `https://dorii.in/blog/${slug}`,
+      siteName: "Dorii Software",
+      images: [
+        {
+          url: "https://dorii.in/og/about-dorii.png", // Always using About-style OG image
+          width: 1200,
+          height: 630,
+          alt: `${post.meta.title} | Dorii Software`,
+        },
+      ],
+      locale: "en_IN",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.meta.title,
+      description: post.meta.description,
+      images: ["https://dorii.in/og/about-dorii.png"], // About-style Twitter image
     },
   };
 }
