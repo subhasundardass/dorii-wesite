@@ -16,13 +16,26 @@ export default function Blogs() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="p-6 border rounded-lg hover:shadow-lg transition"
+            className="cursor-pointer group p-6 border rounded-lg hover:shadow-lg hover:-translate-y-1 transition"
           >
             <h2 className="text-xl font-semibold mb-2">{post.meta.title}</h2>
-            <p className="text-gray-600">{post.meta.description}</p>
+            <p className="dark:text-muted-foreground">
+              {post.meta.description}
+            </p>
             {post.meta.date && (
               <p className="text-sm text-gray-400 mt-2">{post.meta.date}</p>
             )}
+            <span className="mt-4 inline-flex items-center text-sm text-primary">
+              <svg
+                className="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
           </Link>
         ))}
       </div>

@@ -40,7 +40,7 @@ const Solutions = () => {
   return (
     <section
       id="solutions"
-      className="max-w-(--breakpoint-xl) mx-auto w-full py-12 xs:py-20 px-6"
+      className="max-w-(--breakpoint-xl) mx-auto w-full py-12 xs:py-20 px-6 text-gray-700"
       aria-labelledby="solutions-heading"
     >
       <h2
@@ -61,8 +61,8 @@ const Solutions = () => {
         {solutions.map((solution) => (
           <Card
             key={solution.title}
-            className="flex flex-col border rounded-xl overflow-hidden shadow-none
-  w-full max-w-md md:max-w-none mx-auto"
+            className="flex flex-col overflow-hidden shadow-none
+  w-full max-w-md md:max-w-none mx-auto cursor-pointer group p-4 border rounded-xl hover:shadow-lg hover:-translate-y-1 transition"
           >
             <CardHeader>
               <solution.icon aria-hidden="true" />
@@ -77,7 +77,7 @@ const Solutions = () => {
                 </a>
               </h3>
 
-              <p className="mt-1 text-muted-foreground text-sm xs:text-[17px]">
+              <p className="mt-1 dark:text-muted-foreground text-sm xs:text-[17px]">
                 {solution.description}
               </p>
             </CardHeader>

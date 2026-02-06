@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="max-w-(--breakpoint-xl) mx-auto w-full py-12 xs:py-20 px-6"
+      className="max-w-(--breakpoint-xl) mx-auto w-full py-12 xs:py-20 px-6 text-gray-700"
     >
       <h2 className="text-3xl xs:text-3xl md:text-4xl md:leading-14 font-bold tracking-tight sm:max-w-xl md:text-center sm:mx-auto">
         About Dorii Software
