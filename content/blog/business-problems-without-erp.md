@@ -4,6 +4,7 @@ description: "Discover why growing Indian businesses face accounting errors, inv
 date: "2026-02-05"
 author: "Dorii Software"
 showOnHome: true
+image: "/images/blog/business-problems-without-erp.png"
 isActive: true
 keywords:
   - ERP for Indian businesses

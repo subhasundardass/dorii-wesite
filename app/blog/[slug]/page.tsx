@@ -16,34 +16,6 @@ export async function generateStaticParams() {
   }));
 }
 
-/* ----------------------------------------
-   Metadata (params is async!)
----------------------------------------- */
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params: Promise<{ slug: string }>;
-// }): Promise<Metadata> {
-//   const { slug } = await params; // ✅ REQUIRED
-//   const post = getPostBySlug(slug);
-
-//   if (!post) {
-//     return {
-//       title: "Blog | Dorii Software",
-//       description:
-//         "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
-//     };
-//   }
-
-//   return {
-//     title: post.meta.title,
-//     description: post.meta.description,
-//     keywords: post.meta.keywords,
-//     alternates: {
-//       canonical: `/blog/${slug}`,
-//     },
-//   };
-// }
 export async function generateMetadata({
   params,
 }: {
@@ -94,6 +66,8 @@ export async function generateMetadata({
     };
   }
 
+  const ogImage = post.meta.image ?? "https://dorii.in/og/about-dorii.png";
+
   // Dynamically generate About-styled metadata from blog post
   return {
     title: post.meta.title,
@@ -109,7 +83,7 @@ export async function generateMetadata({
       siteName: "Dorii Software",
       images: [
         {
-          url: "https://dorii.in/og/about-dorii.png", // Always using About-style OG image
+          url: ogImage, // Always using About-style OG image
           width: 1200,
           height: 630,
           alt: `${post.meta.title} | Dorii Software`,
@@ -122,7 +96,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.meta.title,
       description: post.meta.description,
-      images: ["https://dorii.in/og/about-dorii.png"], // About-style Twitter image
+      images: [ogImage], // About-style Twitter image
     },
   };
 }
