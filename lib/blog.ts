@@ -9,6 +9,7 @@ export type BlogMeta = {
   keywords?: string[];
   showOnHome?: boolean;
   isActive?: boolean;
+  image?: string;
 };
 
 export type BlogPost = {
@@ -55,6 +56,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
         data.description ??
         "Business automation, ERP, inventory and software insights by Dorii Software.",
       date: data.date ?? "",
+      image: data.image ?? "",
       keywords: data.keywords ?? [],
       showOnHome:
         data.showOnHome === true || data.showOnHome === "true" ? true : false,
@@ -76,7 +78,7 @@ export function getAllPosts(): BlogPost[] {
 
 export function getAllActivePosts(): BlogPost[] {
   return getAllPosts()
-    .filter((post) => post.meta.isActive)
+    .filter((post) => post.meta.isActive && isPublished(post.meta.date))
     .sort((a, b) => {
       const timeA = Date.parse(a.meta.date || "") || 0;
       const timeB = Date.parse(b.meta.date || "") || 0;
@@ -92,7 +94,12 @@ export function getHomePosts(limit?: number): BlogPost[] {
 
   // Filter featured posts
   const featuredPosts = allPosts
-    .filter((post) => post.meta.showOnHome && post.meta.isActive)
+    .filter(
+      (post) =>
+        post.meta.showOnHome &&
+        post.meta.isActive &&
+        isPublished(post.meta.date),
+    )
     .sort((a, b) => {
       const timeA = Date.parse(a.meta.date || "") || 0;
       const timeB = Date.parse(b.meta.date || "") || 0;
@@ -105,4 +112,16 @@ export function getHomePosts(limit?: number): BlogPost[] {
   }
 
   return featuredPosts;
+}
+
+function isPublished(date?: string): boolean {
+  if (!date) return true; // no date = publish immediately
+
+  const publishTime = Date.parse(date);
+  if (isNaN(publishTime)) return true; // invalid date = fail open
+
+  const now = new Date();
+  now.setHours(23, 59, 59, 999); // include whole day
+
+  return publishTime <= now.getTime();
 }

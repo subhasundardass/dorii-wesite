@@ -53,7 +53,7 @@ export default function HousingSocietyPage() {
             Housing Society Management Software
           </h1>
 
-          <p className="mt-6 text-lg sm:text-xl text-gray-700 dark:text-gray-200 max-w-md">
+          <p className="mt-6 text-lg sm:text-xl dark:text-muted-foreground  max-w-md">
             A simple and smart solution to manage your housing society
             operations, maintenance, accounts, and communication—everything in
             one place.
@@ -91,7 +91,7 @@ export default function HousingSocietyPage() {
             Common Problems Faced by Housing Societies
           </h2>
 
-          <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto text-center ">
+          <p className="mt-4 text-lg dark:text-muted-foreground max-w-3xl mx-auto text-center ">
             Many housing societies struggle with daily management due to manual
             processes and lack of a centralized system. These problems grow as
             the society expands.
@@ -102,7 +102,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold mb-2">
                 Maintenance Collection Issues
               </h3>
-              <p className=" text-gray-700">
+              <p className=" dark:text-muted-foreground">
                 Delayed payments, missed reminders, and unclear records make it
                 difficult to collect maintenance on time.
               </p>
@@ -112,7 +112,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold mb-2">
                 Lack of Financial Transparency
               </h3>
-              <p className=" text-gray-700">
+              <p className=" dark:text-muted-foreground">
                 Members are often unaware of how funds are being used, leading
                 to mistrust and disputes.
               </p>
@@ -120,7 +120,7 @@ export default function HousingSocietyPage() {
 
             <div className="p-6 border rounded-lg">
               <h3 className="font-semibold mb-2">Poor Communication</h3>
-              <p className=" text-gray-700">
+              <p className=" dark:text-muted-foreground">
                 Important notices and meeting updates get lost in multiple
                 WhatsApp groups.
               </p>
@@ -128,7 +128,7 @@ export default function HousingSocietyPage() {
 
             <div className="p-6 border rounded-lg">
               <h3 className="font-semibold mb-2">Manual Record Keeping</h3>
-              <p className=" text-gray-700">
+              <p className=" dark:text-muted-foreground">
                 Registers and Excel files are hard to maintain and error-prone.
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function HousingSocietyPage() {
             Why Housing Societies Need Software
           </h2>
 
-          <p className="mt-4 text-lg text-gray-700 max-w-6xl mx-auto">
+          <p className="mt-4 text-lg dark:text-muted-foreground max-w-6xl mx-auto">
             Managing a housing society manually becomes difficult as the number
             of flats and residents increases. Excel sheets, registers, and
             WhatsApp groups are hard to track, often leading to missed payments,
@@ -152,44 +152,44 @@ export default function HousingSocietyPage() {
           </p>
 
           <div className="mt-10 grid sm:grid-cols-2 gap-6 text-left">
-            <div className="p-6 bg-white rounded-lg border">
+            <div className="p-6 rounded-lg border">
               <h3 className="font-semibold mb-2">
                 No Manual Registers or Paperwork
               </h3>
-              <p className="text-gray-700 ">
+              <p className="dark:text-muted-foreground ">
                 All society records such as residents, flats, payments, and
                 notices are stored digitally, reducing paperwork and human
                 errors.
               </p>
             </div>
 
-            <div className="p-6 bg-white rounded-lg border">
+            <div className="p-6 rounded-lg border">
               <h3 className="font-semibold mb-2">
                 Clear Maintenance & Billing Records
               </h3>
-              <p className="text-gray-700 ">
+              <p className="dark:text-muted-foreground ">
                 Maintenance bills, payment history, and pending dues are
                 available in one place, making financial tracking simple and
                 transparent.
               </p>
             </div>
 
-            <div className="p-6 bg-white rounded-lg border">
+            <div className="p-6 rounded-lg border">
               <h3 className="font-semibold mb-2">
                 Faster Complaint Resolution
               </h3>
-              <p className="text-gray-700 ">
+              <p className="dark:text-muted-foreground ">
                 Residents can raise complaints online, and committee members can
                 track progress until the issue is resolved, ensuring
                 accountability.
               </p>
             </div>
 
-            <div className="p-6 bg-white rounded-lg border">
+            <div className="p-6 rounded-lg border">
               <h3 className="font-semibold mb-2">
                 Better Communication with Residents
               </h3>
-              <p className="text-gray-700 ">
+              <p className="dark:text-muted-foreground ">
                 Important notices, meetings, and emergency updates reach all
                 residents instantly, without relying on multiple WhatsApp
                 groups.
@@ -205,7 +205,7 @@ export default function HousingSocietyPage() {
           Key Features of Our Housing Society Management Software
         </h2>
 
-        <p className="mt-4 text-center text-lg text-gray-700 max-w-6xl mx-auto">
+        <p className="mt-4 text-center text-lg dark:text-muted-foreground max-w-6xl mx-auto">
           Our housing society management system covers everything required to
           run an apartment or residential society smoothly — from daily
           operations to financial transparency and resident communication.
@@ -251,7 +251,7 @@ export default function HousingSocietyPage() {
             Benefits for Everyone
           </h2>
 
-          <p className="mt-4 text-lg text-gray-700 text-center max-w-6xl mx-auto">
+          <p className="mt-4 text-lg dark:text-muted-foreground text-center max-w-6xl mx-auto">
             A housing society runs smoothly only when both the management
             committee and residents are satisfied. Our software is designed to
             support the needs of all stakeholders and create a transparent,
@@ -265,13 +265,13 @@ export default function HousingSocietyPage() {
                 Benefits for Committee Members
               </h3>
 
-              <p className="mt-3 text-gray-700 ">
+              <p className="mt-3 dark:text-muted-foreground ">
                 Committee members often handle multiple responsibilities and
                 manual tasks. The system reduces their workload and provides
                 better control over society operations.
               </p>
 
-              <ul className="mt-4 space-y-3 text-gray-700 ">
+              <ul className="mt-4 space-y-3 dark:text-muted-foreground ">
                 <li>
                   ✔ Less manual work by automating billing, records, and
                   reporting
@@ -295,13 +295,13 @@ export default function HousingSocietyPage() {
             <div className="p-6 border rounded-xl">
               <h3 className="text-xl font-semibold">Benefits for Residents</h3>
 
-              <p className="mt-3 text-gray-700 ">
+              <p className="mt-3 dark:text-muted-foreground ">
                 Residents benefit from better communication, quick services, and
                 easy access to important society information without dependency
                 on the committee.
               </p>
 
-              <ul className="mt-4 space-y-3 text-gray-700 ">
+              <ul className="mt-4 space-y-3 dark:text-muted-foreground ">
                 <li>
                   ✔ Easy and timely maintenance payments with payment history
                 </li>
@@ -331,7 +331,7 @@ export default function HousingSocietyPage() {
             Frequently Asked Questions
           </h2>
 
-          <p className="mt-4 text-lg text-gray-700 text-center max-w-3xl mx-auto">
+          <p className="mt-4 text-lg dark:text-muted-foreground text-center max-w-3xl mx-auto">
             Here are some common questions housing societies ask before moving
             to a digital management system.
           </p>
@@ -341,7 +341,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg">
                 How does the system help with maintenance billing?
               </h3>
-              <p className="mt-2 text-gray-700  leading-relaxed">
+              <p className="mt-2 dark:text-muted-foreground  leading-relaxed">
                 The system automatically generates maintenance bills based on
                 society rules, tracks paid and pending amounts, and sends
                 reminders to residents. Committee members can easily view
@@ -354,7 +354,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg">
                 Can residents raise complaints online?
               </h3>
-              <p className="mt-2 text-gray-700  leading-relaxed">
+              <p className="mt-2 dark:text-muted-foreground  leading-relaxed">
                 Yes, residents can raise complaints directly from the system.
                 Each complaint is recorded with status tracking, helping the
                 committee ensure timely resolution and better accountability.
@@ -365,7 +365,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg">
                 Is the system secure and compliant?
               </h3>
-              <p className="mt-2 text-gray-700  leading-relaxed">
+              <p className="mt-2 dark:text-muted-foreground  leading-relaxed">
                 All society data is stored securely with role-based access
                 control. Sensitive information is protected, and only authorized
                 users can view or manage specific data.
@@ -376,7 +376,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg">
                 Is the software easy to use for non-technical users?
               </h3>
-              <p className="mt-2 text-gray-700  leading-relaxed">
+              <p className="mt-2 dark:text-muted-foreground  leading-relaxed">
                 Yes, the system is designed with a simple and clean interface.
                 Even residents and committee members with basic mobile or
                 computer knowledge can use it comfortably without training.
@@ -387,7 +387,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg">
                 Can this software work for small housing societies?
               </h3>
-              <p className="mt-2 text-gray-700  leading-relaxed">
+              <p className="mt-2 dark:text-muted-foreground  leading-relaxed">
                 Absolutely. The software is flexible and works well for both
                 small and large housing societies. Features can be enabled as
                 per the society’s size and requirements.
@@ -398,7 +398,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg">
                 Will residents get notifications and updates?
               </h3>
-              <p className="mt-2 text-gray-700  leading-relaxed">
+              <p className="mt-2 dark:text-muted-foreground  leading-relaxed">
                 Yes, residents receive important notices, meeting updates,
                 payment reminders, and emergency alerts through the system,
                 ensuring clear and timely communication.
@@ -409,13 +409,13 @@ export default function HousingSocietyPage() {
       </section>
 
       {/* Why choose */}
-      <section className="mt-16 bg-gray-50 py-12 rounded-2xl">
+      <section className="mt-16 py-12 rounded-2xl">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">
             Why Choose Our Housing Society Management Software?
           </h2>
 
-          <p className="text-center text-lg text-gray-700 max-w-6xl mx-auto mb-10">
+          <p className="text-center text-lg dark:text-muted-foreground max-w-6xl mx-auto mb-10">
             We built this software by understanding the real challenges faced by
             housing societies—manual records, payment confusion, communication
             gaps, and lack of transparency. Our solution is simple, reliable,
@@ -427,7 +427,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg mb-2">
                 Built for Indian Housing Societies
               </h3>
-              <p className="text-gray-700">
+              <p className="dark:text-muted-foreground">
                 Designed specifically for Indian apartments and housing
                 societies, covering maintenance billing, accounting, notices,
                 and resident management.
@@ -438,7 +438,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg mb-2">
                 Easy for Non-Technical Users
               </h3>
-              <p className="text-gray-700">
+              <p className="dark:text-muted-foreground">
                 No technical knowledge required. Committee members and residents
                 can start using the system with minimal training.
               </p>
@@ -448,7 +448,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg mb-2">
                 Complete Transparency
               </h3>
-              <p className="text-gray-700">
+              <p className="dark:text-muted-foreground">
                 Every transaction, notice, and update is visible to authorized
                 users, helping build trust between the committee and residents.
               </p>
@@ -458,7 +458,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg mb-2">
                 Save Time & Reduce Manual Work
               </h3>
-              <p className="text-gray-700">
+              <p className="dark:text-muted-foreground">
                 Automate maintenance collection, expense tracking, reports, and
                 communication—no more Excel sheets or WhatsApp chaos.
               </p>
@@ -466,7 +466,7 @@ export default function HousingSocietyPage() {
 
             <div>
               <h3 className="font-semibold text-lg mb-2">Secure & Reliable</h3>
-              <p className="text-gray-700">
+              <p className="dark:text-muted-foreground">
                 Your society data is safe with proper access control, role-based
                 permissions, and secure data handling.
               </p>
@@ -476,7 +476,7 @@ export default function HousingSocietyPage() {
               <h3 className="font-semibold text-lg mb-2">
                 Scales as Your Society Grows
               </h3>
-              <p className="text-gray-700">
+              <p className="dark:text-muted-foreground">
                 Whether you manage a small society or a large apartment complex,
                 the system adapts to your needs without complications.
               </p>
@@ -498,7 +498,7 @@ function Feature({ title, desc }: { title: string; desc: string }) {
   return (
     <div className="p-6 border rounded-xl hover:shadow-sm transition">
       <h3 className="font-semibold text-lg">{title}</h3>
-      <p className="mt-2 text-gray-700 ">{desc}</p>
+      <p className="mt-2 dark:text-muted-foreground ">{desc}</p>
     </div>
   );
 }

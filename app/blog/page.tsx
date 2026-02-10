@@ -4,7 +4,7 @@ import { getAllActivePosts, getAllPosts } from "@/lib/blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Dorii Software",
+  title: "Blog ",
   description:
     "Explore our latest insights on ERP, business automation, inventory, warehouse, and transport management software solutions.",
   alternates: { canonical: "https://www.dorii.in/blog" },

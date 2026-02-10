@@ -50,7 +50,7 @@ export default function WarehouseManagementPage() {
         <h2 className="text-3xl font-semibold text-center">
           Common Warehouse Challenges We Solve
         </h2>
-        <p className="mt-4 max-w-6xl mx-auto text-center text-lg">
+        <p className="mt-4 max-w-6xl mx-auto text-center text-lg dark:text-muted-foreground ">
           Warehouses often struggle with visibility, accuracy, and speed.
           Dorii’s Warehouse Management Software is designed to eliminate
           operational bottlenecks and bring complete control to your warehouse
@@ -98,7 +98,7 @@ export default function WarehouseManagementPage() {
           ].map((item) => (
             <Card key={item.title} className="p-6">
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-muted-foreground text-lg">{item.desc}</p>
+              <p className="dark:text-muted-foreground ">{item.desc}</p>
             </Card>
           ))}
         </div>
@@ -119,7 +119,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Multi-Warehouse Inventory Control
             </h3>
-            <p className="text-muted-foreground">
+            <p className="dark:text-muted-foreground">
               Manage inventory across multiple warehouses, locations, zones,
               racks, and bins with real-time quantity visibility.
             </p>
@@ -130,7 +130,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Barcode, Batch & Serial Tracking
             </h3>
-            <p className="text-muted-foreground">
+            <p className="dark:text-muted-foreground">
               Enable barcode-based inward, picking, and dispatch with batch,
               lot, and serial number tracking for full traceability.
             </p>
@@ -141,7 +141,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Intelligent Storage & Bin Management
             </h3>
-            <p className="text-muted-foreground">
+            <p className="dark:text-muted-foreground">
               Define structured warehouse layouts with smart bin allocation and
               optimized space utilization.
             </p>
@@ -152,7 +152,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Fast Order Picking & Dispatch
             </h3>
-            <p className="text-muted-foreground">
+            <p className="dark:text-muted-foreground">
               Streamline picking, packing, and dispatch workflows to reduce
               turnaround time and improve order accuracy.
             </p>
@@ -163,7 +163,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Stock Aging & Performance Analytics
             </h3>
-            <p className="text-muted-foreground">
+            <p className="dark:text-muted-foreground">
               Identify slow-moving, dead, and fast-moving stock with detailed
               aging and warehouse performance reports.
             </p>
@@ -174,7 +174,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Seamless ERP & Module Integration
             </h3>
-            <p className="text-muted-foreground">
+            <p className="dark:text-muted-foreground">
               Fully integrated with purchase, sales, accounting, manufacturing,
               and transport modules for end-to-end visibility.
             </p>
@@ -187,7 +187,7 @@ export default function WarehouseManagementPage() {
         <h2 className="text-3xl font-semibold text-center">
           Business Benefits
         </h2>
-        <p className="mt-4 max-w-6xl mx-auto text-center text-lg ">
+        <p className="mt-4 max-w-6xl mx-auto text-center  ">
           Dorii’s Warehouse Management Software helps businesses reduce costs,
           improve operational efficiency, and scale warehouse operations with
           confidence.
@@ -198,7 +198,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Higher Inventory Accuracy
             </h3>
-            <p className="text-muted-foreground text-lg">
+            <p className="dark:text-muted-foreground ">
               Real-time tracking and barcode-driven workflows drastically reduce
               stock mismatches, shrinkage, and manual errors.
             </p>
@@ -208,7 +208,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Faster Order Fulfillment
             </h3>
-            <p className="text-muted-foreground text-lg">
+            <p className="dark:text-muted-foreground ">
               Optimized picking, packing, and dispatch processes improve
               turnaround time and customer satisfaction.
             </p>
@@ -218,7 +218,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Reduced Operating Costs
             </h3>
-            <p className="text-muted-foreground text-lg">
+            <p className="dark:text-muted-foreground ">
               Better space utilization, reduced rework, and lower dependency on
               manual processes cut overall warehouse costs.
             </p>
@@ -228,7 +228,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Complete Operational Visibility
             </h3>
-            <p className="text-muted-foreground text-lg">
+            <p className="dark:text-muted-foreground ">
               Centralized dashboards and reports provide real-time insights into
               stock movement and warehouse performance.
             </p>
@@ -238,7 +238,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Scalable & Future-Ready
             </h3>
-            <p className="text-muted-foreground text-lg">
+            <p className="dark:text-muted-foreground ">
               Easily scale from a single warehouse to multi-location operations
               without changing systems or processes.
             </p>
@@ -248,7 +248,7 @@ export default function WarehouseManagementPage() {
             <h3 className="text-xl font-semibold mb-2">
               Seamless ERP Integration
             </h3>
-            <p className="text-muted-foreground text-lg">
+            <p className="dark:text-muted-foreground ">
               Tight integration with purchase, sales, accounting, and
               manufacturing ensures data consistency across the organization.
             </p>
