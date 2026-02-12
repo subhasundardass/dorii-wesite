@@ -68,7 +68,7 @@ const ServicesWeOffer = () => {
         Our Services
       </h2>
 
-      <p className="mt-4 max-w-[100ch] xs:text-lg  sm:text-center sm:mx-auto ">
+      <p className="mt-4 max-w-[100ch] xs:text-lg  sm:text-center sm:mx-auto dark:text-muted-foreground">
         Our services focus on building practical software and ERP systems that
         support everyday business operations, reduce complexity, and provide a
         strong foundation for future growth.

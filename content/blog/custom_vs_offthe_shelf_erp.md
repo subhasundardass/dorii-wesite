@@ -1,5 +1,5 @@
 ---
-title: "Custom ERP vs Ready-made ERP ERP: Which Is Right for Your Business?"
+title: "Custom ERP vs Ready-made ERP: Which Is Right for Your Business?"
 description: "Learn the difference between custom ERP and ready-made ERP solutions for Indian SMEs and find out which fits your business best."
 date: "2026-02-10"
 author: "Dorii Software"

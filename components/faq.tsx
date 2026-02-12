@@ -46,7 +46,7 @@ const FAQ = () => {
       id="faq"
       className="w-full max-w-(--breakpoint-xl) mx-auto py-8 xs:py-16 px-6"
     >
-      <h2 className="md:text-center text-2xl xs:text-3xl md:text-4xl leading-[1.15]! font-bold tracking-tighter">
+      <h2 className="md:text-center text-2xl xs:text-3xl md:text-4xl leading-[1.15]! font-bold tracking-tighter dark:text-muted-foreground">
         Frequently Asked Questions
       </h2>
       <p className="mt-3 md:text-center xs:text-lg ">
