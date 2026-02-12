@@ -54,7 +54,7 @@ export default function BlogPage() {
         </h1>
 
         {/* SEO-friendly description */}
-        <p className="mt-6  max-w-[100ch] sm:mx-auto sm:text-center">
+        <p className="mt-6  max-w-[100ch] sm:mx-auto sm:text-center dark:text-muted-foreground xs:text-lg">
           Stay up-to-date with Dorii Software’s insights on ERP, inventory,
           warehouse, transport management, and business automation software.
           Learn best practices, trends, and tips to improve your operations.

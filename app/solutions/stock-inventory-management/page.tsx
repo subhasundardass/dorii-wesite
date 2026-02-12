@@ -72,7 +72,7 @@ export default function StockInventoryPage() {
       </section>
 
       {/* Problems */}
-      <section className="py-16">
+      <section className="">
         <div className="mx-auto">
           <h2 className="text-2xl sm:text-3xl font-semibold text-center text-foreground">
             Common Inventory & Stock Management Problems We Solve

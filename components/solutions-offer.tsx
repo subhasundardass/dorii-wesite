@@ -40,7 +40,7 @@ const Solutions = () => {
   return (
     <section
       id="solutions"
-      className="max-w-(--breakpoint-xl) mx-auto w-full py-12 xs:py-20 px-6 text-gray-700"
+      className="max-w-(--breakpoint-xl) mx-auto w-full py-12 xs:py-20 px-6"
       aria-labelledby="solutions-heading"
     >
       <h2
@@ -50,7 +50,7 @@ const Solutions = () => {
         Solutions We Offer
       </h2>
 
-      <p className="mt-6 max-w-6xl xs:text-lg  xs:text-center sm:mx-auto">
+      <p className="mt-6 max-w-6xl xs:text-lg  xs:text-center sm:mx-auto dark:text-muted-foreground">
         Our ERP and business automation solutions are built for how businesses
         actually work. Whether it’s CRM, inventory, accounting, manufacturing,
         or logistics, we help teams reduce manual work, improve control, and run
