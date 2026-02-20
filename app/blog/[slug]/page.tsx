@@ -134,7 +134,7 @@ export default async function BlogSlugPage({
         
       "
     >
-      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight pt-4">
+      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight pt-4 mb-4">
         {post.meta.title}
       </h1>
 
