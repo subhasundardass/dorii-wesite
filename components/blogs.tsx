@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getHomePosts } from "@/lib/blog";
 
 export default function Blogs() {
-  const posts = getHomePosts(3);
+  const posts = getHomePosts(6);
   console.log(posts);
 
   return (
@@ -20,12 +20,11 @@ export default function Blogs() {
           >
             <h2 className="text-xl font-semibold mb-2">{post.meta.title}</h2>
             <p className="dark:text-muted-foreground">
-              {post.meta.description}
+              {post.meta.description.split(" ").slice(0, 20).join(" ")}...
             </p>
-            {post.meta.date && (
-              <p className="text-sm text-gray-400 mt-2">{post.meta.date}</p>
-            )}
+
             <span className="mt-4 inline-flex items-center text-sm text-primary">
+              Read more
               <svg
                 className="w-4 h-4 ml-1"
                 fill="none"
