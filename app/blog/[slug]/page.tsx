@@ -131,7 +131,7 @@ export default async function BlogSlugPage({
         prose-h2:mb-6
         md:text-[17px]
         lg:text-[18px]
-        
+        text-foreground
       "
     >
       <h1 className="text-3xl sm:text-4xl font-bold tracking-tight pt-4 mb-4">
@@ -152,21 +152,19 @@ export default async function BlogSlugPage({
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-700 underline"
+              className="text-blue-700 hover:underline dark:text-blue-400"
             >
               {children}
             </a>
           ),
           h2: ({ children }) => (
-            <h2 className="my-4 text-2xl font-bold">{children}</h2>
+            <h2 className="text-2xl font-bold">{children}</h2>
           ),
           h3: ({ children }) => (
-            <h3 className="my-4 text-xl font-semibold">{children}</h3>
+            <h3 className="text-xl font-semibold">{children}</h3>
           ),
           /* ---------------- Paragraph ---------------- */
-          p: ({ children }) => (
-            <p className="my-4 leading-7 text-subtle">{children}</p>
-          ),
+          p: ({ children }) => <p className="py-4  text-subtle">{children}</p>,
 
           /* ---------------- Lists ---------------- */
           ul: ({ children }) => (
