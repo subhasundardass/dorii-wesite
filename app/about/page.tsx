@@ -12,7 +12,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Dorii Software | ERP & Business Automation Company in Siliguri",
+  title: "About Dorii Software",
   description:
     "Dorii Software is a Siliguri-based ERP and business automation company delivering scalable solutions for transport, inventory, warehouse, and enterprise operations across India.",
 

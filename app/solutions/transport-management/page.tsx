@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { CTA } from "@/components/CTA";
 
 export const generateMetadata = (): Metadata => ({
-  title: "Transport & Logistics Management Software | Dorii Software",
+  title: "Transport & Logistics Management Software",
   description:
     "Simplify your transport operations with Dorii's all-in-one Transport Management Software (TMS) for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and daily operations.",
   openGraph: {
@@ -85,7 +85,7 @@ export default function TransportManagementPage() {
       </section>
 
       {/* Challenges Section */}
-      <section className="px-6 py-16 max-w-7xl mx-auto">
+      <section className="px-6 py-16 mx-auto">
         <h2 className="text-3xl font-semibold text-center tracking-tight text-gray-900 dark:text-white">
           Common Transport Challenges We Solve
         </h2>
@@ -139,10 +139,7 @@ export default function TransportManagementPage() {
               desc: "Our TMS scales with your business — whether managing 5 vehicles or 500 — without increasing complexity.",
             },
           ].map((item) => (
-            <div
-              key={item.title}
-              className="p-6 rounded-xl shadow-sm hover:shadow-md transition"
-            >
+            <div key={item.title} className="p-6  transition border rounded-lg">
               <div className="flex items-start gap-3">
                 <span className="mt-2 h-2 w-2 rounded-full bg-blue-600" />
                 <h3 className="text-lg font-semibold">{item.title}</h3>
@@ -160,7 +157,7 @@ export default function TransportManagementPage() {
             Why Choose Our Transport & Logistics Software?
           </h2>
 
-          <p className="mt-4 max-w-3xl mx-auto text-gray-800">
+          <p className="mt-4 max-w-3xl mx-auto dark:text-muted-foreground text-lg">
             Dorii TMS is built for real-world transport businesses, helping you
             save time, reduce errors, and increase profits.
           </p>

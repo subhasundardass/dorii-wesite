@@ -4,7 +4,7 @@ import { Barcode, Boxes, Layers, LineChart, Plug, Truck } from "lucide-react";
 import { CTA } from "@/components/CTA";
 
 export const generateMetadata = (): Metadata => ({
-  title: "Warehouse Management Software | Dorii Software",
+  title: "Warehouse Management Software ",
   description:
     "Optimize warehouse operations with real-time tracking of goods, automated storage management, order fulfillment, and efficient space utilization using our warehouse ERP solution.",
   openGraph: {

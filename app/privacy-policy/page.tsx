@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Dorii Software",
+  title: "Privacy Policy",
   description:
     "Learn how Dorii Software collects, uses, and protects your personal information. Our Privacy Policy ensures safe and transparent data practices.",
   keywords: [

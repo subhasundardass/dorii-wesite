@@ -2,7 +2,7 @@ import { CTA } from "@/components/CTA";
 import { Metadata } from "next";
 
 export const generateMetadata = (): Metadata => ({
-  title: "Housing Society Management Software | Dorii Software",
+  title: "Housing Society Management Software",
   description:
     "Manage your housing society efficiently with Dorii's all-in-one Housing Society Management Software for maintenance billing, online payments, accounting, complaints, notices, visitor management, and resident communication.",
   openGraph: {
