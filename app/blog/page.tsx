@@ -3,34 +3,34 @@ import Link from "next/link";
 import { getAllActivePosts, getAllPosts } from "@/lib/blog";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Blog ",
-  description:
-    "Explore our latest insights on ERP, business automation, inventory, warehouse, and transport management software solutions.",
-  alternates: { canonical: "https://www.dorii.in/blog" },
-  openGraph: {
-    type: "website",
-    title: "Dorii Software Blog | ERP & Business Automation Insights",
-    description:
-      "Read expert articles on ERP, inventory, warehouse, transport management, and business automation software by Dorii Software.",
-    url: "https://www.dorii.in/blog",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Dorii Software Blog",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Dorii Software Blog | ERP & Business Automation Insights",
-    description:
-      "Expert insights on ERP, inventory, warehouse, transport management, and business automation software.",
-    images: ["/og-image.png"],
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Blog ",
+//   description:
+//     "Explore our latest insights on ERP, business automation, inventory, warehouse, and transport management software solutions.",
+//   alternates: { canonical: "https://www.dorii.in/blog" },
+//   openGraph: {
+//     type: "website",
+//     title: "Dorii Software Blog | ERP & Business Automation Insights",
+//     description:
+//       "Read expert articles on ERP, inventory, warehouse, transport management, and business automation software by Dorii Software.",
+//     url: "https://www.dorii.in/blog",
+//     images: [
+//       {
+//         url: "/og-image.png",
+//         width: 1200,
+//         height: 630,
+//         alt: "Dorii Software Blog",
+//       },
+//     ],
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Dorii Software Blog | ERP & Business Automation Insights",
+//     description:
+//       "Expert insights on ERP, inventory, warehouse, transport management, and business automation software.",
+//     images: ["/og-image.png"],
+//   },
+// };
 
 export default function BlogPage() {
   const posts = getAllActivePosts();

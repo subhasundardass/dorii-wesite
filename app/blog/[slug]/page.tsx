@@ -66,9 +66,8 @@ export async function generateMetadata({
     };
   }
 
-  const ogImage = post.meta.image ?? "https://dorii.in/og/about-dorii.png";
+  const ogImage = post.meta.image ?? "/og/about-dorii.png";
 
-  // Dynamically generate About-styled metadata from blog post
   return {
     title: post.meta.title,
     description: post.meta.description,
@@ -79,7 +78,7 @@ export async function generateMetadata({
     openGraph: {
       title: post.meta.title,
       description: post.meta.description,
-      url: `https://dorii.in/blog/${slug}`,
+      url: `/blog/${slug}`,
       siteName: "Dorii Software",
       images: [
         {

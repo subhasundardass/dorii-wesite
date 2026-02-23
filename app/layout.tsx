@@ -14,7 +14,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   title: {
     default: "Business Automation & ERP Solutions",
-    template: "%s | Dorii Software",
+    template: "%s | Dorii",
   },
 
   description:

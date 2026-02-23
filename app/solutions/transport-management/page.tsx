@@ -3,6 +3,9 @@ import { CTA } from "@/components/CTA";
 
 export const generateMetadata = (): Metadata => ({
   title: "Transport & Logistics Management Software",
+  alternates: {
+    canonical: `/solutions/transport-management`,
+  },
   description:
     "Simplify your transport operations with Dorii's all-in-one Transport Management Software (TMS) for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and daily operations.",
   openGraph: {

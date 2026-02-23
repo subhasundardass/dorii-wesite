@@ -4,7 +4,7 @@ import Link from "next/link";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Careers | Dorii Software",
+  title: "Careers",
   description:
     "Join Dorii Software! We invite fresh IT engineers, digital marketing students, and IT product marketing students to be part of our innovative software and business automation team.",
   keywords: [
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "ERP software careers",
     "IT product marketing Siliguri",
   ],
-  alternates: { canonical: "https://dorii.in/careers" },
+  alternates: { canonical: "/careers" },
 };
 
 export default function CareersPage() {
   const jobOpenings = [
     {
       title: "Junior Software Engineer Intern",
-      department: "IT / Software Development",
+      department: "Software Development",
       description:
         "We welcome fresh IT engineers and computer science students to work on ERP and business automation projects. Gain hands-on experience and mentorship from industry experts.",
     },

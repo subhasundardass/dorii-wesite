@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "business automation software policy",
     "website usage policy",
   ],
-  alternates: { canonical: "https://dorii.in/terms" },
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

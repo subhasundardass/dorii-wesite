@@ -12,7 +12,7 @@ export const metadata = {
     "inventory management help",
     "warehouse management software",
   ],
-  alternates: { canonical: "https://dorii.in/contact" },
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

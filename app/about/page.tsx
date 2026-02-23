@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://dorii.in/about",
+    canonical: "/about",
   },
 
   openGraph: {
