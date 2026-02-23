@@ -42,11 +42,10 @@ const About = () => {
       <div className="mt-10 text-center">
         <Link
           href="/about"
-          className="inline-block px-6 py-3 font-medium rounded-full 
-               bg-primary text-black 
-               hover:bg-primary/90 
-               dark:bg-primary dark:text-black
-               transition-colors duration-200"
+          className="inline-block px-6 py-3 font-medium rounded-full
+             bg-primary text-primary-foreground
+             hover:bg-primary/90
+             transition-colors duration-200"
         >
           Read More About Us
         </Link>

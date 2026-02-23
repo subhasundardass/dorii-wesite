@@ -2,7 +2,7 @@ import Script from "next/script";
 import ContactForm from "./ContactForm";
 
 export const metadata = {
-  title: "Contact Dorii Software | ERP & Business Automation Experts",
+  title: "Contact",
   description:
     "Get in touch with Dorii Software for custom ERP, business automation, inventory, warehouse, and transport solutions. Contact us today!",
   keywords: [
@@ -12,7 +12,7 @@ export const metadata = {
     "inventory management help",
     "warehouse management software",
   ],
-  alternates: { canonical: "https://dorii.in/contact" },
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

@@ -2,7 +2,10 @@ import { Metadata } from "next";
 import { CTA } from "@/components/CTA";
 
 export const generateMetadata = (): Metadata => ({
-  title: "Stock & Inventory Management Software | Dorii Software",
+  title: "Stock & Inventory Management Software",
+  alternates: {
+    canonical: `/solutions/stock-inventory-management`,
+  },
   description:
     "Gain full visibility of your inventory with automated stock management, low-stock alerts, batch tracking, product categorization, and seamless integration with sales and purchase operations.",
   openGraph: {

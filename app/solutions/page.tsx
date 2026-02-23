@@ -42,11 +42,11 @@ const solutions = [
 
 // --- Metadata for SEO ---
 export const generateMetadata = (): Metadata => ({
-  title: "Business Automation & ERP Solutions | Dorii Software",
+  title: "Ready-to-Use Business Automation & ERP Solutions",
   description:
     "Explore Dorii Software's complete business automation and ERP solutions: Housing Society, Transport, Warehouse, and Stock & Inventory management software for scalable operations.",
   openGraph: {
-    title: "Business Automation & ERP Solutions | Dorii Software",
+    title: "Business Automation & ERP Solutions",
     description:
       "Explore Dorii Software's complete business automation and ERP solutions: Housing Society, Transport, Warehouse, and Stock & Inventory management software for scalable operations.",
     url: "https://www.dorii.in/solutions",

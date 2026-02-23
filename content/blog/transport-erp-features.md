@@ -14,7 +14,7 @@ isActive: true
 
 The Indian logistics industry is evolving rapidly. With increasing fuel prices, GST compliance requirements, fast delivery expectations, and rising competition, transport businesses can no longer rely on manual registers and Excel sheets.
 
-A powerful [**ERP system**](/blog/Erp-software-for-indian-businesses) is no longer a luxury — it’s a necessity.
+A powerful [**ERP system**](/blog/erp-software-for-indian-businesses) is no longer a luxury — it’s a necessity.
 
 In this article, we’ll explore the **essential transport ERP features** every Indian logistics company must have to streamline operations, reduce costs, and increase profitability.
 
@@ -186,7 +186,7 @@ Scalability ensures your software grows with your business.
 
 ---
 
-# Why Indian Logistics Companies Need These Features
+## Why Indian Logistics Companies Need These Features
 
 Indian transport businesses face unique challenges:
 
@@ -200,7 +200,7 @@ A well-built Transport ERP system addresses these challenges by bringing automat
 
 ---
 
-# Final Thoughts
+## Final Thoughts
 
 Choosing the right Transport ERP is not about buying software — it's about building operational discipline.
 
@@ -217,4 +217,4 @@ An ideal transport ERP should include:
 
 If your current system is missing these features, it may be time to upgrade.
 
-Investing in the right [**transport ERP software**](https://dorii.in) today can help Indian logistics businesses reduce costs, avoid delays, improve customer satisfaction, and increase profits.
+Investing in the right [**transport ERP software**](/solutions/transport-management) today can help Indian logistics businesses reduce costs, avoid delays, improve customer satisfaction, and increase profits.

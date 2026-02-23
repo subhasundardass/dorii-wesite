@@ -2,7 +2,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Dorii Software",
+  title: "Terms & Conditions",
   description:
     "Read the Terms & Conditions for using Dorii Software website and services. Learn about user responsibilities, software usage, and our policies.",
   keywords: [
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "business automation software policy",
     "website usage policy",
   ],
-  alternates: { canonical: "https://dorii.in/terms" },
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
