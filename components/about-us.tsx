@@ -21,7 +21,7 @@ const About = () => {
       <div className="mt-10 grid md:grid-cols-2 gap-10">
         <div className="flex flex-col justify-center bg-muted/80 rounded-2xl p-8 md:p-10 hover:shadow-lg hover:-translate-y-1 transition">
           <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
-          <p className="dark:text-muted-foreground">
+          <p className="text-md text-muted-foreground">
             Our mission is to empower businesses by blending the energy and
             creativity of young engineers with the guidance of experienced
             industry professionals. The result is ERP and automation software
@@ -31,7 +31,7 @@ const About = () => {
 
         <div className="flex flex-col justify-center bg-muted/80 rounded-2xl p-8 md:p-10 hover:shadow-lg hover:-translate-y-1 transition">
           <h3 className="text-2xl font-semibold mb-3">Our Vision</h3>
-          <p className="dark:text-muted-foreground">
+          <p className="text-md text-muted-foreground">
             Our vision is to become a trusted leader in ERP and business
             automation by creating innovative, dependable solutions that support
             long-term growth for businesses across industries.

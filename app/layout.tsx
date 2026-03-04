@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
@@ -9,6 +9,11 @@ import Footer from "@/components/footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -192,7 +197,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${geistSans.className} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         {/* Global Navbar */}
 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
