@@ -89,7 +89,7 @@ const solutionsJSONLD = {
   ],
 };
 export const metadata: Metadata = {
-  title: "Siliguri Odoo Expert | Custom Odoo Modules & Workflow Automation",
+  title: "Siliguri Odoo Expert - Custom Odoo Modules & Workflow Automation",
   description:
     "Siliguri’s dedicated Odoo development team — custom module development, workflow automation, and full ERP implementation for North Bengal and global clients. Book a consultation today.",
   keywords: [
@@ -113,7 +113,7 @@ export const metadata: Metadata = {
         url: "https://dorii.in/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Siliguri Odoo Expert",
+        alt: "Siliguri Odoo Expert - Custom Modules & Workflow Automation",
       },
     ],
     type: "website",
@@ -251,11 +251,11 @@ export default function Page() {
               id="what-is-odoo-customisation"
               className="scroll-mt-28 space-y-6"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                 What Is Odoo Customisation?
               </h2>
 
-              <div className="space-y-5 text-gray-700 leading-relaxed">
+              <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   Odoo is one of the most powerful open-source business
                   management platforms — covering CRM, accounting, inventory,
@@ -285,7 +285,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-900">
+              <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
                 Four Types of Odoo Customisation
               </h3>
 
@@ -312,10 +312,12 @@ export default function Page() {
                     key={i}
                     className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition"
                   >
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -332,19 +334,19 @@ export default function Page() {
                   Decision Guide
                 </span>
 
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                   When Should You Customise Odoo Instead of Using Standard
                   Features?
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Not every business requirement needs custom Odoo development.
                   In many cases, standard Odoo configuration is enough. The key
                   is understanding when customisation delivers real ROI — and
                   when it simply increases cost and complexity.
                 </p>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Below is a practical decision guide to help business owners,
                   operations managers, and finance teams determine whether Odoo
                   customisation is justified.
@@ -354,7 +356,7 @@ export default function Page() {
               {/* Decision Table */}
               <div className="overflow-x-auto rounded-xl border border-gray-200">
                 <table className="min-w-full text-left">
-                  <thead className="bg-gray-100 text-gray-800">
+                  <thead className="text-gray-700 dark:text-gray-300">
                     <tr>
                       <th className="p-4 border">Scenario</th>
                       <th className="p-4 border">Recommendation</th>
@@ -394,11 +396,11 @@ export default function Page() {
                         "Software cannot fix cultural resistance",
                       ],
                     ].map((row, i) => (
-                      <tr key={i} className="hover:bg-gray-50 transition">
+                      <tr key={i} className=" transition">
                         {row.map((cell, j) => (
                           <td
                             key={j}
-                            className="p-4 border text-gray-700 align-top"
+                            className="p-4 border text-gray-700 dark:text-gray-300 align-top"
                           >
                             {cell}
                           </td>
@@ -410,8 +412,8 @@ export default function Page() {
               </div>
 
               {/* SEO Paragraph Expansion */}
-              <div className="space-y-5 text-gray-700 leading-relaxed max-w-3xl">
-                <h3 className="text-xl font-semibold text-gray-900">
+              <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl">
+                <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
                   Signs You Definitely Need Odoo Customisation
                 </h3>
 
@@ -423,7 +425,7 @@ export default function Page() {
                   ensures accuracy, automation, and long-term scalability.
                 </p>
 
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
                   When Configuration Is Better Than Custom Development
                 </h3>
 
@@ -446,7 +448,7 @@ export default function Page() {
                 <h4 className="font-semibold text-[#734B66] mb-2">
                   Not Sure What You Need?
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                   We analyse your workflow and recommend the most cost-effective
                   approach — configuration, automation, or full custom module
                   development.
@@ -465,11 +467,11 @@ export default function Page() {
               id="workflow-automation"
               className="scroll-mt-28 space-y-6"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                 Workflow Automation in Odoo
               </h2>
 
-              <div className="space-y-5 text-gray-700 leading-relaxed">
+              <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   Workflow automation eliminates repetitive manual work —
                   approvals, document generation, reminders, and
@@ -492,8 +494,10 @@ export default function Page() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-gray-900">{title}</h4>
-                      <p className="text-gray-600">
+                      <h4 className="font-semibold text-gray-700 dark:text-gray-300 dark:text-gray-300">
+                        {title}
+                      </h4>
+                      <p className="text-gray-700 dark:text-gray-300">
                         Automating routine business processes to increase speed
                         and reduce errors.
                       </p>
@@ -506,7 +510,7 @@ export default function Page() {
                 <h4 className="font-semibold text-[#734B66] mb-2">
                   Real-World Impact
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                   Clients regularly save 1–3 hours per day by automating manual
                   processes. Most automation projects pay for themselves within
                   weeks.
@@ -519,11 +523,11 @@ export default function Page() {
               id="custom-module-development"
               className="scroll-mt-28 space-y-6"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                 Custom Module Development
               </h2>
 
-              <div className="space-y-5 text-gray-700 leading-relaxed">
+              <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   When standard modules don’t fit your business logic,
                   <strong> custom module development</strong> becomes essential.
@@ -536,7 +540,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-900">
+              <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
                 Common Examples
               </h3>
 
@@ -553,10 +557,10 @@ export default function Page() {
                     key={i}
                     className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition"
                   >
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       {title}
                     </h4>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                       Tailored development aligned with your specific
                       operational requirements.
                     </p>
@@ -569,7 +573,7 @@ export default function Page() {
                   <h4 className="text-lg font-semibold text-[#734B66] mb-2">
                     Have a Specific Module in Mind?
                   </h4>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 dark:text-gray-300">
                     We’ll scope it and send a fixed-price quote — usually within
                     48 hours.
                   </p>
@@ -590,11 +594,11 @@ export default function Page() {
               className="scroll-mt-28 space-y-10"
             >
               <div className="space-y-4 max-w-2xl">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                   Odoo Implementation & Setup
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   A structured implementation ensures clean data, confident
                   users, and long-term scalability.
                 </p>
@@ -618,10 +622,10 @@ export default function Page() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">
+                      <h4 className="font-semibold text-gray-700 dark:text-gray-300 mb-1">
                         {title}
                       </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                         Comprehensive setup aligned with your workflows and
                         long-term operational goals.
                       </p>
@@ -642,11 +646,11 @@ export default function Page() {
                   Industries We Serve
                 </span>
 
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                   Odoo Solutions for Diverse Business Industries
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   We provide industry-specific Odoo implementation and
                   customisation services tailored to real operational
                   challenges. Whether you run a manufacturing unit, trading
@@ -691,11 +695,11 @@ export default function Page() {
                     {/* Accent Line */}
                     <div className="w-10 h-1 bg-[#734B66] mb-4 rounded-full"></div>
 
-                    <h5 className="font-semibold text-gray-900 mb-2 group-hover:text-[#734B66] transition">
+                    <h5 className="font-semibold text-gray-700 dark:text-gray-300 mb-2 group-hover:text-[#734B66] transition">
                       {item.title}
                     </h5>
 
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-700 dark:text-gray-300text-sm leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -707,7 +711,7 @@ export default function Page() {
                 <h4 className="font-semibold text-[#734B66] mb-2">
                   Don’t See Your Industry Listed?
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   We customise Odoo for unique and niche industries as well.
                   <a
                     href="/contact"
@@ -728,11 +732,11 @@ export default function Page() {
                 Local Expertise
               </span>
 
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                 Odoo Expert in Siliguri — Serving North Bengal & Beyond
               </h2>
 
-              <div className="space-y-5 text-gray-700 leading-relaxed">
+              <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   We are Siliguri’s dedicated Odoo development team. While many
                   agencies operate remotely from metros, we are right here —
@@ -777,17 +781,19 @@ export default function Page() {
                     className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition"
                   >
                     <div className="text-2xl mb-3">{item.icon}</div>
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                    <h4 className="font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
                 ))}
               </div>
 
               {/* Areas Served */}
               <div className="flex flex-wrap gap-3 pt-4">
-                <span className="font-semibold text-gray-800">
+                <span className="font-semibold text-gray-700 dark:text-gray-300">
                   Areas We Serve:
                 </span>
 
@@ -817,7 +823,7 @@ export default function Page() {
                 <h4 className="font-semibold text-[#5e2b97] mb-2">
                   Looking for an Odoo expert near Siliguri?
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                   You’ve found one. We offer in-person consultations, on-site
                   training, and dedicated local business support.
                   <a
@@ -835,17 +841,17 @@ export default function Page() {
                 <span className="text-sm font-semibold text-[#734B66] uppercase tracking-wide">
                   Cost & Timeline
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                   What Does Odoo Customisation Cost?
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Odoo customisation costs vary depending on complexity,
                   integrations, reporting needs, and automation depth. Below is
                   a realistic pricing comparison based on the Indian market.
                 </p>
 
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm">
                   These are typical investment ranges for small and mid-sized
                   businesses. Final pricing depends on scope clarity,
                   documentation, and required turnaround time.
@@ -897,7 +903,10 @@ export default function Page() {
                     ].map((row, i) => (
                       <tr key={i} className="hover:bg-gray-50 transition">
                         {row.map((cell, j) => (
-                          <td key={j} className="p-4 border text-gray-700">
+                          <td
+                            key={j}
+                            className="p-4 border text-gray-700 dark:text-gray-300"
+                          >
                             {cell}
                           </td>
                         ))}
@@ -911,7 +920,7 @@ export default function Page() {
                 <h4 className="font-semibold text-[#734B66] mb-2">
                   Our Pricing Promise
                 </h4>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Fixed-price quotes. Clear scope definition. No hidden
                   surprises. We document every feature before development begins
                   so you know exactly what you're paying for.
@@ -929,18 +938,18 @@ export default function Page() {
                   Hiring Guide
                 </span>
 
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
                   How to Choose the Right Odoo Developer for Your Business
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Selecting the right Odoo developer is one of the most
                   important decisions for your ERP success. A poorly structured
                   implementation can lead to upgrade issues, unstable modules,
                   and long-term maintenance headaches.
                 </p>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Whether you are hiring locally in Siliguri, anywhere in India,
                   or internationally — here’s what you should evaluate before
                   signing a contract.
@@ -981,11 +990,11 @@ export default function Page() {
                   >
                     <div className="w-8 h-1 bg-[#734B66] mb-4 rounded-full"></div>
 
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                    <h4 className="font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       {item.title}
                     </h4>
 
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -997,7 +1006,7 @@ export default function Page() {
                 <h4 className="font-semibold text-red-600 mb-2">
                   ⚠ Common Mistake to Avoid
                 </h4>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Choosing the cheapest freelancer without verifying
                   architecture standards often leads to unstable systems and
                   expensive rework. ERP customisation should be treated as a
@@ -1010,7 +1019,7 @@ export default function Page() {
                 <h4 className="font-semibold text-[#734B66] mb-2">
                   Looking for a Reliable Odoo Developer in Siliguri or India?
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                   We combine 20+ years of business software experience with
                   structured Odoo development practices. Let’s discuss your
                   requirements and determine the most efficient approach.

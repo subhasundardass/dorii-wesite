@@ -17,11 +17,11 @@ export default function FAQSection() {
           FAQ
         </span>
 
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
           Frequently Asked Questions
         </h2>
 
-        <p className="text-gray-700 leading-relaxed">
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
           The questions we hear most often from small business owners in India
           and abroad considering Odoo customisation.
         </p>

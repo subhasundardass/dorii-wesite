@@ -52,7 +52,7 @@ export default function TableOfContents() {
     <>
       {/* MOBILE */}
       <div className="lg:hidden mb-10">
-        <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+        <h3 className="text-sm uppercase tracking-widest text-gray-700 dark:text-gray-300 mb-4">
           Table of Contents
         </h3>
 
@@ -64,7 +64,7 @@ export default function TableOfContents() {
                 className={`${
                   activeId === item.id
                     ? "text-purple-700 font-semibold"
-                    : "text-gray-700"
+                    : "text-gray-700 dark:text-gray-300"
                 } hover:text-purple-700 transition`}
               >
                 {item.label}
@@ -76,11 +76,11 @@ export default function TableOfContents() {
 
       {/* DESKTOP */}
       <aside className="hidden lg:block sticky top-24 h-fit pr-4">
-        <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-6">
+        <h3 className="text-sm uppercase tracking-widest text-gray-700 dark:text-gray-300 mb-6">
           Table of Contents
         </h3>
 
-        <ul className="space-y-2 text-sm border-l border-gray-200">
+        <ul className="space-y-2 text-sm border-l text-gray-700 dark:text-gray-300">
           {tocItems.map((item) => (
             <li key={item.id}>
               <a
@@ -88,7 +88,7 @@ export default function TableOfContents() {
                 className={`block pl-4 py-2 border-l-2 ${
                   activeId === item.id
                     ? "border-[#734B66] text-[#734B66] font-semibold"
-                    : "border-transparent text-gray-700"
+                    : "border-transparent text-gray-700 dark:text-gray-300"
                 } hover:border-[#734B66] hover:text-[#5e2b97] transition-all duration-200`}
               >
                 {item.label}
