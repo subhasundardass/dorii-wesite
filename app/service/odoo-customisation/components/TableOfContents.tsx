@@ -1,4 +1,6 @@
 "use client";
+import FreeConsultationPopup from "@/components/ConsultationPopup";
+import ConsultationPopup from "@/components/ConsultationPopup";
 import { useEffect, useState } from "react";
 
 export default function TableOfContents() {
@@ -97,18 +99,21 @@ export default function TableOfContents() {
           ))}
         </ul>
 
-        <div className="mt-6 p-4 bg-purple-50/60 border border-purple-200 rounded-lg space-y-4">
-          <p className="text-sm text-gray-800 leading-relaxed">
+        <div className="mt-6 p-4  border  rounded-lg space-y-4">
+          <p className="text-sm  leading-relaxed">
             Need a custom Odoo solution? We’ll send a fixed-price quote within
             <span className="text-[#734B66] font-semibold"> 48 hours</span>.
           </p>
-
-          <a
-            href="/contact"
+          <FreeConsultationPopup
+            buttonText="Book a Free Consultation"
+            buttonClass="block w-full text-center px-4 py-2.5 rounded-md bg-[#734B66] text-white text-sm font-semibold hover:bg-[#5e3d54] transition"
+          />
+          {/* <button
+            id="open-consultation-popup"
             className="block w-full text-center px-4 py-2.5 rounded-md bg-[#734B66] text-white text-sm font-semibold hover:bg-[#5e3d54] transition"
           >
-            Get a Free Quote →
-          </a>
+            Book a Free Consultation
+          </button> */}
         </div>
       </aside>
     </>
