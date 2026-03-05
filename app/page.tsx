@@ -89,32 +89,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="mt-6">
-      <section className="relative overflow-hidden bg-amber-50">
-        <div
-          className="absolute pointer-events-none rounded-full"
-          style={{
-            top: "-100px",
-            right: "-100px",
-            width: "450px",
-            height: "450px",
-            background: "rgba(80,255,255,.05)",
-          }}
-        />
-        <div
-          className="absolute pointer-events-none rounded-full"
-          style={{
-            bottom: "-80px",
-            left: "-80px",
-            width: "350px",
-            height: "350px",
-            background: "rgba(80,2,0,.07)",
-          }}
-        />
-        <div className="relative z-10">
-          <Hero />
-        </div>
-      </section>
-
+      <Hero />
       <Solutions />
       <About />
       <ServicesWeOffer />
