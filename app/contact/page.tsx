@@ -2,7 +2,7 @@ import Script from "next/script";
 import ContactForm from "./ContactForm";
 
 export const metadata = {
-  title: "Contact",
+  title: "Contact Us",
   description:
     "Get in touch with Dorii Software for custom ERP, business automation, inventory, warehouse, and transport solutions. Contact us today!",
   keywords: [

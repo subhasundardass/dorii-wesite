@@ -77,7 +77,7 @@ const Solutions = () => {
                 </a>
               </h3>
 
-              <p className="mt-1 dark:text-muted-foreground text-sm xs:text-[17px]">
+              <p className="mt-1 text-md text-muted-foreground">
                 {solution.description}
               </p>
             </CardHeader>

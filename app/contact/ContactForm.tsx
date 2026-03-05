@@ -219,6 +219,18 @@ export default function ContactForm() {
                   Dorii Software <br />
                   Siliguri, West Bengal, India <br />
                 </p>
+
+                <div className="mt-2">
+                  <div className="none">Research & Development Center</div>
+                  <a
+                    href="https://www.sittechno.org/"
+                    className="underline"
+                    target="_blank"
+                  >
+                    Siliguri Institute of Technology (SIT)
+                  </a>
+                  , Siliguri, West Bengal, India <br />
+                </div>
               </div>
 
               <div>

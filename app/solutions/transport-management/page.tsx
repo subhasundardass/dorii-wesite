@@ -9,7 +9,7 @@ export const generateMetadata = (): Metadata => ({
   description:
     "Simplify your transport operations with Dorii's all-in-one Transport Management Software (TMS) for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and daily operations.",
   openGraph: {
-    title: "Transport & Logistics Management Software | Dorii Software",
+    title: "Transport & Logistics Management Software",
     description:
       "An all-in-one Transport Management System (TMS) for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and streamlined logistics operations.",
     url: "https://www.dorii.in/solutions/transport-management",
@@ -26,18 +26,15 @@ export const generateMetadata = (): Metadata => ({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Transport & Logistics Management Software | Dorii Software",
+    title: "Transport & Logistics Management Software",
     description:
       "An end-to-end TMS for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and daily transport operations.",
     images: ["/og/transport-management-solution.png"],
   },
   keywords: [
-    "Transport Management Software",
+    "Transport Management Software India",
     "Logistics Management System",
-    "TMS Software",
-    "Fleet Management Software",
-    "Transport ERP",
-    "Logistics ERP",
+    "TMS software for fleet owners",
     "Trip Management System",
     "LR Challan Software",
     "Transport Billing Software",

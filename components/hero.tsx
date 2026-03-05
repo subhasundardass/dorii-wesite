@@ -14,9 +14,10 @@ const Hero = () => {
   items-center
   justify-center
   overflow-hidden
+
   border-b border-accent"
     >
-      <div className="max-w-(--breakpoint-xl) w-full flex flex-col lg:flex-row mx-auto items-center justify-between gap-y-14 gap-x-10 px-6 py-12 lg:py-0">
+      <div className="max-w-(--breakpoint-xl) w-full flex flex-col lg:flex-row mx-auto items-center justify-between">
         <div className="max-w-xl">
           <Badge className="rounded-full py-1 border-none">
             End-to-End Business Automation & ERP Solutions

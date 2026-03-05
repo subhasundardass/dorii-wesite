@@ -18,8 +18,8 @@ export default function Blogs() {
             href={`/blog/${post.slug}`}
             className="cursor-pointer group p-6 border rounded-lg hover:shadow-lg hover:-translate-y-1 transition"
           >
-            <h2 className="text-xl font-semibold mb-2">{post.meta.title}</h2>
-            <p className="dark:text-muted-foreground">
+            <h3 className="font-semibold mb-2">{post.meta.title}</h3>
+            <p className="text-muted-foreground">
               {post.meta.description.split(" ").slice(0, 20).join(" ")}...
             </p>
 
