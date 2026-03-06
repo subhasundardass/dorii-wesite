@@ -88,7 +88,7 @@ export const metadata: Metadata = {
 };
 export default function Home() {
   return (
-    <main className="mt-6">
+    <main>
       <Hero />
       <Solutions />
       <About />

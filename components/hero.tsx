@@ -7,14 +7,13 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div
-      className="mt-12 lg:mt-0
+      className="
   min-h-[calc(100vh-4rem)]
   w-full
   flex
   items-center
   justify-center
-  overflow-hidden
-
+  px-4 sm:px-6 lg:px-8
   border-b border-accent"
     >
       <div className="max-w-(--breakpoint-xl) w-full flex flex-col lg:flex-row mx-auto items-center justify-between">
