@@ -141,6 +141,7 @@ const solutionsJSONLD = {
     },
   ],
 };
+
 export const metadata: Metadata = {
   title: "Siliguri Odoo Expert - Custom Odoo Modules & Workflow Automation",
   description:

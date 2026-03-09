@@ -126,15 +126,14 @@ const Footer = () => {
       <Separator />
       <div className="max-w-(--breakpoint-xl) mx-auto py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6">
         {/* Copyright */}
-        <div className="text-muted-foreground">
-          Scalable ERP and business automation solutions for modern enterprises.
-        </div>
+
         <span className="text-muted-foreground text-center xs:text-start">
           &copy; {new Date().getFullYear()}{" "}
           <Link href="https://dorii.in" target="_blank">
             Dorii Software
           </Link>
           . All rights reserved.
+          <span className="ml-4">ERP Software Company in Siliguri, India</span>
         </span>
 
         <div className="flex items-center gap-5 text-muted-foreground">

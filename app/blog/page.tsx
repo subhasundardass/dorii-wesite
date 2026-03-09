@@ -38,7 +38,7 @@ export default function BlogPage() {
               className="flex flex-col rounded-2xl border shadow-sm hover:shadow-md transition p-6 bg-background text-left"
             >
               <div>
-                <h2 className="text-2xl font-semibold leading-snug hover:text-primary transition">
+                <h2 className="text-2xl font-semibold leading-tight hover:text-primary transition">
                   <Link href={`/blog/${post.slug}`}>{post.meta.title}</Link>
                 </h2>
 

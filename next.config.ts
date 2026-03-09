@@ -5,9 +5,17 @@ const withMDX = createMDX({
   extension: /\.mdx?$/,
 });
 const nextConfig: NextConfig = {
-  /* config options here */
-  // output: "export",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
+
+  async redirects() {
+    return [
+      {
+        source: "/service/odoo-customisation",
+        destination: "/services/odoo-customisation",
+        permanent: true, // 301 redirect for SEO
+      },
+    ];
+  },
 };
 
 export default withMDX(nextConfig);
