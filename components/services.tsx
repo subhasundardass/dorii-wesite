@@ -16,6 +16,7 @@ const services = [
     description:
       "Tailor-made software built around your business processes, designed to scale as you grow.",
     icon: Code,
+    href: "/services/custom-software-development",
   },
   {
     title: "Odoo Customisation & Module Development",

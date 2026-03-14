@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     default: "Business Automation & ERP Solutions",
-    template: "%s | Dorii",
+    template: "%s | Dorii Software",
   },
 
   description:
@@ -90,69 +90,6 @@ export const metadata: Metadata = {
   // manifest: "/site.webmanifest",
 };
 
-const solutionsJSONLD = [
-  {
-    "@type": "SoftwareApplication",
-    name: "Housing Society Management Software",
-    description:
-      "A comprehensive housing society ERP solution to manage maintenance billing, payments, accounting, notices, complaints, member records, and daily operations from a single platform.",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    url: "https://www.dorii.in/solutions/housing-society",
-    image: "https://www.dorii.in/og/dorii-home.png",
-    offers: {
-      "@type": "Offer",
-      price: "Contact for Pricing",
-      priceCurrency: "INR",
-    },
-  },
-  {
-    "@type": "SoftwareApplication",
-    name: "Transport & Logistics Management Software",
-    description:
-      "End-to-end TMS for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and transport operations.",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    url: "https://www.dorii.in/solutions/transport-management",
-    image: "https://www.dorii.in/og/dorii-home.png",
-    offers: {
-      "@type": "Offer",
-      price: "Contact for Pricing",
-      priceCurrency: "INR",
-    },
-  },
-  {
-    "@type": "SoftwareApplication",
-    name: "Warehouse Management Software",
-    description:
-      "Optimize warehouse operations with real-time tracking, automated storage, order fulfillment, stock movement, and efficient space utilization.",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    url: "https://www.dorii.in/solutions/warehouse-management",
-    image: "https://www.dorii.in/og/dorii-home.png",
-    offers: {
-      "@type": "Offer",
-      price: "Contact for Pricing",
-      priceCurrency: "INR",
-    },
-  },
-  {
-    "@type": "SoftwareApplication",
-    name: "Stock & Inventory Management Software",
-    description:
-      "Gain full visibility of your inventory with automated stock management, low-stock alerts, batch tracking, product categorization, and integration with sales and purchases.",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    url: "https://www.dorii.in/solutions/stock-inventory-management",
-    image: "https://www.dorii.in/og/dorii-home.png",
-    offers: {
-      "@type": "Offer",
-      price: "Contact for Pricing",
-      priceCurrency: "INR",
-    },
-  },
-];
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -162,45 +99,221 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <Script
-          id="ga-script"
+          id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "SoftwareCompany",
-              name: "Dorii Software",
-              url: "https://www.dorii.in",
-              logo: "https://www.dorii.in/og/dorii-home.png",
-              description:
-                "Custom business automation and ERP software for sales, inventory, supply chain, HR, accounts, and manufacturing.",
-              sameAs: [
-                "https://www.linkedin.com/company/dorii-software",
-                "https://github.com/doriisoftware",
-              ],
-              contactPoint: [
+              "@graph": [
+                // ── 1. ORGANIZATION ──────────────────────────────────────
                 {
-                  "@type": "ContactPoint",
-                  telephone: "+91-9732939123",
-                  contactType: "customer support",
+                  "@type": [
+                    "Organization",
+                    "ProfessionalService",
+                    "LocalBusiness",
+                  ],
+                  "@id": "https://dorii.in/#organization",
+                  name: "Dorii Software",
+                  alternateName: ["Dorii"],
+                  url: "https://dorii.in",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://dorii.in/logo.png",
+                    width: 180,
+                    height: 60,
+                  },
+                  image: "https://dorii.in/og-image.png",
+                  description:
+                    "Dorii Software is a DPIIT-recognized custom software development company in Siliguri, India. We build ERP systems, Transport TMS, Warehouse WMS, Housing Society ERP, business automation software, and enterprise applications for Indian SMEs across North Bengal and pan-India.",
+                  foundingDate: "2020",
+                  numberOfEmployees: {
+                    "@type": "QuantitativeValue",
+                    minValue: 10,
+                    maxValue: 49,
+                  },
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Siliguri",
+                    addressRegion: "West Bengal",
+                    postalCode: "734001",
+                    addressCountry: "IN",
+                  },
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    latitude: 26.7271,
+                    longitude: 88.3953,
+                  },
+                  telephone: "+919732939123",
+                  email: "doriisoftware@gmail.com",
+                  contactPoint: [
+                    {
+                      "@type": "ContactPoint",
+                      telephone: "+919732939123",
+                      contactType: "sales",
+                      availableLanguage: ["English", "Hindi", "Bengali"],
+                      areaServed: "IN",
+                    },
+                    {
+                      "@type": "ContactPoint",
+                      telephone: "+919732939123",
+                      contactType: "customer support",
+                      availableLanguage: ["English", "Hindi", "Bengali"],
+                    },
+                  ],
+                  areaServed: [
+                    {
+                      "@type": "City",
+                      name: "Siliguri",
+                      sameAs: "https://en.wikipedia.org/wiki/Siliguri",
+                      containedInPlace: {
+                        "@type": "AdministrativeArea",
+                        name: "West Bengal",
+                        sameAs: "https://en.wikipedia.org/wiki/West_Bengal",
+                        containedInPlace: {
+                          "@type": "Country",
+                          name: "India",
+                          sameAs: "https://en.wikipedia.org/wiki/India",
+                        },
+                      },
+                    },
+                    {
+                      "@type": "City",
+                      name: "Darjeeling",
+                      sameAs:
+                        "https://en.wikipedia.org/wiki/Darjeeling_district",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Jalpaiguri",
+                      sameAs:
+                        "https://en.wikipedia.org/wiki/Jalpaiguri_district",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Cooch Behar",
+                      sameAs:
+                        "https://en.wikipedia.org/wiki/Cooch_Behar_district",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Alipurduar",
+                      sameAs:
+                        "https://en.wikipedia.org/wiki/Alipurduar_district",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Kalimpong",
+                      sameAs:
+                        "https://en.wikipedia.org/wiki/Kalimpong_district",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Raiganj",
+                      sameAs: "https://en.wikipedia.org/wiki/Raiganj",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Balurghat",
+                      sameAs: "https://en.wikipedia.org/wiki/Balurghat",
+                    },
+                  ],
+                  serviceArea: {
+                    "@type": "GeoCircle",
+                    geoMidpoint: {
+                      "@type": "GeoCoordinates",
+                      latitude: 26.7271,
+                      longitude: 88.3953,
+                    },
+                    geoRadius: "150000",
+                  },
+                  knowsAbout: [
+                    "Custom ERP Software Development",
+                    "Business Automation Software",
+                    "Transport Management System",
+                    "Warehouse Management System",
+                    "Housing Society ERP",
+                    "Odoo ERP Customisation",
+                    "Mobile App Development",
+                    "GST Software India",
+                    "Enterprise Software Development",
+                    "Software Development Company Siliguri",
+                    "ERP Software North Bengal",
+                  ],
+                  hasCredential: [
+                    {
+                      "@type": "EducationalOccupationalCredential",
+                      name: "DPIIT Recognized Startup",
+                      credentialCategory: "Government Recognition",
+                      recognizedBy: {
+                        "@type": "Organization",
+                        name: "Department for Promotion of Industry and Internal Trade, Government of India",
+                      },
+                    },
+                    {
+                      "@type": "EducationalOccupationalCredential",
+                      name: "MSME Registered",
+                      credentialCategory: "Government Certification",
+                      recognizedBy: {
+                        "@type": "Organization",
+                        name: "Ministry of Micro, Small and Medium Enterprises, Government of India",
+                      },
+                    },
+                  ],
+                  openingHoursSpecification: [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      dayOfWeek: [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                      ],
+                      opens: "09:30",
+                      closes: "18:30",
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      dayOfWeek: "Saturday",
+                      opens: "10:00",
+                      closes: "14:00",
+                    },
+                  ],
+                  priceRange: "₹₹",
+                  currenciesAccepted: ["INR", "USD"],
+                  paymentAccepted: "Bank Transfer, UPI, Credit Card, Razorpay",
+                },
+
+                // ── 2. WEBSITE ───────────────────────────────────────────
+                {
+                  "@type": "WebSite",
+                  "@id": "https://dorii.in/#website",
+                  url: "https://dorii.in",
+                  name: "Dorii Software",
+                  description:
+                    "Custom Software Development Company in Siliguri, India — ERP, Automation & Enterprise Apps",
+                  publisher: { "@id": "https://dorii.in/#organization" },
+                  inLanguage: "en-IN",
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: {
+                      "@type": "EntryPoint",
+                      urlTemplate: "https://dorii.in/?s={search_term_string}",
+                    },
+                    "query-input": "required name=search_term_string",
+                  },
                 },
               ],
-              foundingLocation: {
-                "@type": "Place",
-                name: "Siliguri, West Bengal, India",
-              },
-              areaServed: {
-                "@type": "Country",
-                name: "India",
-              },
-              softwareProducts: solutionsJSONLD, // attach solutions
             }),
           }}
         />
       </head>
       <body className={`${inter.className} antialiased`}>
-        {/* Global Navbar */}
-
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          forcedTheme="light"
+        >
           {/* Google Analytics 4 */}
           <Script
             strategy="afterInteractive"

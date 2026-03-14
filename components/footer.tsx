@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
-import { Linkedin, X } from "lucide-react";
+import { LinkedinIcon, Linkedin, X } from "lucide-react";
+
 import Link from "next/link";
 import { Logo } from "./navbar/logo";
 
@@ -32,10 +33,7 @@ const footerSections = [
         title: "About Us",
         href: "/about",
       },
-      {
-        title: "Contact",
-        href: "/contact",
-      },
+
       {
         title: "Privacy Policy",
         href: "/privacy-policy",
@@ -43,6 +41,10 @@ const footerSections = [
       {
         title: "Terms of Service",
         href: "/terms",
+      },
+      {
+        title: "Contact",
+        href: "/contact",
       },
     ],
   },
@@ -86,15 +88,16 @@ const Footer = () => {
           <Logo />
 
           <p className="mt-4 text-muted-foreground">
-            Design amazing digital experiences that create more happy in the
-            world.
+            Dorii Software is a DPIIT-recognized custom ERP &amp; software
+            development company in Siliguri, India — building Transport TMS,
+            Warehouse WMS, Housing Society ERP, and business automation software
+            for Indian SMEs and global clients.
           </p>
-          <div className="mt-4 text-muted-foreground">
+          {/* <div className="mt-4 text-muted-foreground">
             <ul>
               <li>Recognized MSME by Govt. of India</li>
-              <li>DPIIT-recognized Startup</li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {footerSections.map(({ title, links }) => (
@@ -126,27 +129,51 @@ const Footer = () => {
       <Separator />
       <div className="max-w-(--breakpoint-xl) mx-auto py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6">
         {/* Copyright */}
-        <div className="text-muted-foreground">
-          Scalable ERP and business automation solutions for modern enterprises.
-        </div>
+
         <span className="text-muted-foreground text-center xs:text-start">
           &copy; {new Date().getFullYear()}{" "}
           <Link href="https://dorii.in" target="_blank">
             Dorii Software
           </Link>
           . All rights reserved.
+          <span className="ml-4">ERP Software Company in Siliguri, India</span>
         </span>
 
         <div className="flex items-center gap-5 text-muted-foreground">
+          {/* X / Twitter */}
           <Link href="https://twitter.com/doriisoftware" target="_blank">
-            <X className="h-5 w-5" />
+            <svg
+              className="h-5 w-5 hover:text-black transition-all"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M18.244 2H21l-6.54 7.48L22 22h-6.828l-5.347-6.99L3.64 22H1l7.01-8.02L2 2h6.828l4.84 6.35L18.244 2zm-2.396 18h1.885L8.1 3.9H6.088L15.848 20z" />
+            </svg>
           </Link>
 
+          {/* LinkedIn */}
           <Link
             href="https://linkedin.com/company/doriisoftware"
             target="_blank"
           >
-            <Linkedin className="h-5 w-5" />
+            <svg
+              className="h-5 w-5 hover:text-[#0A66C2] transition-all"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.24 8h4.5v13h-4.5V8zm7.26 0h4.31v1.78h.06c.6-1.13 2.06-2.31 4.24-2.31 4.54 0 5.38 2.99 5.38 6.88V21h-4.5v-5.96c0-1.42-.03-3.25-1.98-3.25-1.98 0-2.28 1.55-2.28 3.15V21h-4.5V8z" />
+            </svg>
+          </Link>
+
+          {/* Instagram */}
+          <Link href="https://instagram.com/doriisoftware" target="_blank">
+            <svg
+              className="h-5 w-5 hover:text-pink-500 transition-all"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5A3.75 3.75 0 0020 16.25v-8.5A3.75 3.75 0 0016.25 4h-8.5zm4.25 3.5a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 2a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5zm4.88-.88a1.13 1.13 0 110 2.26 1.13 1.13 0 010-2.26z" />
+            </svg>
           </Link>
         </div>
       </div>
