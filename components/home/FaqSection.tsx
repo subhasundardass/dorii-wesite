@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     q: "What is the cost of custom ERP software development in India?",
-    a: "Custom ERP development projects at Dorii Software typically start from ₹2–3 lakhs for focused single-module systems. Full multi-module ERP implementations usually range from ₹8–25 lakhs depending on integrations, automation complexity, and number of users. For international clients, projects generally start from $5,000 USD.",
+    a: "Custom ERP development projects at Dorii Software typically start from ₹1–2 lakhs for focused single-module systems. Full multi-module ERP implementations usually range from ₹8–25 lakhs depending on integrations, automation complexity, and number of users. For international clients, projects generally start from $5,000 USD.",
   },
   {
     q: "How long does custom software development take?",

@@ -24,8 +24,7 @@ import FaqSection from "@/components/home/FaqSection";
 export const metadata: Metadata = {
   // ── TITLE ────────────────────────────────────────────────
   title: {
-    default:
-      "Dorii Software — Custom ERP & Software Development Company in Siliguri, India",
+    default: "Custom ERP & Software Development Company in Siliguri, India",
     template: "%s — Dorii Software",
   },
 

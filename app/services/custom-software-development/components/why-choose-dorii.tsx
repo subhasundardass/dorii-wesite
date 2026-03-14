@@ -225,7 +225,7 @@ export default function WhyChooseDorii() {
       {/* Stat bar */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
         {[
-          { value: "5+", label: "Years in Business" },
+          { value: "15+", label: "Years in Business" },
           { value: "50+", label: "Projects Delivered" },
           { value: "North Bengal", label: "Odoo Specialist" },
           { value: "100%", label: "Source Code Ownership" },

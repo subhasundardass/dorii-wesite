@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ServicesWeOffer() {
   return (
     <section
@@ -22,9 +24,19 @@ export default function ServicesWeOffer() {
               Your Business
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              From <strong>custom ERP software development</strong> to{" "}
-              <strong>Odoo customisation</strong>,{" "}
-              <strong>mobile app development</strong>, and{" "}
+              From{" "}
+              <strong>
+                <Link href={"/services/custom-software-development"}>
+                  custom ERP software development
+                </Link>
+              </strong>{" "}
+              to{" "}
+              <strong>
+                <Link href={"/services/odoo-customisation"}>
+                  Odoo customisation
+                </Link>
+              </strong>
+              , <strong>mobile app development</strong>, and{" "}
               <strong>business process automation</strong> — we build what your
               business actually needs, not what fits a template.
             </p>

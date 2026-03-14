@@ -1,88 +1,3 @@
-const products = [
-  {
-    title: "Transport Management System",
-    short: "Logistics platform for transport operators",
-    icon: "truck",
-    features: [
-      "LR & challan generation",
-      "e-Way bill integration",
-      "Driver & fleet management",
-      "Trip costing",
-      "GST freight billing",
-      "Multi-branch accounting",
-    ],
-  },
-
-  {
-    title: "Inventory Management System",
-    short: "Real-time stock and warehouse tracking",
-    icon: "inventory",
-    features: [
-      "Multi-warehouse inventory",
-      "Barcode scanning",
-      "Purchase & sales tracking",
-      "Stock alerts",
-      "Batch & expiry tracking",
-      "GST billing",
-    ],
-  },
-
-  {
-    title: "Retail POS Software",
-    short: "Billing system for retail stores",
-    icon: "pos",
-    features: [
-      "Fast POS billing",
-      "Barcode support",
-      "Inventory sync",
-      "GST invoices",
-      "Customer loyalty",
-      "Daily sales reports",
-    ],
-  },
-
-  {
-    title: "HR & Payroll Software",
-    short: "Employee management & salary automation",
-    icon: "hr",
-    features: [
-      "Employee records",
-      "Leave management",
-      "Attendance tracking",
-      "Payroll processing",
-      "PF & ESI reports",
-      "Payslip generation",
-    ],
-  },
-
-  {
-    title: "Manufacturing ERP",
-    short: "Production planning & factory operations",
-    icon: "factory",
-    features: [
-      "Bill of materials",
-      "Production planning",
-      "Work order tracking",
-      "Raw material inventory",
-      "Cost tracking",
-      "Quality control",
-    ],
-  },
-
-  {
-    title: "Custom CRM System",
-    short: "Sales pipeline & customer management",
-    icon: "crm",
-    features: [
-      "Lead management",
-      "Sales pipeline",
-      "Task automation",
-      "Customer database",
-      "Follow-up reminders",
-      "Reports & analytics",
-    ],
-  },
-];
 export default function WhoWeAre() {
   return (
     <section
@@ -99,70 +14,90 @@ export default function WhoWeAre() {
             {/* TEAM CARDS */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 bg-white dark:bg-slate-900 rounded-2xl px-4 py-3 shadow-sm border border-slate-200 dark:border-slate-800">
-                <div className="w-9 h-9 rounded-xl bg-linear-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white bg-primary font-bold text-sm">
-                  SR
+                <div className="w-9 h-9 rounded-xl bg-linear-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                  1
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-bold text-slate-900 dark:text-white">
-                    Senior Backend Engineer
+                    Business Discovery
                   </p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                    Python · Django · PostgreSQL
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    We understand your workflows, operations, and challenges.
                   </p>
                 </div>
-                <span className="rounded-xl px-2 py-1 text-xs bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400">
-                  On Project
+                <span className="rounded-xl px-2 py-1 text-xs bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-400">
+                  Planning
                 </span>
               </div>
 
               <div className="flex items-center gap-3 bg-white dark:bg-slate-900 rounded-2xl px-4 py-3 shadow-sm border border-slate-200 dark:border-slate-800">
-                <div className="w-9 h-9 rounded-xl bg-linear-to-br from-violet-500 to-violet-700 flex items-center justify-center text-white font-bold text-sm">
-                  PK
+                <div className="w-9 h-9 rounded-xl bg-linear-to-br from-violet-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm">
+                  2
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-bold text-slate-900 dark:text-white">
-                    Full-Stack Developer
+                    System Architecture
                   </p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                    React.js · Node.js · REST API
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Our engineers design a scalable system tailored to your
+                    business.
                   </p>
                 </div>
-                <span className="rounded-xl px-2 py-1 text-xs bg-brand-50 dark:bg-brand-900/20 border border-brand-200 dark:border-brand-800 text-brand-700 dark:text-brand-400">
-                  In Sprint 4
+                <span className="rounded-xl px-2 py-1 text-xs bg-violet-50 dark:bg-violet-900/30 border border-violet-200 dark:border-violet-800 text-violet-700 dark:text-violet-400">
+                  Design
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3 bg-white dark:bg-slate-900 rounded-2xl px-4 py-3 shadow-sm border border-slate-200 dark:border-slate-800">
+                <div className="w-9 h-9 rounded-xl bg-linear-to-br from-emerald-500 to-green-600 flex items-center justify-center text-white font-bold text-sm">
+                  3
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-bold text-slate-900 dark:text-white">
+                    Agile Development
+                  </p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Features are developed in structured sprints with regular
+                    demos.
+                  </p>
+                </div>
+                <span className="rounded-xl px-2 py-1 text-xs bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400">
+                  Development
                 </span>
               </div>
 
               <div className="flex items-center gap-3 bg-white dark:bg-slate-900 rounded-2xl px-4 py-3 shadow-sm border border-slate-200 dark:border-slate-800">
                 <div className="w-9 h-9 rounded-xl bg-linear-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white font-bold text-sm">
-                  AM
+                  4
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-bold text-slate-900 dark:text-white">
-                    Mobile Engineer
+                    Testing & Deployment
                   </p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                    Flutter · iOS · Android
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    We test the system with your team before launching it live.
                   </p>
                 </div>
                 <span className="rounded-xl px-2 py-1 text-xs bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-400">
-                  UAT Review
+                  QA
                 </span>
               </div>
 
               <div className="flex items-center gap-3 bg-white dark:bg-slate-900 rounded-2xl px-4 py-3 shadow-sm border border-slate-200 dark:border-slate-800">
                 <div className="w-9 h-9 rounded-xl bg-linear-to-br from-rose-500 to-pink-600 flex items-center justify-center text-white font-bold text-sm">
-                  TR
+                  5
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-bold text-slate-900 dark:text-white">
-                    Domain Consultant
+                    Continuous Support
                   </p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                    ERP · GST · Business Analysis
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    We continuously improve and support your system as your
+                    business grows.
                   </p>
                 </div>
                 <span className="rounded-xl px-2 py-1 text-xs bg-rose-50 dark:bg-rose-900/30 border border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-400">
-                  Discovery
+                  Support
                 </span>
               </div>
             </div>
@@ -312,6 +247,28 @@ export default function WhoWeAre() {
             fully remote-first with structured sprint-based communication —
             distance is never a barrier.
           </p>
+
+          <div className="mt-6">
+            <a
+              href="/about"
+              className="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700  font-semibold py-3 rounded-xl transition"
+            >
+              Learn More About Us
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>

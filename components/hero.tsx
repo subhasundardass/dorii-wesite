@@ -428,7 +428,7 @@ const Hero = () => {
             Custom Software Development Company
           </strong>{" "}
           —<br />
-          <span className="bg-gradient-to-r from-brand-300 via-cyan-300 to-brand-300 bg-clip-text text-transparent grad-anim">
+          <span className="bg-linear-to-r from-brand-300 via-cyan-300 to-brand-300 bg-clip-text text-transparent grad-anim">
             ERP, Automation &amp; Enterprise Apps
           </span>
           <br />
@@ -438,21 +438,22 @@ const Hero = () => {
         </h1>
 
         <p className="text-blue-200/70 text-lg leading-relaxed mb-8 max-w-xl">
-          Dorii Software builds{" "}
+          {" "}
+          Dorii Software builds
           <strong className="text-white font-semibold">
             custom ERP systems
           </strong>
           ,{" "}
           <strong className="text-white font-semibold">
-            business automation software
+            business automation platforms
           </strong>
           , and{" "}
           <strong className="text-white font-semibold">
-            enterprise applications
-          </strong>{" "}
-          for Indian SMEs and international businesses. From Transport TMS and
-          Warehouse WMS to full Odoo ERP customisation — we build software that
-          fits your exact operations.
+            enterprise web applications{" "}
+          </strong>
+          tailored to real business workflows. From Transport TMS and Warehouse
+          WMS to HR, Finance, CRM and fully custom platforms — we build scalable
+          software that fits your exact operations.
         </p>
 
         {/* Trust pills */}
@@ -474,7 +475,7 @@ const Hero = () => {
         {/* CTAs */}
         <div className="flex flex-wrap gap-3 mb-12">
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold transition-all hover:-translate-y-0.5 shadow-lg shadow-indigo-600/30"
           >
             Get Free Consultation
@@ -493,7 +494,7 @@ const Hero = () => {
             </svg>
           </a>
           <a
-            href="#solutions"
+            href="/solutions"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-indigo-500/40 hover:border-indigo-400 text-indigo-300 hover:text-white text-sm font-semibold transition-all hover:-translate-y-0.5"
           >
             Explore Solutions

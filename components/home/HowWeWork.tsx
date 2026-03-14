@@ -59,7 +59,7 @@ export default function HowWeWork() {
                       />
                     </svg>
                   </div>
-                  <div className="absolute -top-1 -right-1 w-7 h-7 bg-brand-500 rounded-full flex items-center justify-center text-white text-xs font-black shadow-lg shadow-brand-500/40">
+                  <div className="absolute -top-1 -right-1 w-7 h-7 bg-primary rounded-full flex items-center justify-center text-white text-xs font-black shadow-lg shadow-brand-500/40">
                     1
                   </div>
                 </div>

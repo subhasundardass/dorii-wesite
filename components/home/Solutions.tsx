@@ -1,3 +1,88 @@
+// const products = [
+//   {
+//     title: "Transport Management System",
+//     short: "Logistics platform for transport operators",
+//     icon: "truck",
+//     features: [
+//       "LR & challan generation",
+//       "e-Way bill integration",
+//       "Driver & fleet management",
+//       "Trip costing",
+//       "GST freight billing",
+//       "Multi-branch accounting",
+//     ],
+//   },
+
+//   {
+//     title: "Inventory Management System",
+//     short: "Real-time stock and warehouse tracking",
+//     icon: "inventory",
+//     features: [
+//       "Multi-warehouse inventory",
+//       "Barcode scanning",
+//       "Purchase & sales tracking",
+//       "Stock alerts",
+//       "Batch & expiry tracking",
+//       "GST billing",
+//     ],
+//   },
+
+//   {
+//     title: "Retail POS Software",
+//     short: "Billing system for retail stores",
+//     icon: "pos",
+//     features: [
+//       "Fast POS billing",
+//       "Barcode support",
+//       "Inventory sync",
+//       "GST invoices",
+//       "Customer loyalty",
+//       "Daily sales reports",
+//     ],
+//   },
+
+//   {
+//     title: "HR & Payroll Software",
+//     short: "Employee management & salary automation",
+//     icon: "hr",
+//     features: [
+//       "Employee records",
+//       "Leave management",
+//       "Attendance tracking",
+//       "Payroll processing",
+//       "PF & ESI reports",
+//       "Payslip generation",
+//     ],
+//   },
+
+//   {
+//     title: "Manufacturing ERP",
+//     short: "Production planning & factory operations",
+//     icon: "factory",
+//     features: [
+//       "Bill of materials",
+//       "Production planning",
+//       "Work order tracking",
+//       "Raw material inventory",
+//       "Cost tracking",
+//       "Quality control",
+//     ],
+//   },
+
+//   {
+//     title: "Custom CRM System",
+//     short: "Sales pipeline & customer management",
+//     icon: "crm",
+//     features: [
+//       "Lead management",
+//       "Sales pipeline",
+//       "Task automation",
+//       "Customer database",
+//       "Follow-up reminders",
+//       "Reports & analytics",
+//     ],
+//   },
+// ];
 export default function SolutionsWeOffer() {
   return (
     <section
@@ -100,7 +185,7 @@ export default function SolutionsWeOffer() {
               <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-500 mb-4">
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-brand-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-brand-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -116,7 +201,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-brand-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-brand-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -130,7 +215,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-brand-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-brand-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -144,7 +229,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-brand-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-brand-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -158,7 +243,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-brand-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-brand-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -172,7 +257,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-brand-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-brand-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -186,7 +271,7 @@ export default function SolutionsWeOffer() {
                 </li>
               </ul>
               <a
-                href="#contact"
+                href="/solutions/transport-management"
                 className="text-brand-600 font-bold text-sm hover:text-brand-700 flex items-center gap-1"
               >
                 Learn more about TMS{" "}
@@ -212,10 +297,10 @@ export default function SolutionsWeOffer() {
             className="bg-white border border-blue-100 rounded-3xl overflow-hidden shadow-sm card-hover"
             aria-labelledby="housing-heading"
           >
-            <div className="bg-gradient-to-br from-indigo-50 to-blue-100 px-8 py-10 border-b border-blue-100 relative overflow-hidden">
+            <div className="bg-linear-to-br from-indigo-50 to-blue-100 px-8 py-10 border-b border-blue-100 relative overflow-hidden">
               <div className="absolute right-4 top-4 w-32 h-32 bg-indigo-400/10 rounded-full blur-2xl"></div>
               <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-600/30">
+                <div className="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-indigo-600/30">
                   <svg
                     className="w-7 h-7 text-white"
                     fill="none"
@@ -273,7 +358,7 @@ export default function SolutionsWeOffer() {
               <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-500 mb-4">
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-indigo-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-indigo-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -287,7 +372,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-indigo-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-indigo-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -301,7 +386,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-indigo-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-indigo-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -315,7 +400,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-indigo-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-indigo-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -329,7 +414,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-indigo-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-indigo-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -343,7 +428,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-indigo-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-indigo-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -357,7 +442,7 @@ export default function SolutionsWeOffer() {
                 </li>
               </ul>
               <a
-                href="#contact"
+                href="/solutions/housing-society"
                 className="text-indigo-600 font-bold text-sm hover:text-indigo-700 flex items-center gap-1"
               >
                 Learn more about Housing ERP{" "}
@@ -383,10 +468,10 @@ export default function SolutionsWeOffer() {
             className="bg-white border border-blue-100 rounded-3xl overflow-hidden shadow-sm card-hover"
             aria-labelledby="wms-heading"
           >
-            <div className="bg-gradient-to-br from-sky-50 to-cyan-100 px-8 py-10 border-b border-blue-100 relative overflow-hidden">
+            <div className="bg-linear-to-br from-sky-50 to-cyan-100 px-8 py-10 border-b border-blue-100 relative overflow-hidden">
               <div className="absolute right-4 top-4 w-32 h-32 bg-cyan-400/10 rounded-full blur-2xl"></div>
               <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-cyan-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-600/30">
+                <div className="w-14 h-14 bg-cyan-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-cyan-600/30">
                   <svg
                     className="w-7 h-7 text-white"
                     fill="none"
@@ -444,7 +529,7 @@ export default function SolutionsWeOffer() {
               <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-500 mb-4">
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-cyan-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-cyan-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -458,7 +543,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-cyan-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-cyan-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -472,7 +557,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-cyan-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-cyan-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -486,7 +571,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-cyan-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-cyan-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -500,7 +585,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-cyan-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-cyan-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -514,7 +599,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-cyan-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-cyan-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -528,7 +613,7 @@ export default function SolutionsWeOffer() {
                 </li>
               </ul>
               <a
-                href="#contact"
+                href="/solutions/warehouse-management"
                 className="text-cyan-600 font-bold text-sm hover:text-cyan-700 flex items-center gap-1"
               >
                 Learn more about WMS{" "}
@@ -554,10 +639,10 @@ export default function SolutionsWeOffer() {
             className="bg-white border border-blue-100 rounded-3xl overflow-hidden shadow-sm card-hover"
             aria-labelledby="inventory-heading"
           >
-            <div className="bg-gradient-to-br from-violet-50 to-blue-100 px-8 py-10 border-b border-blue-100 relative overflow-hidden">
+            <div className="bg-linear-to-br from-violet-50 to-blue-100 px-8 py-10 border-b border-blue-100 relative overflow-hidden">
               <div className="absolute right-4 top-4 w-32 h-32 bg-violet-400/10 rounded-full blur-2xl"></div>
               <div className="flex items-start gap-4">
-                <div className="w-14 h-14 bg-violet-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-violet-600/30">
+                <div className="w-14 h-14 bg-violet-600 rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-violet-600/30">
                   <svg
                     className="w-7 h-7 text-white"
                     fill="none"
@@ -615,7 +700,7 @@ export default function SolutionsWeOffer() {
               <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-gray-500 mb-4">
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-violet-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-violet-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -629,7 +714,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-violet-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-violet-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -643,7 +728,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-violet-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-violet-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -657,7 +742,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-violet-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-violet-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -671,7 +756,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-violet-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-violet-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -685,7 +770,7 @@ export default function SolutionsWeOffer() {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <svg
-                    className="w-3.5 h-3.5 text-violet-500 flex-shrink-0"
+                    className="w-3.5 h-3.5 text-violet-500 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -699,7 +784,7 @@ export default function SolutionsWeOffer() {
                 </li>
               </ul>
               <a
-                href="#contact"
+                href="/solutions/stock-inventory-management"
                 className="text-violet-600 font-bold text-sm hover:text-violet-700 flex items-center gap-1"
               >
                 Learn more about Inventory ERP{" "}
