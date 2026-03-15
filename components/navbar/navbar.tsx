@@ -25,7 +25,7 @@ const Navbar = () => {
             <Button className="hidden xs:inline-flex">Contact</Button>
           </Link> */}
           <Link
-            href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20discuss%20a%20software%20project"
+            href="https://wa.me/919732939123?text=Hi%20I%20want%20to%20discuss%20a%20software%20project"
             target="_blank"
             rel="noopener noreferrer"
           >
