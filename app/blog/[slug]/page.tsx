@@ -121,7 +121,7 @@ export default async function BlogSlugPage({
         <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-blue-100/60 blur-3xl dark:bg-blue-900/20" />
         <div className="pointer-events-none absolute bottom-0 left-0 h-48 w-48 rounded-full bg-amber-100/50 blur-2xl dark:bg-amber-900/10" />
 
-        <div className="relative mx-auto max-w-4xl">
+        <div className="relative mx-auto max-w-5xl">
           {/* Eyebrow line */}
           <div className="mb-6 flex items-center gap-3">
             <span className="h-px w-10 bg-blue-500" />
@@ -151,12 +151,13 @@ export default async function BlogSlugPage({
           </div>
         </div>
       </header>
+
       {/* ── Divider rule ── */}
-      <div className="mx-auto max-w-4xl px-6 sm:px-0">
+      <div className="mx-auto max-w-5xl px-6 sm:px-0">
         <div className="h-px bg-linear-to-r from-transparent via-blue-300 to-transparent dark:via-blue-700/50" />
       </div>
       {/* ---------------- Markdown Content ---------------- */}
-      <div className="mx-auto max-w-3xl px-6 py-14 sm:px-0 sm:py-20">
+      <div className="mx-auto max-w-5xl px-6 py-14 sm:px-0 sm:py-20">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
@@ -181,7 +182,7 @@ export default async function BlogSlugPage({
 
             /* ── H3 ── */
             h3: ({ children }) => (
-              <h3 className="mt-10 mb-4 text-xl font-bold text-gray-800 dark:text-gray-200 sm:text-2xl">
+              <h3 className="font-['Playfair_Display',Georgia,serif] mt-10 mb-4 text-xl font-bold text-gray-800 dark:text-gray-200 sm:text-2xl">
                 {children}
               </h3>
             ),
