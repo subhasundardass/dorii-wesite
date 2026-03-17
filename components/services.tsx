@@ -23,7 +23,7 @@ const services = [
     description:
       "Custom Odoo modules, workflow enhancements, and integrations aligned with your operations.",
     icon: Boxes,
-    href: "/service/odoo-customisation", // <-- link added
+    href: "/services/odoo-customisation", // <-- link added
   },
 
   {

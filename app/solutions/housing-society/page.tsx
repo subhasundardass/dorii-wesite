@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const generateMetadata = (): Metadata => ({
   title: "Housing Society Management Software",
   alternates: {
-    canonical: `/solutions/housing-society-management`,
+    canonical: `/solutions/housing-society`,
   },
   description:
     "Manage your housing society efficiently with Dorii's all-in-one Housing Society Management Software for maintenance billing, online payments, accounting, complaints, notices, visitor management, and resident communication.",
@@ -12,7 +12,7 @@ export const generateMetadata = (): Metadata => ({
     title: "Housing Society Management Software | Dorii Software",
     description:
       "An all-in-one Housing Society Management System to manage maintenance billing, online payments, accounting, complaints, notices, visitor tracking, and transparent society operations.",
-    url: "https://www.dorii.in/solutions/housing-society-management",
+    url: "https://www.dorii.in/solutions/housing-society",
     siteName: "Dorii Software",
     images: [
       {
