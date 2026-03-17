@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Subha Sundar Das",
+      name: "Dorii Team",
       url: "https://www.dorii.in",
     },
   ],
@@ -308,7 +308,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} antialiased h-full`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
