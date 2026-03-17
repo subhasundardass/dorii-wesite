@@ -141,23 +141,23 @@ export default async function BlogSlugPage({
           )}
 
           {/* Meta row */}
-          <div className="mt-10 flex flex-wrap items-center gap-4 border-t border-gray-200 pt-6 dark:border-gray-700/60">
+          {/* <div className="mt-10 flex flex-wrap items-center gap-4 border-t border-gray-200 pt-6 dark:border-gray-700/60">
             {post.meta.date && (
               <span className="text-sm font-medium text-gray-400 dark:text-gray-500">
                 {post.meta.date}
               </span>
             )}
             <span className="h-1 w-1 rounded-full bg-gray-300 dark:bg-gray-600" />
-          </div>
+          </div> */}
         </div>
       </header>
 
       {/* ── Divider rule ── */}
-      <div className="mx-auto max-w-5xl px-6 sm:px-0">
+      {/* <div className="mx-auto max-w-5xl px-6 sm:px-0">
         <div className="h-px bg-linear-to-r from-transparent via-blue-300 to-transparent dark:via-blue-700/50" />
-      </div>
+      </div> */}
       {/* ---------------- Markdown Content ---------------- */}
-      <div className="mx-auto max-w-5xl px-6 py-14 sm:px-0 sm:py-20">
+      <div className="mx-auto max-w-5xl px-6 py-14 sm:px-0 sm:py-10">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{

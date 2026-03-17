@@ -393,8 +393,9 @@ export default function Home() {
         <ServicesWeOffer />
         <HowWeWork />
         <WhyDorii />
-        {/* <Industries /> */}
+
         <FaqSection />
+        <Blogs />
         {/* <Solutions />
       <About />
       <ServicesWeOffer />
