@@ -73,5 +73,5 @@ Advantages include:
 ## Conclusion
 
 Choosing between custom and off-the-shelf ERP depends on your business needs, budget, and growth plans. For Indian SMEs, the right ERP can save time, reduce errors, and make your operations much more efficient. 
-**Ready to choose the best ERP for your business?** [Explore our ERP solutions](https://www.dorii.in/solutions) tailored for Indian SMEs and make the right choice today.
+**Ready to choose the best ERP for your business?** [Explore our ERP solutions](/solutions) tailored for Indian SMEs and make the right choice today.
 

@@ -5,7 +5,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   alternates: {
-    canonical: `/privacy`,
+    canonical: `/privacy-policy`,
   },
   description:
     "Learn how Dorii Software collects, uses, and protects your personal information. Our Privacy Policy ensures safe and transparent data practices.",

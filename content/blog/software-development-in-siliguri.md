@@ -1,5 +1,5 @@
 ---
-title: "Software Development in Siliguri | Leading IT & ERP Companies in North Bengal"
+title: "Software Development in Siliguri - Leading IT & ERP Companies in North Bengal"
 description: "Looking for a reliable software company in Siliguri? Discover how IT companies in North Bengal are transforming businesses with ERP, web development, and custom software solutions."
 date: "2026-02-12"
 author: "Dorii Software"
@@ -82,7 +82,7 @@ The next wave of software innovation may not come only from metro cities — it 
 
 Software development companies in Siliguri are playing a critical role in helping businesses automate operations, improve reporting, and scale efficiently. From ERP systems to custom web and mobile applications, local IT providers offer cost-effective, scalable, and business-focused solutions.
 
-Businesses planning digital transformation can benefit significantly by partnering with a reliable [software company in Siliguri](http://dorii.in) or a trusted **IT company in Siliguri** that understands both technology and real-world business operations. One such example is **[Dorii Software](http://dorii.in/about)**, which focuses on building practical ERP and business automation solutions designed for growing businesses in Siliguri and across North Bengal.
+Businesses planning digital transformation can benefit significantly by partnering with a reliable [software company in Siliguri](/services/custom-software-development) or a trusted **IT company in Siliguri** that understands both technology and real-world business operations. One such example is **[Dorii Software](/about)**, which focuses on building practical ERP and business automation solutions designed for growing businesses in Siliguri and across North Bengal.
 
 **What industries in smaller cities do you think will drive the next big wave of software innovation?**  
-[Click here](http://dorii.in/contact) to share your thoughts or discuss your business software requirements.
+[Click here](/contact) to share your thoughts or discuss your business software requirements.
