@@ -12,11 +12,11 @@ export const generateMetadata = (): Metadata => ({
     title: "Housing Society Management Software | Dorii Software",
     description:
       "An all-in-one Housing Society Management System to manage maintenance billing, online payments, accounting, complaints, notices, visitor tracking, and transparent society operations.",
-    url: "https://www.dorii.in/solutions/housing-society",
+    url: "//solutions/housing-society",
     siteName: "Dorii Software",
     images: [
       {
-        url: "/images/og/housing-society-managemne-solution.png",
+        url: "/og/housing-society-management-solution.png",
         width: 1200,
         height: 630,
         alt: "Housing Society Management Software – Dorii Software",
@@ -29,7 +29,7 @@ export const generateMetadata = (): Metadata => ({
     title: "Housing Society Management Software | Dorii Software",
     description:
       "Smart Housing Society Management Software for maintenance billing, accounting, online payments, complaints, notices, and resident communication.",
-    images: ["/images/og/housing-society-managemne-solution.png"],
+    images: ["/og/housing-society-management-solution.png"],
   },
   keywords: [
     "Housing Society Management Software",

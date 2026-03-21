@@ -3,7 +3,7 @@ import { getHomePosts } from "@/lib/blog";
 
 export default function Blogs() {
   const posts = getHomePosts(6);
-  console.log(posts);
+  // console.log(posts);
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-16">

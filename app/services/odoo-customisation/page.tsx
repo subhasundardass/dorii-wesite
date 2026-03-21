@@ -25,10 +25,10 @@ const solutionsJSONLD = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://dorii.in/#organization",
-      name: "DORII Software",
-      url: "https://dorii.in",
-      logo: "https://dorii.in/logo.png",
+      "@id": "//#organization",
+      name: "Dorii Software",
+      url: "/",
+      logo: "//logo.png",
       sameAs: [
         "https://www.linkedin.com/company/doriisoftware",
         // "https://www.facebook.com/dorii.in",
@@ -43,9 +43,9 @@ const solutionsJSONLD = {
 
     {
       "@type": "LocalBusiness",
-      name: "DORII Software",
-      url: "https://dorii.in",
-      logo: "https://dorii.in/logo.png",
+      name: "Dorii Software",
+      url: "/",
+      logo: "//logo.png",
       email: "doriisoftware@gmail.com",
       areaServed: [
         "Siliguri",
@@ -72,28 +72,28 @@ const solutionsJSONLD = {
       headline: "Siliguri Odoo Expert Guide",
       author: {
         "@type": "Organization",
-        name: "DORII Software",
+        name: "Dorii Software",
       },
     },
     {
       "@type": "WebPage",
-      "@id": "https://dorii.in/odoo-customisation#webpage",
-      url: "https://dorii.in/odoo-customisation",
+      "@id": "//services/odoo-customisation#webpage",
+      url: "//services/odoo-customisation",
       name: "Siliguri Odoo Expert | Custom Odoo Modules & Workflow Automation",
       description:
         "Siliguri’s dedicated Odoo development team — custom module development, workflow automation, and full ERP implementation for North Bengal and global clients. Book a consultation today.",
       inLanguage: "en",
       isPartOf: {
-        "@id": "https://dorii.in/#organization",
+        "@id": "//#organization",
       },
     },
 
     {
       "@type": "Service",
-      "@id": "https://dorii.in/odoo-customisation#service",
+      "@id": "//services/odoo-customisation#service",
       name: "Odoo Customisation",
       provider: {
-        "@id": "https://dorii.in/#organization",
+        "@id": "//#organization",
       },
       areaServed: ["IN", "Global"],
       serviceType: [
@@ -101,14 +101,14 @@ const solutionsJSONLD = {
         "Workflow Automation",
         "ERP Implementation",
       ],
-      url: "https://dorii.in/odoo-customisation",
+      url: "//services/odoo-customisation",
       description:
         "Full Odoo customization including modules, workflow automation, and compliance for Indian and global clients.",
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://dorii.in/odoo-customisation#faq",
+      "@id": "//services/odoo-customisation#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -136,7 +136,7 @@ const solutionsJSONLD = {
         },
       ],
       isPartOf: {
-        "@id": "https://dorii.in/odoo-customisation#webpage",
+        "@id": "//services/odoo-customisation#webpage",
       },
     },
   ],
@@ -156,18 +156,18 @@ export const metadata: Metadata = {
     "GST compliance Odoo",
     "North Bengal business software",
   ],
-  authors: [{ name: "DORII", url: "https://dorii.in" }],
+  authors: [{ name: "DORII", url: "/" }],
   alternates: {
-    canonical: "https://dorii.in/odoo-customisation",
+    canonical: "//services/odoo-customisation",
   },
   openGraph: {
     title: "Siliguri Odoo Expert | Custom Odoo Modules & Workflow Automation",
     description: "Siliguri’s dedicated Odoo development team...",
-    url: "https://dorii.in/odoo-customisation",
+    url: "//services/odoo-customisation",
     siteName: "Dorii Software",
     images: [
       {
-        url: "https://dorii.in/images/service/odoo-customisation.png",
+        url: "//images/service/odoo-customisation.png",
         width: 1200,
         height: 630,
         alt: "Siliguri Odoo Expert - Custom Modules & Workflow Automation",
@@ -179,7 +179,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Siliguri Odoo Expert | Custom Odoo Modules & Workflow Automation",
     description: "Siliguri’s dedicated Odoo development team...",
-    images: ["https://dorii.in/images/service/odoo-customisation.png"],
+    images: ["//images/service/odoo-customisation.png"],
     creator: "@dorii",
   },
 };

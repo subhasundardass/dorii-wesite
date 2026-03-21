@@ -80,7 +80,7 @@ export default function BlogPage() {
               "@context": "https://schema.org",
               "@type": "Blog",
               name: "Dorii Software Blog",
-              url: "https://www.dorii.in/blog",
+              url: "//blog",
               description:
                 "Latest insights on ERP, inventory, warehouse, transport management, and business automation software solutions.",
               publisher: {
@@ -88,7 +88,7 @@ export default function BlogPage() {
                 name: "Dorii Software",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://www.dorii.in/og-image.png",
+                  url: "//og-image.png",
                 },
               },
               blogPost: posts.map((post) => ({
@@ -96,7 +96,7 @@ export default function BlogPage() {
                 headline: post.meta.title,
                 datePublished: post.meta.date,
                 description: post.meta.description,
-                url: `https://www.dorii.in/blog/${post.slug}`,
+                url: `//blog/${post.slug}`,
               })),
             }),
           }}

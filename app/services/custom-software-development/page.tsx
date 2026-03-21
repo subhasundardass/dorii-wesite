@@ -23,11 +23,11 @@ export const solutionsJSONLD = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://dorii.in/#business",
+      "@id": "//#business",
       name: "Dorii Software",
       description:
         "Custom software development company based in Siliguri, West Bengal. Specialising in ERP, CRM, billing, school, hospital, and Odoo software for North Bengal businesses.",
-      url: "https://dorii.in",
+      url: "/",
       telephone: "+91XXXXXXXXXX",
       email: "hello@dorii.in",
       foundingDate: "2019",
@@ -75,14 +75,14 @@ export const solutionsJSONLD = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dorii.in/services/custom-software-development#webpage",
-      url: "https://dorii.in/services/custom-software-development",
+      "@id": "//services/custom-software-development#webpage",
+      url: "//services/custom-software-development",
       name: "Custom Software Development Company in Siliguri | Dorii Software",
       description:
         "Custom software development services in Siliguri and North Bengal. ERP, CRM, billing, school, hospital and Odoo software built for your business.",
       inLanguage: "en-IN",
-      isPartOf: { "@id": "https://dorii.in/#website" },
-      about: { "@id": "https://dorii.in/#business" },
+      isPartOf: { "@id": "//#website" },
+      about: { "@id": "//#business" },
       breadcrumb: {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -90,31 +90,31 @@ export const solutionsJSONLD = {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://dorii.in",
+            item: "/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://dorii.in/services",
+            item: "//services",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Custom Software Development",
-            item: "https://dorii.in/services/custom-software-development",
+            item: "//services/custom-software-development",
           },
         ],
       },
     },
     {
       "@type": "Service",
-      "@id": "https://dorii.in/services/custom-software-development#service",
+      "@id": "//services/custom-software-development#service",
       name: "Custom Software Development",
       serviceType: "Custom Software Development",
       description:
         "End-to-end custom software development for businesses in Siliguri and North Bengal. We build ERP, CRM, billing, hospital, school, transport, and hotel management software tailored to your exact business needs.",
-      provider: { "@id": "https://dorii.in/#business" },
+      provider: { "@id": "//#business" },
       areaServed: { "@type": "State", name: "West Bengal" },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
@@ -209,13 +209,13 @@ export const metadata: Metadata = {
     "custom ERP development India",
   ],
   alternates: {
-    canonical: "https://dorii.in/services/custom-software-development",
+    canonical: "//services/custom-software-development",
   },
   openGraph: {
     title: "Custom Software Development Company in Siliguri | Dorii Software",
     description:
       "We build custom ERP, CRM, billing, and business software for Siliguri and North Bengal businesses. Affordable, end-to-end, source code ownership guaranteed.",
-    url: "https://dorii.in/services/custom-software-development",
+    url: "//services/custom-software-development",
     siteName: "Dorii Software",
     locale: "en_IN",
     type: "website",

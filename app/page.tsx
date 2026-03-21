@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "Dorii Software builds custom ERP, Transport TMS, Warehouse WMS, and business automation software for Indian SMEs. DPIIT startup. Pan-India & international delivery.",
 
   // ── CANONICAL ────────────────────────────────────────────
-  metadataBase: new URL("https://dorii.in"),
+
   alternates: {
-    canonical: "https://dorii.in",
+    canonical: "/",
   },
 
   // ── KEYWORDS ─────────────────────────────────────────────
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Dorii Software",
-    url: "https://dorii.in",
+    url: "/",
     title:
       "Dorii Software — Custom ERP & Software Development Company in Siliguri",
     // 158 chars
@@ -113,7 +113,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Dorii Team",
-      url: "https://dorii.in/about",
+      url: "/about",
     },
   ],
   creator: "Dorii Software",
@@ -160,27 +160,27 @@ export const structuredData = {
     // ── 3. WEBPAGE ───────────────────────────────────────────
     {
       "@type": "WebPage",
-      "@id": "https://dorii.in/#homepage",
-      url: "https://dorii.in",
+      "@id": "//#homepage",
+      url: "/",
       name: "Dorii Software – Custom ERP & Business Automation Company",
       description:
         "Custom ERP software, Transport TMS, Warehouse WMS, Housing Society ERP and business automation solutions built for Indian businesses.",
-      isPartOf: { "@id": "https://dorii.in/#website" },
-      about: { "@id": "https://dorii.in/#organization" },
+      isPartOf: { "@id": "//#website" },
+      about: { "@id": "//#organization" },
       inLanguage: "en-IN",
-      breadcrumb: { "@id": "https://dorii.in/#breadcrumb" },
+      breadcrumb: { "@id": "//#breadcrumb" },
     },
 
     // ── 4. BREADCRUMB ────────────────────────────────────────
     {
       "@type": "BreadcrumbList",
-      "@id": "https://dorii.in/#breadcrumb",
+      "@id": "//#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://dorii.in/",
+          item: "//",
         },
       ],
     },
@@ -188,12 +188,12 @@ export const structuredData = {
     // ── 5. SERVICES ──────────────────────────────────────────
     {
       "@type": "Service",
-      "@id": "https://dorii.in/#service-erp",
+      "@id": "//#service-erp",
       name: "Custom ERP Software Development",
       serviceType: "Enterprise Resource Planning Software Development",
       description:
         "End-to-end custom ERP software built from scratch for your exact business workflows. Covers manufacturing, logistics, trading, services, and hybrid operations with GST compliance built in.",
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
       areaServed: { "@type": "Country", name: "India" },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
@@ -232,43 +232,43 @@ export const structuredData = {
     },
     {
       "@type": "Service",
-      "@id": "https://dorii.in/#service-odoo",
+      "@id": "//#service-odoo",
       name: "Odoo ERP Customisation & Development",
       serviceType: "Odoo Development",
       description:
         "Custom Odoo module development, workflow customisation, third-party API integrations, data migration, and Odoo ERP implementation. Supporting Odoo 14, 15, 16, and 17.",
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
       areaServed: { "@type": "Country", name: "India" },
     },
     {
       "@type": "Service",
-      "@id": "https://dorii.in/#service-mobile",
+      "@id": "//#service-mobile",
       name: "Mobile App Development — Flutter, iOS & Android",
       serviceType: "Mobile Application Development",
       description:
         "Cross-platform business mobile apps built with Flutter for Android and iOS. Field force apps, delivery tracking, mobile ERP access, and customer portals optimised for Indian networks.",
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
       areaServed: { "@type": "Country", name: "India" },
     },
     {
       "@type": "Service",
-      "@id": "https://dorii.in/#service-automation",
+      "@id": "//#service-automation",
       name: "Business Process Automation",
       serviceType: "Business Automation Software",
       description:
         "Automation software eliminating manual data entry, approval bottlenecks, and repetitive workflows. WhatsApp Business API alerts, GST portal sync, automated reporting, and custom workflow engines.",
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
       areaServed: { "@type": "Country", name: "India" },
     },
 
     // ── 6. SOFTWARE PRODUCTS ─────────────────────────────────
     {
       "@type": "SoftwareApplication",
-      "@id": "https://dorii.in/#product-tms",
+      "@id": "//#product-tms",
       name: "Dorii TMS — Transport Management System",
       applicationSuite: "Dorii ERP Platform",
       applicationCategory: "BusinessApplication",
-      isPartOf: { "@id": "https://dorii.in/#homepage" },
+      isPartOf: { "@id": "//#homepage" },
       operatingSystem: "Web, Android, iOS",
       description:
         "Complete road freight TMS for Indian logistics operators. LR generation, challan management, e-Way Bill auto-filing, driver management, trip costing, GST freight billing, and multi-branch accounts.",
@@ -289,13 +289,13 @@ export const structuredData = {
             "Custom pricing based on modules and users. Contact for quote.",
         },
       },
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://dorii.in/#product-wms",
+      "@id": "//#product-wms",
       name: "Dorii WMS — Warehouse Management System",
-      isPartOf: { "@id": "https://dorii.in/#homepage" },
+      isPartOf: { "@id": "//#homepage" },
       applicationSuite: "Dorii ERP Platform",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web, Android",
@@ -317,13 +317,13 @@ export const structuredData = {
           description: "Custom pricing based on warehouse count and users.",
         },
       },
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://dorii.in/#product-housing",
+      "@id": "//#product-housing",
       name: "Dorii Housing ERP — Society Management",
-      isPartOf: { "@id": "https://dorii.in/#homepage" },
+      isPartOf: { "@id": "//#homepage" },
       applicationSuite: "Dorii ERP Platform",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web, Android, iOS",
@@ -345,13 +345,13 @@ export const structuredData = {
           description: "Custom pricing based on number of units and modules.",
         },
       },
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://dorii.in/#product-inventory",
+      "@id": "//#product-inventory",
       name: "Dorii Inventory — Stock & Inventory Management ERP",
-      isPartOf: { "@id": "https://dorii.in/#homepage" },
+      isPartOf: { "@id": "//#homepage" },
       applicationSuite: "Dorii ERP Platform",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web, Android",
@@ -373,7 +373,7 @@ export const structuredData = {
           description: "Custom pricing based on branches and user count.",
         },
       },
-      provider: { "@id": "https://dorii.in/#organization" },
+      provider: { "@id": "//#organization" },
     },
   ],
 };
@@ -393,8 +393,9 @@ export default function Home() {
         <ServicesWeOffer />
         <HowWeWork />
         <WhyDorii />
-        {/* <Industries /> */}
+
         <FaqSection />
+        <Blogs />
         {/* <Solutions />
       <About />
       <ServicesWeOffer />

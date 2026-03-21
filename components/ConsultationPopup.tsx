@@ -110,7 +110,7 @@ export default function FreeConsultationPopup({
       });
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
 
       if (data.success) {
         setMessage("Consultation booked successfully!");

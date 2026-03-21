@@ -43,11 +43,11 @@ export async function generateMetadata({
         title: "Blog | Dorii Software",
         description:
           "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
-        url: "https://dorii.in/blog",
+        url: "//blog",
         siteName: "Dorii Software",
         images: [
           {
-            url: "https://dorii.in/og/about-dorii.png",
+            url: "//og/about-dorii.png",
             width: 1200,
             height: 630,
             alt: "Dorii Software – ERP & Business Automation Company",
@@ -61,7 +61,7 @@ export async function generateMetadata({
         title: "Blog | Dorii Software",
         description:
           "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
-        images: ["https://dorii.in/og/about-dorii.png"],
+        images: ["//og/about-dorii.png"],
       },
     };
   }
@@ -73,7 +73,7 @@ export async function generateMetadata({
     description: post.meta.description,
     keywords: post.meta.keywords,
     alternates: {
-      canonical: `/blog/${slug}`,
+      canonical: post.meta.canonical ?? `/blog/${slug}`,
     },
     openGraph: {
       title: post.meta.title,
@@ -141,23 +141,23 @@ export default async function BlogSlugPage({
           )}
 
           {/* Meta row */}
-          <div className="mt-10 flex flex-wrap items-center gap-4 border-t border-gray-200 pt-6 dark:border-gray-700/60">
+          {/* <div className="mt-10 flex flex-wrap items-center gap-4 border-t border-gray-200 pt-6 dark:border-gray-700/60">
             {post.meta.date && (
               <span className="text-sm font-medium text-gray-400 dark:text-gray-500">
                 {post.meta.date}
               </span>
             )}
             <span className="h-1 w-1 rounded-full bg-gray-300 dark:bg-gray-600" />
-          </div>
+          </div> */}
         </div>
       </header>
 
       {/* ── Divider rule ── */}
-      <div className="mx-auto max-w-5xl px-6 sm:px-0">
+      {/* <div className="mx-auto max-w-5xl px-6 sm:px-0">
         <div className="h-px bg-linear-to-r from-transparent via-blue-300 to-transparent dark:via-blue-700/50" />
-      </div>
+      </div> */}
       {/* ---------------- Markdown Content ---------------- */}
-      <div className="mx-auto max-w-5xl px-6 py-14 sm:px-0 sm:py-20">
+      <div className="mx-auto max-w-5xl px-6 py-14 sm:px-0 sm:py-10">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{

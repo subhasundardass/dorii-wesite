@@ -49,7 +49,7 @@ export const generateMetadata = (): Metadata => ({
     title: "Business Automation & ERP Solutions",
     description:
       "Explore Dorii Software's complete business automation and ERP solutions: Housing Society, Transport, Warehouse, and Stock & Inventory management software for scalable operations.",
-    url: "https://www.dorii.in/solutions",
+    url: "//solutions",
     siteName: "Dorii Software",
     images: [
       {
@@ -127,14 +127,11 @@ export default function SolutionsPage() {
             "@context": "https://schema.org",
             "@type": "SoftwareCompany",
             name: "Dorii Software",
-            url: "https://www.dorii.in",
-            logo: "https://www.dorii.in/og-image.png",
+            url: "/",
+            logo: "//og-image.png",
             description:
               "Dorii Software delivers business automation and ERP software solutions across Housing Society, Transport, Warehouse, and Stock & Inventory management.",
-            sameAs: [
-              "https://www.linkedin.com/company/dorii-software",
-              "https://github.com/doriisoftware",
-            ],
+            sameAs: ["https://www.linkedin.com/company/doriisoftware"],
             contactPoint: [
               {
                 "@type": "ContactPoint",
@@ -148,8 +145,8 @@ export default function SolutionsPage() {
               description: s.description,
               applicationCategory: "BusinessApplication",
               operatingSystem: "Web",
-              url: `https://www.dorii.in${s.href}`,
-              image: "https://www.dorii.in/og-image.png",
+              url: `/${s.href}`,
+              image: "//og-image.png",
               offers: {
                 "@type": "Offer",
                 price: "Contact for Pricing",

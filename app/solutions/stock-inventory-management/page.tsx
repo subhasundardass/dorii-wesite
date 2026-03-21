@@ -12,7 +12,7 @@ export const generateMetadata = (): Metadata => ({
     title: "Stock & Inventory Management Software | Dorii Software",
     description:
       "Automate inventory and stock management with alerts, batch tracking, and real-time visibility.",
-    url: "https://www.dorii.in/solutions/stock-inventory-management",
+    url: "//solutions/stock-inventory-management",
     siteName: "Dorii Software",
     images: [
       {

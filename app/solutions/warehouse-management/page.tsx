@@ -277,8 +277,8 @@ export default function WarehouseManagementPage() {
               "Optimize warehouse operations with real-time tracking of goods, automated storage management, order fulfillment, and efficient space utilization using our warehouse ERP solution.",
             applicationCategory: "BusinessApplication",
             operatingSystem: "Web",
-            url: "https://www.dorii.in/solutions/warehouse-management",
-            image: "https://www.dorii.in/og-image.png",
+            url: "//solutions/warehouse-management",
+            image: "//og-image.png",
             offers: {
               "@type": "Offer",
               price: "Contact for Pricing",
