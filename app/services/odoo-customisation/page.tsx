@@ -26,7 +26,7 @@ const solutionsJSONLD = {
     {
       "@type": "Organization",
       "@id": "https://dorii.in/#organization",
-      name: "DORII Software",
+      name: "Dorii Software",
       url: "https://dorii.in",
       logo: "https://dorii.in/logo.png",
       sameAs: [
@@ -43,7 +43,7 @@ const solutionsJSONLD = {
 
     {
       "@type": "LocalBusiness",
-      name: "DORII Software",
+      name: "Dorii Software",
       url: "https://dorii.in",
       logo: "https://dorii.in/logo.png",
       email: "doriisoftware@gmail.com",
@@ -72,13 +72,13 @@ const solutionsJSONLD = {
       headline: "Siliguri Odoo Expert Guide",
       author: {
         "@type": "Organization",
-        name: "DORII Software",
+        name: "Dorii Software",
       },
     },
     {
       "@type": "WebPage",
-      "@id": "https://dorii.in/odoo-customisation#webpage",
-      url: "https://dorii.in/odoo-customisation",
+      "@id": "https://dorii.in/services/odoo-customisation#webpage",
+      url: "https://dorii.in/services/odoo-customisation",
       name: "Siliguri Odoo Expert | Custom Odoo Modules & Workflow Automation",
       description:
         "Siliguri’s dedicated Odoo development team — custom module development, workflow automation, and full ERP implementation for North Bengal and global clients. Book a consultation today.",
@@ -90,7 +90,7 @@ const solutionsJSONLD = {
 
     {
       "@type": "Service",
-      "@id": "https://dorii.in/odoo-customisation#service",
+      "@id": "https://dorii.in/services/odoo-customisation#service",
       name: "Odoo Customisation",
       provider: {
         "@id": "https://dorii.in/#organization",
@@ -101,14 +101,14 @@ const solutionsJSONLD = {
         "Workflow Automation",
         "ERP Implementation",
       ],
-      url: "https://dorii.in/odoo-customisation",
+      url: "https://dorii.in/services/odoo-customisation",
       description:
         "Full Odoo customization including modules, workflow automation, and compliance for Indian and global clients.",
     },
 
     {
       "@type": "FAQPage",
-      "@id": "https://dorii.in/odoo-customisation#faq",
+      "@id": "https://dorii.in/services/odoo-customisation#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -136,7 +136,7 @@ const solutionsJSONLD = {
         },
       ],
       isPartOf: {
-        "@id": "https://dorii.in/odoo-customisation#webpage",
+        "@id": "https://dorii.in/services/odoo-customisation#webpage",
       },
     },
   ],
@@ -158,12 +158,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "DORII", url: "https://dorii.in" }],
   alternates: {
-    canonical: "https://dorii.in/odoo-customisation",
+    canonical: "https://dorii.in/services/odoo-customisation",
   },
   openGraph: {
     title: "Siliguri Odoo Expert | Custom Odoo Modules & Workflow Automation",
     description: "Siliguri’s dedicated Odoo development team...",
-    url: "https://dorii.in/odoo-customisation",
+    url: "https://dorii.in/services/odoo-customisation",
     siteName: "Dorii Software",
     images: [
       {

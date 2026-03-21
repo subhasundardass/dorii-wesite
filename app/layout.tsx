@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Dorii Software is a business automation and custom ERP software development company delivering scalable solutions for sales, inventory, supply chain, HR, accounts, and manufacturing across industries.",
 
   alternates: {
-    canonical: "https://dorii.in",
+    canonical: "/",
   },
 
   keywords: [
@@ -39,8 +39,6 @@ export const metadata: Metadata = {
     "manufacturing ERP solutions",
     "enterprise software development",
   ],
-
-  metadataBase: new URL("https://dorii.in"),
 
   openGraph: {
     type: "website",

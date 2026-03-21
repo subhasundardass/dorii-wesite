@@ -10,6 +10,7 @@ export type BlogMeta = {
   showOnHome?: boolean;
   isActive?: boolean;
   image?: string;
+  canonical?: string;
 };
 
 export type BlogPost = {
@@ -51,7 +52,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
   return {
     slug,
     meta: {
-      title: data.title ?? "Dorii Software Blog",
+      title: data.title ?? "Dorii Software",
       description:
         data.description ??
         "Business automation, ERP, inventory and software insights by Dorii Software.",
@@ -62,6 +63,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
         data.showOnHome === true || data.showOnHome === "true" ? true : false,
       isActive:
         data.isActive === true || data.isActive === "true" ? true : false,
+      canonical: data.canonical ?? "/",
     },
     content,
   };
