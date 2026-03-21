@@ -208,7 +208,7 @@ export default async function BlogSlugPage({
             ),
             /* ── Blockquote ── */
             blockquote: ({ children }) => (
-              <blockquote className="relative my-10 rounded-r-xl border-l-[3px] border-blue-500 bg-gradient-to-r from-blue-50 to-transparent py-5 pl-6 pr-4 italic text-gray-600 dark:from-blue-900/20 dark:to-transparent dark:text-gray-300">
+              <blockquote className="relative my-10 rounded-r-xl border-l-[3px] border-blue-500 bg-linear-to-r from-blue-50 to-transparent py-5 pl-6 pr-4 italic text-gray-600 dark:from-blue-900/20 dark:to-transparent dark:text-gray-300">
                 <span className="pointer-events-none absolute -top-4 -left-1 font-['Georgia'] text-7xl leading-none text-blue-200 dark:text-blue-800/50">
                   "
                 </span>
