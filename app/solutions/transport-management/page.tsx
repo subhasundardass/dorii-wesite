@@ -12,7 +12,7 @@ export const generateMetadata = (): Metadata => ({
     title: "Transport & Logistics Management Software",
     description:
       "An all-in-one Transport Management System (TMS) for trip planning, LR/challan generation, billing, accounting, vehicle tracking, and streamlined logistics operations.",
-    url: "https://www.dorii.in/solutions/transport-management",
+    url: "//solutions/transport-management",
     siteName: "Dorii Software",
     images: [
       {

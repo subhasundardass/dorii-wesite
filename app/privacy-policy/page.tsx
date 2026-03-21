@@ -30,15 +30,15 @@ export default function PrivacyPage() {
               "@context": "https://schema.org",
               "@type": "WebPage",
               name: "Privacy Policy",
-              url: "https://dorii.in/privacy",
+              url: "//privacy",
               mainEntity: {
                 "@type": "PrivacyPolicy",
                 provider: {
                   "@type": "Organization",
                   name: "Dorii Software",
-                  url: "https://dorii.in",
+                  url: "/",
                 },
-                privacyPolicy: "https://dorii.in/privacy",
+                privacyPolicy: "//privacy",
               },
             }),
           }}

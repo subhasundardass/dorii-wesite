@@ -7,8 +7,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Dorii Software",
-  url: "https://dorii.in",
-  logo: "https://dorii.in/logo.png",
+  url: "/",
+  logo: "//logo.png",
   description:
     "Dorii Software is a Siliguri-based ERP and business automation company delivering scalable software for transport, inventory, warehouse, and enterprise operations across India.",
   address: {
@@ -43,11 +43,11 @@ export const metadata: Metadata = {
       "About Dorii Software | ERP & Business Automation Company in Siliguri",
     description:
       "We build scalable ERP, transport, inventory, and warehouse software for growing businesses across India. Headquartered in Siliguri, West Bengal.",
-    url: "https://dorii.in/about",
+    url: "//about",
     siteName: "Dorii Software",
     images: [
       {
-        url: "https://dorii.in/og/about-dorii.png",
+        url: "//og/about-dorii.png",
         width: 1200,
         height: 630,
         alt: "Dorii Software – ERP & Business Automation Company in Siliguri",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "About Dorii Software | ERP & Automation Company, Siliguri",
     description:
       "ERP, transport, warehouse & business automation software built for real-world operations. Based in Siliguri, North Bengal, India.",
-    images: ["https://dorii.in/og/about-dorii.png"],
+    images: ["//og/about-dorii.png"],
   },
 };
 

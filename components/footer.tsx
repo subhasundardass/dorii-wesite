@@ -132,7 +132,7 @@ const Footer = () => {
 
         <span className="text-muted-foreground text-center xs:text-start">
           &copy; {new Date().getFullYear()}{" "}
-          <Link href="https://dorii.in" target="_blank">
+          <Link href="/" target="_blank">
             Dorii Software
           </Link>
           . All rights reserved.

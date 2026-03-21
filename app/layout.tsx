@@ -17,6 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dorii.in"),
   title: {
     default: "Business Automation & ERP Solutions",
     template: "%s | Dorii Software",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Dorii Software",
-    url: "https://dorii.in",
+    url: "/",
     title: "Dorii Software | Business Automation & ERP Solutions",
     description:
       "Custom business automation and ERP software solutions designed to scale operations across sales, inventory, HR, accounts, supply chain, and manufacturing.",
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Dorii Team",
-      url: "https://www.dorii.in",
+      url: "/",
     },
   ],
 
@@ -110,17 +111,17 @@ export default function RootLayout({
                     "ProfessionalService",
                     "LocalBusiness",
                   ],
-                  "@id": "https://dorii.in/#organization",
+                  "@id": "/#organization",
                   name: "Dorii Software",
                   alternateName: ["Dorii"],
-                  url: "https://dorii.in",
+                  url: "/",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://dorii.in/logo.png",
+                    url: "/logo.png",
                     width: 180,
                     height: 60,
                   },
-                  image: "https://dorii.in/og-image.png",
+                  image: "/og-image.png",
                   description:
                     "Dorii Software is a DPIIT-recognized custom software development company in Siliguri, India. We build ERP systems, Transport TMS, Warehouse WMS, Housing Society ERP, business automation software, and enterprise applications for Indian SMEs across North Bengal and pan-India.",
                   foundingDate: "2020",
@@ -285,18 +286,18 @@ export default function RootLayout({
                 // ── 2. WEBSITE ───────────────────────────────────────────
                 {
                   "@type": "WebSite",
-                  "@id": "https://dorii.in/#website",
-                  url: "https://dorii.in",
+                  "@id": "/#website",
+                  url: "/",
                   name: "Dorii Software",
                   description:
                     "Custom Software Development Company in Siliguri, India — ERP, Automation & Enterprise Apps",
-                  publisher: { "@id": "https://dorii.in/#organization" },
+                  publisher: { "@id": "/#organization" },
                   inLanguage: "en-IN",
                   potentialAction: {
                     "@type": "SearchAction",
                     target: {
                       "@type": "EntryPoint",
-                      urlTemplate: "https://dorii.in/?s={search_term_string}",
+                      urlTemplate: "/?s={search_term_string}",
                     },
                     "query-input": "required name=search_term_string",
                   },

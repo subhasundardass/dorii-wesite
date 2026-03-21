@@ -62,7 +62,7 @@ export async function POST(request: Request) {
 
     // Verify Invisible reCAPTCHA token
     const isHuman = await verifyRecaptcha(token);
-    console.log(isHuman);
+    // console.log(isHuman);
     if (!isHuman) {
       return NextResponse.json(
         { message: "Captcha verification failed" },

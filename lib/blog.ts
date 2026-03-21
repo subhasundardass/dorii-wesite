@@ -42,7 +42,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
   const fullPath = path.join(BLOG_DIR, `${slug}.md`);
 
   if (!fs.existsSync(fullPath)) {
-    console.error(`Markdown file not found: ${fullPath}`);
+    // console.error(`Markdown file not found: ${fullPath}`);
     return null;
   }
 

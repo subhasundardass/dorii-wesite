@@ -4,7 +4,7 @@ description: "Looking for a reliable software company in Siliguri? Discover how 
 date: "2026-02-12"
 author: "Dorii Software"
 image: "/images/blog/software-development-in-siliguri.png"
-canonical: "/solutions/custom-software-development"
+canonical: "/services/custom-software-development"
 showOnHome: false
 isActive: true
 keywords:

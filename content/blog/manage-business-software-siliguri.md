@@ -16,7 +16,7 @@ keywords:
 # showOnHome: false
 # isActive: true
 
-canonical: "/solutions/custom-software-development"
+canonical: "/services/custom-software-development"
 # og_image: "/blog/images/erp-siliguri-og.jpg"
 ---
 

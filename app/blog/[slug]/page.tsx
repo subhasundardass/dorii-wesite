@@ -43,11 +43,11 @@ export async function generateMetadata({
         title: "Blog | Dorii Software",
         description:
           "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
-        url: "https://dorii.in/blog",
+        url: "//blog",
         siteName: "Dorii Software",
         images: [
           {
-            url: "https://dorii.in/og/about-dorii.png",
+            url: "//og/about-dorii.png",
             width: 1200,
             height: 630,
             alt: "Dorii Software – ERP & Business Automation Company",
@@ -61,7 +61,7 @@ export async function generateMetadata({
         title: "Blog | Dorii Software",
         description:
           "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
-        images: ["https://dorii.in/og/about-dorii.png"],
+        images: ["//og/about-dorii.png"],
       },
     };
   }
