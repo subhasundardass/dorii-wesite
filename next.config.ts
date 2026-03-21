@@ -12,7 +12,12 @@ const nextConfig: NextConfig = {
       {
         source: "/service/odoo-customisation",
         destination: "/services/odoo-customisation",
-        permanent: true, // 301 redirect for SEO
+        permanent: true,
+      },
+      {
+        source: "/odoo-customisation",
+        destination: "/services/odoo-customisation",
+        permanent: true,
       },
 
       // /privacy → /privacy-policy
@@ -33,12 +38,11 @@ const nextConfig: NextConfig = {
         destination: "/services/custom-software-development",
         permanent: true,
       },
-      // broken nested blog link
+
       {
-        source:
-          "/blog/business-problems-without-erp/erp-software-for-indian-businesses",
-        destination: "/blog/erp-software-for-indian-businesses",
-        permanent: true,
+        source: "/solutions/housing-society-management",
+        destination: "/solutions/housing-society",
+        permanent: true, // 301
       },
     ];
   },
