@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 const faqs = [
   {
     q: "Does Dorii Software work with clients outside India — pan-India or internationally?",
@@ -53,7 +55,7 @@ const faqSchema = {
 export default function FaqSection() {
   return (
     <>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />

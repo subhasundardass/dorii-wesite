@@ -18,6 +18,7 @@ import HowWeWork from "@/components/home/HowWeWork";
 import WhyDorii from "@/components/home/WhyDorii";
 import Industries from "@/components/home/Industries";
 import FaqSection from "@/components/home/FaqSection";
+import Script from "next/script";
 // import Pricing from "@/components/pricing";
 // import Testimonial from "@/components/testimonial";
 
@@ -139,7 +140,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/dorii-logo.png" },
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
@@ -157,223 +158,36 @@ export const metadata: Metadata = {
 export const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
-    // ── 3. WEBPAGE ───────────────────────────────────────────
+    // ── WEBPAGE ─────────────────────────────────────────────
     {
       "@type": "WebPage",
-      "@id": "//#homepage",
-      url: "/",
+      "@id": "https://dorii.in/#homepage",
+      url: "https://dorii.in/",
       name: "Dorii Software – Custom ERP & Business Automation Company",
       description:
         "Custom ERP software, Transport TMS, Warehouse WMS, Housing Society ERP and business automation solutions built for Indian businesses.",
-      isPartOf: { "@id": "//#website" },
-      about: { "@id": "//#organization" },
+      isPartOf: { "@id": "https://dorii.in/#website" },
+      about: { "@id": "https://dorii.in/#organization" },
       inLanguage: "en-IN",
-      breadcrumb: { "@id": "//#breadcrumb" },
+      breadcrumb: { "@id": "https://dorii.in/#breadcrumb" },
+      mainEntity: [
+        { "@id": "https://dorii.in/#custom-software-development" },
+        { "@id": "https://dorii.in/#odoo-customisation" },
+      ],
     },
 
-    // ── 4. BREADCRUMB ────────────────────────────────────────
+    // ── BREADCRUMB ─────────────────────────────────────────
     {
       "@type": "BreadcrumbList",
-      "@id": "//#breadcrumb",
+      "@id": "https://dorii.in/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "//",
+          item: "https://dorii.in/",
         },
       ],
-    },
-
-    // ── 5. SERVICES ──────────────────────────────────────────
-    {
-      "@type": "Service",
-      "@id": "//#service-erp",
-      name: "Custom ERP Software Development",
-      serviceType: "Enterprise Resource Planning Software Development",
-      description:
-        "End-to-end custom ERP software built from scratch for your exact business workflows. Covers manufacturing, logistics, trading, services, and hybrid operations with GST compliance built in.",
-      provider: { "@id": "//#organization" },
-      areaServed: { "@type": "Country", name: "India" },
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "ERP Products",
-        itemListElement: [
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Transport Management System (TMS)",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Warehouse Management System (WMS)",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Housing Society ERP",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Inventory Management ERP",
-            },
-          },
-        ],
-      },
-    },
-    {
-      "@type": "Service",
-      "@id": "//#service-odoo",
-      name: "Odoo ERP Customisation & Development",
-      serviceType: "Odoo Development",
-      description:
-        "Custom Odoo module development, workflow customisation, third-party API integrations, data migration, and Odoo ERP implementation. Supporting Odoo 14, 15, 16, and 17.",
-      provider: { "@id": "//#organization" },
-      areaServed: { "@type": "Country", name: "India" },
-    },
-    {
-      "@type": "Service",
-      "@id": "//#service-mobile",
-      name: "Mobile App Development — Flutter, iOS & Android",
-      serviceType: "Mobile Application Development",
-      description:
-        "Cross-platform business mobile apps built with Flutter for Android and iOS. Field force apps, delivery tracking, mobile ERP access, and customer portals optimised for Indian networks.",
-      provider: { "@id": "//#organization" },
-      areaServed: { "@type": "Country", name: "India" },
-    },
-    {
-      "@type": "Service",
-      "@id": "//#service-automation",
-      name: "Business Process Automation",
-      serviceType: "Business Automation Software",
-      description:
-        "Automation software eliminating manual data entry, approval bottlenecks, and repetitive workflows. WhatsApp Business API alerts, GST portal sync, automated reporting, and custom workflow engines.",
-      provider: { "@id": "//#organization" },
-      areaServed: { "@type": "Country", name: "India" },
-    },
-
-    // ── 6. SOFTWARE PRODUCTS ─────────────────────────────────
-    {
-      "@type": "SoftwareApplication",
-      "@id": "//#product-tms",
-      name: "Dorii TMS — Transport Management System",
-      applicationSuite: "Dorii ERP Platform",
-      applicationCategory: "BusinessApplication",
-      isPartOf: { "@id": "//#homepage" },
-      operatingSystem: "Web, Android, iOS",
-      description:
-        "Complete road freight TMS for Indian logistics operators. LR generation, challan management, e-Way Bill auto-filing, driver management, trip costing, GST freight billing, and multi-branch accounts.",
-      featureList: [
-        "LR and Challan Generation",
-        "e-Way Bill Auto-filing",
-        "Driver and Fleet Management",
-        "Trip Costing and P&L",
-        "GST-ready Freight Billing",
-        "Multi-branch Accounts",
-      ],
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "INR",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          description:
-            "Custom pricing based on modules and users. Contact for quote.",
-        },
-      },
-      provider: { "@id": "//#organization" },
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "//#product-wms",
-      name: "Dorii WMS — Warehouse Management System",
-      isPartOf: { "@id": "//#homepage" },
-      applicationSuite: "Dorii ERP Platform",
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Web, Android",
-      description:
-        "Warehouse management software for mid-size distribution companies. Zone-rack-bin mapping, barcode scanning, FIFO/FEFO, order fulfilment, and automatic stock reconciliation across multiple locations.",
-      featureList: [
-        "Zone-Rack-Bin Mapping",
-        "Barcode Scanning",
-        "FIFO and FEFO Stock Management",
-        "Order Fulfilment Workflows",
-        "Multi-Warehouse Support",
-        "Automated Stock Reconciliation",
-      ],
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "INR",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          description: "Custom pricing based on warehouse count and users.",
-        },
-      },
-      provider: { "@id": "//#organization" },
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "//#product-housing",
-      name: "Dorii Housing ERP — Society Management",
-      isPartOf: { "@id": "//#homepage" },
-      applicationSuite: "Dorii ERP Platform",
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Web, Android, iOS",
-      description:
-        "Housing society management ERP for RWAs and cooperative housing societies. Online maintenance billing, UPI collections, complaint ticketing, visitor management, and AGM documentation.",
-      featureList: [
-        "Online Maintenance Billing",
-        "UPI and Online Collection",
-        "Complaint Ticketing System",
-        "Visitor Management",
-        "AGM and Notice Board",
-        "Committee Accounting",
-      ],
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "INR",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          description: "Custom pricing based on number of units and modules.",
-        },
-      },
-      provider: { "@id": "//#organization" },
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "//#product-inventory",
-      name: "Dorii Inventory — Stock & Inventory Management ERP",
-      isPartOf: { "@id": "//#homepage" },
-      applicationSuite: "Dorii ERP Platform",
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Web, Android",
-      description:
-        "Stock and inventory management for manufacturers, distributors, and multi-branch traders. Purchase-to-sale cycle, batch/serial/expiry tracking, multi-location stock, and GST-compliant invoicing.",
-      featureList: [
-        "Purchase-to-Sale Cycle",
-        "Batch, Serial and Expiry Tracking",
-        "Multi-branch Stock Visibility",
-        "Automated Reorder Alerts",
-        "GST Invoicing Built-in",
-        "Supplier Management",
-      ],
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "INR",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          description: "Custom pricing based on branches and user count.",
-        },
-      },
-      provider: { "@id": "//#organization" },
     },
   ],
 };
@@ -381,10 +195,11 @@ export const structuredData = {
 export default function Home() {
   return (
     <>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+
       <main>
         <Hero />
         <TrustBar />

@@ -19,28 +19,24 @@ import CostTimeline from "./cost-timeline";
 import ChooseDeveloper from "./choosing-a-developer";
 import ImplimentationSetup from "./implementation-setup";
 import FreeConsultationPopup from "@/components/ConsultationPopup";
+import Script from "next/script";
 
-const solutionsJSONLD = {
+const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      headline: "Siliguri Odoo Expert Guide",
-      author: {
-        "@type": "Organization",
-        name: "Dorii Software",
-      },
-    },
-    {
       "@type": "WebPage",
-      "@id": "/services/odoo-customisation#webpage",
-      url: "/services/odoo-customisation",
+      "@id": "https://dorii.in/services/odoo-customisation#webpage",
+      url: "https://dorii.in/services/odoo-customisation",
       name: "Siliguri Odoo Expert | Custom Odoo Modules & Workflow Automation",
       description:
         "Siliguri’s dedicated Odoo development team — custom module development, workflow automation, and full ERP implementation for North Bengal and global clients. Book a consultation today.",
       inLanguage: "en",
       isPartOf: {
-        "@id": "/#services",
+        "@id": "https://dorii.in/#website",
+      },
+      about: {
+        "@id": "https://dorii.in/#organization",
       },
     },
 
@@ -49,7 +45,7 @@ const solutionsJSONLD = {
       "@id": "/services/odoo-customisation#service",
       name: "Odoo Customisation",
       provider: {
-        "@id": "/#organization",
+        "@id": "https://dorii.in/#organization",
       },
       areaServed: ["IN", "Global"],
       serviceType: [
@@ -57,14 +53,38 @@ const solutionsJSONLD = {
         "Workflow Automation",
         "ERP Implementation",
       ],
-      url: "/services/odoo-customisation",
+      url: "https://dorii.in/services/odoo-customisation",
       description:
         "Full Odoo customization including modules, workflow automation, and compliance for Indian and global clients.",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dorii.in/services/odoo-customisation#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://dorii.in/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://dorii.in/services",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "ERP Development",
+          item: "https://dorii.in/services/odoo-customisation",
+        },
+      ],
     },
 
     {
       "@type": "FAQPage",
-      "@id": "/services/odoo-customisation#faq",
+      "@id": "https://dorii.in/services/odoo-customisation#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -92,7 +112,7 @@ const solutionsJSONLD = {
         },
       ],
       isPartOf: {
-        "@id": "/services/odoo-customisation#webpage",
+        "@id": "https://dorii.in/services/odoo-customisation#webpage",
       },
     },
   ],
@@ -142,11 +162,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <script
+      <Script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(solutionsJSONLD),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       <div className="">

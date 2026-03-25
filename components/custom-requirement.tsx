@@ -54,7 +54,7 @@ const CustomRequirement = () => {
         solution for you.
       </p>
 
-      <div className="min-h-[550px] md:min-h-[320px] xl:min-h-[300px]">
+      <div className="min-h-137.5 md:min-h-80 xl:min-h-75">
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Left: Requirement Form */}
           <form className="space-y-5 w-full">

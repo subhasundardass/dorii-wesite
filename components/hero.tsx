@@ -35,7 +35,7 @@ const Hero = () => {
         {/* Animated orbs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-indigo-600/20 blur-[120px] animate-[pulse_6s_ease-in-out_infinite]" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-violet-500/15 blur-[100px] animate-[pulse_8s_ease-in-out_infinite_2s]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-indigo-700/10 blur-[140px] animate-[pulse_10s_ease-in-out_infinite_1s]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-indigo-700/10 blur-[140px] animate-[pulse_10s_ease-in-out_infinite_1s]" />
 
         {/* Circuit lines */}
         <svg
@@ -108,7 +108,7 @@ const Hero = () => {
         </svg>
 
         {/* Scan line */}
-        <div className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-indigo-400/40 to-transparent animate-[scan_6s_linear_infinite]" />
+        <div className="absolute inset-x-0 h-px bg-linear-to-r from-transparent via-indigo-400/40 to-transparent animate-[scan_6s_linear_infinite]" />
 
         {/* Noise overlay */}
         <svg
