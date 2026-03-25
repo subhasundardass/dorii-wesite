@@ -1,7 +1,6 @@
 // app/blog/page.tsx
 import Link from "next/link";
 import { getAllActivePosts, getAllPosts } from "@/lib/blog";
-import { Metadata } from "next";
 
 export default function BlogPage() {
   const posts = getAllActivePosts();

@@ -17,95 +17,49 @@ import Hero from "./Hero";
 import Introduction from "./Intruduction";
 import RelatedArticles from "./RelatedArticle";
 import TableOfContent from "./TableOfContent";
+import Script from "next/script";
 
-export const solutionsJSONLD = {
+export const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": "//#business",
-      name: "Dorii Software",
-      description:
-        "Custom software development company based in Siliguri, West Bengal. Specialising in ERP, CRM, billing, school, hospital, and Odoo software for North Bengal businesses.",
-      url: "/",
-      telephone: "+91XXXXXXXXXX",
-      email: "hello@dorii.in",
-      foundingDate: "2019",
-      priceRange: "₹₹",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Siliguri",
-        addressRegion: "West Bengal",
-        postalCode: "734001",
-        addressCountry: "IN",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 26.7271,
-        longitude: 88.3953,
-      },
-      areaServed: [
-        { "@type": "City", name: "Siliguri" },
-        { "@type": "City", name: "Jalpaiguri" },
-        { "@type": "City", name: "Darjeeling" },
-        { "@type": "City", name: "Alipurduar" },
-        { "@type": "City", name: "Cooch Behar" },
-        { "@type": "City", name: "Kalimpong" },
-        { "@type": "City", name: "Gangtok" },
-        { "@type": "State", name: "West Bengal" },
-        { "@type": "State", name: "Sikkim" },
-        { "@type": "Country", name: "India" },
-      ],
-      knowsAbout: [
-        "Custom Software Development",
-        "ERP Software",
-        "CRM Software",
-        "Odoo Implementation",
-        "Hospital Management Software",
-        "School Management Software",
-        "Hotel Management Software",
-        "Transport Management System",
-        "Web Application Development",
-        "Workflow Automation",
-      ],
-      sameAs: [
-        "https://www.linkedin.com/company/doriisoftware",
-        "https://www.facebook.com/doriisoftware",
-      ],
-    },
-    {
       "@type": "WebPage",
-      "@id": "//services/custom-software-development#webpage",
-      url: "//services/custom-software-development",
-      name: "Custom Software Development Company in Siliguri | Dorii Software",
+      "@id": "https://dorii.in/services/custom-software-development#webpage",
+      url: "https://dorii.in/services/custom-software-development",
+      name: "Custom Software Development Company in Siliguri",
       description:
         "Custom software development services in Siliguri and North Bengal. ERP, CRM, billing, school, hospital and Odoo software built for your business.",
       inLanguage: "en-IN",
-      isPartOf: { "@id": "//#website" },
-      about: { "@id": "//#business" },
-      breadcrumb: {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "/",
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Services",
-            item: "//services",
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: "Custom Software Development",
-            item: "//services/custom-software-development",
-          },
-        ],
+      isPartOf: {
+        "@id": "https://dorii.in/#website",
       },
+      about: {
+        "@id": "https://dorii.in/#organization",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dorii.in/services/odoo-customisation#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://dorii.in/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://dorii.in/services",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Custom Software Development",
+          item: "https://dorii.in/services/custom-software-development",
+        },
+      ],
     },
     {
       "@type": "Service",
@@ -239,9 +193,9 @@ export const metadata: Metadata = {
 export default function CustomSoftwareDevelopment() {
   return (
     <>
-      <script
+      <Script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(solutionsJSONLD) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       <div className="pt-16">

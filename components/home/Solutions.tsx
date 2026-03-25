@@ -175,7 +175,7 @@ export default function SolutionsWeOffer() {
               </div>
             </div>
             <div className="p-8">
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              <p className="text-gray-600  leading-relaxed mb-4">
                 Built after weeks inside actual transport offices, our{" "}
                 <strong>Transport Management Software</strong> handles the
                 complete freight cycle — from trip creation to delivery
@@ -349,7 +349,7 @@ export default function SolutionsWeOffer() {
               </div>
             </div>
             <div className="p-8">
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              <p className="text-gray-600  leading-relaxed mb-4">
                 A complete <strong>housing society management platform</strong>{" "}
                 for RWAs and cooperative housing societies. Covers everything
                 from online maintenance billing and UPI collections to visitor
@@ -519,7 +519,7 @@ export default function SolutionsWeOffer() {
               </div>
             </div>
             <div className="p-8">
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              <p className="text-gray-600  leading-relaxed mb-4">
                 A <strong>warehouse management software</strong> built for
                 mid-size distribution companies. Handles zone-rack-bin stock
                 mapping, barcode scanning, order picking workflows, and
@@ -690,7 +690,7 @@ export default function SolutionsWeOffer() {
               </div>
             </div>
             <div className="p-8">
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              <p className="text-gray-600  leading-relaxed mb-4">
                 A <strong>stock and inventory management system</strong> built
                 for manufacturers, distributors, and multi-branch traders.
                 Covers the complete purchase-to-sale cycle with

@@ -116,7 +116,7 @@ const Footer = () => {
                 <li key={title}>
                   <Link
                     href={href}
-                    className="text-sm text-muted-foreground hover:text-foreground break-words"
+                    className="text-sm text-muted-foreground hover:text-foreground wrap-break-word"
                   >
                     {title}
                   </Link>
