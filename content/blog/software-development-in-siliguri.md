@@ -3,7 +3,7 @@ title: "Software Development in Siliguri - Leading IT & ERP Companies in North B
 description: "Looking for a reliable software company in Siliguri? Discover how IT companies in North Bengal are transforming businesses with ERP, web development, and custom software solutions."
 date: "2026-02-12"
 author: "Dorii Software"
-image: "/images/blog/software-development-in-siliguri.png"
+og_image: "/images/blog/software-development-in-siliguri.png"
 canonical: "/services/custom-software-development"
 showOnHome: false
 isActive: true
@@ -28,7 +28,7 @@ Driven by increasing digital adoption across multiple industries, businesses in 
 
 ### 1. Growing Demand Across Multiple Industries
 
-The growth of software development in Siliguri is not limited to logistics or transport sectors. Several major industries are rapidly adopting technology solutions, including:
+The growth of [software development in Siliguri](/services/custom-software-development) is not limited to logistics or transport sectors. Several major industries are rapidly adopting technology solutions, including:
 
 - Travel and tourism companies
 - Tea gardens and tea trading businesses

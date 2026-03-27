@@ -57,7 +57,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
         data.description ??
         "Business automation, ERP, inventory and software insights by Dorii Software.",
       date: data.date ?? "",
-      image: data.image ?? "",
+      image: data.og_image ?? "",
       keywords: data.keywords ?? [],
       showOnHome:
         data.showOnHome === true || data.showOnHome === "true" ? true : false,

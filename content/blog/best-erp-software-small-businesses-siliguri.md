@@ -16,7 +16,7 @@ showOnHome: false
 isActive: true
 
 canonical: "/services/custom-software-development"
-og_image: "/blog/images/erp-siliguri-og.jpg"
+og_image: "/blog/images/best-erp-software-small-businesses-siliguri.png"
 ---
 
 ## 1. Introduction — Why Siliguri SMEs Need ERP Software
@@ -220,5 +220,3 @@ If you are ready to move beyond spreadsheets and manual billing, we are here to 
 > 👉 [Contact Our Custom Software Development Team in Siliguri](/contact)
 
 ---
-
-_© 2026 Custom Software Development Company, Siliguri, West Bengal. All rights reserved._

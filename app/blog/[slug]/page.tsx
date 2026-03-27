@@ -44,11 +44,11 @@ export async function generateMetadata({
         title: "Blog | Dorii Software",
         description:
           "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
-        url: "//blog",
+        url: "/blog",
         siteName: "Dorii Software",
         images: [
           {
-            url: "//og/about-dorii.png",
+            url: "/og/about-dorii.png",
             width: 1200,
             height: 630,
             alt: "Dorii Software – ERP & Business Automation Company",
@@ -62,7 +62,7 @@ export async function generateMetadata({
         title: "Blog | Dorii Software",
         description:
           "Business automation, ERP, inventory and warehouse insights by Dorii Software.",
-        images: ["//og/about-dorii.png"],
+        images: ["/og/about-dorii.png"],
       },
     };
   }
@@ -76,11 +76,15 @@ export async function generateMetadata({
     alternates: {
       canonical: post.meta.canonical ?? `/blog/${slug}`,
     },
+    authors: [{ name: "Dorii Team", url: "/about" }],
     openGraph: {
       title: post.meta.title,
       description: post.meta.description,
       url: `/blog/${slug}`,
       siteName: "Dorii Software",
+      publishedTime: post.meta.date, // ✅ added
+      modifiedTime: post.meta.date, // ✅ added
+      tags: post.meta.keywords,
       images: [
         {
           url: ogImage, // Always using About-style OG image
@@ -139,10 +143,15 @@ export default async function BlogSlugPage({
         "@id": `${baseUrl}/blog/${slug}#article`,
         headline: post.meta.title,
         description: post.meta.description,
-        image: `${baseUrl}${ogImage}`,
+        image: {
+          "@type": "ImageObject",
+          url: `${baseUrl}${ogImage}`,
+          width: 1200,
+          height: 630,
+        },
         author: {
-          "@type": "Person",
-          name: "Dorii Team",
+          "@type": "Organization",
+          "@id": `${baseUrl}/#organization`,
         },
         publisher: {
           "@id": `${baseUrl}/#organization`,
@@ -152,6 +161,16 @@ export default async function BlogSlugPage({
         },
         datePublished: post.meta.date || "2024-01-01",
         dateModified: post.meta.date || "2024-01-01",
+        inLanguage: "en-US",
+        // ✅ AI crawling additions
+        isAccessibleForFree: true,
+        license: "https://creativecommons.org/licenses/by/4.0/",
+        creditText: "Dorii Blog",
+        acquireLicensePage: `${baseUrl}/licensing`,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", ".article-summary", ".article-body"],
+        },
       },
       {
         "@type": "BreadcrumbList",
@@ -244,7 +263,7 @@ export default async function BlogSlugPage({
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative font-semibold text-blue-600 underline decoration-blue-300 underline-offset-2 transition-colors hover:text-blue-800 hover:decoration-blue-500 dark:text-blue-400 dark:decoration-blue-600 dark:hover:text-blue-300"
+                  className="relative font-semibold underline decoration-blue-300 underline-offset-2 transition-colors hover:text-blue-800 hover:decoration-blue-500 dark:text-blue-400 dark:decoration-blue-600 dark:hover:text-blue-300"
                 >
                   {children}
                 </a>
@@ -259,7 +278,13 @@ export default async function BlogSlugPage({
 
               /* ── H3 ── */
               h3: ({ children }) => (
-                <h3 className="font-['Playfair_Display',Georgia,serif] mt-10 mb-4 text-xl font-bold text-gray-800 dark:text-gray-200 sm:text-2xl">
+                <h3 className="font-['Playfair_Display',Georgia,serif] mt-10 mb-4 text-xl font-bold text-gray-800 dark:text-gray-200 sm:text-1xl">
+                  {children}
+                </h3>
+              ),
+              /* ── H3 ── */
+              h4: ({ children }) => (
+                <h3 className="text-md font-semibold text-gray-800 dark:text-gray-200 ">
                   {children}
                 </h3>
               ),
