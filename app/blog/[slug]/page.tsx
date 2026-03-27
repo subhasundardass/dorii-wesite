@@ -76,7 +76,7 @@ export async function generateMetadata({
     alternates: {
       canonical: post.meta.canonical ?? `/blog/${slug}`,
     },
-    authors: [{ name: "Dorii Team", url: `/about` }],
+    authors: [{ name: "Dorii Team", url: "/about" }],
     openGraph: {
       title: post.meta.title,
       description: post.meta.description,
