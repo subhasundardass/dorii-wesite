@@ -158,7 +158,9 @@ export default function ServicesWeOffer() {
                 </div>
                 <div>
                   <h3 className="font-medium text-ink mb-1 dark:text-gray-800">
-                    <strong>Custom ERP Software Development</strong>
+                    <Link href={"/services/custom-software-development"}>
+                      <strong>Custom ERP Software Development</strong>
+                    </Link>
                   </h3>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     End-to-end{" "}
@@ -190,7 +192,9 @@ export default function ServicesWeOffer() {
                 </div>
                 <div>
                   <h3 className="font-medium text-ink mb-1 dark:text-gray-800">
-                    <strong>Odoo ERP Customisation &amp; Development</strong>
+                    <Link href={"/services/odoo-customisation"}>
+                      <strong>Odoo ERP Customisation &amp; Development</strong>
+                    </Link>
                   </h3>
                   <p className="text-gray-500 text-sm leading-relaxed">
                     Custom Odoo modules, workflow customisation, third-party API

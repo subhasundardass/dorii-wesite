@@ -30,14 +30,14 @@ export default function BlogPage() {
           Learn best practices, trends, and tips to improve your operations.
         </p>
 
-        <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-2 ">
           {posts.map((post) => (
             <article
               key={post.slug}
-              className="flex flex-col rounded-2xl border shadow-sm hover:shadow-md transition p-6 bg-background text-left"
+              className="flex flex-col rounded-2xl border shadow-sm hover:shadow-md transition p-6  text-left bg-[#f5f3ee] dark:bg-[#141416]"
             >
               <div>
-                <h2 className="text-2xl font-semibold leading-tight hover:text-primary transition">
+                <h2 className="font-['Playfair_Display',Georgia,serif] text-2xl font-semibold leading-[1.1] hover:text-primary transition">
                   <Link href={`/blog/${post.slug}`}>{post.meta.title}</Link>
                 </h2>
 
@@ -56,7 +56,9 @@ export default function BlogPage() {
 
                 {post.meta.description && (
                   <p className="mt-4 text-muted-foreground">
-                    {post.meta.description}
+                    {post.meta.description.length > 160
+                      ? post.meta.description.slice(0, 160) + "..."
+                      : post.meta.description}
                   </p>
                 )}
               </div>

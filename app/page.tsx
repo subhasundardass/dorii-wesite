@@ -204,8 +204,8 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <WhoWeAre />
-        <SolutionsWeOffer />
         <ServicesWeOffer />
+        <SolutionsWeOffer />
         <HowWeWork />
         <WhyDorii />
 

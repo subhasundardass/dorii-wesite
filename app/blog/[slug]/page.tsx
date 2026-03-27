@@ -244,7 +244,7 @@ export default async function BlogSlugPage({
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative font-semibold text-blue-600 underline decoration-blue-300 underline-offset-2 transition-colors hover:text-blue-800 hover:decoration-blue-500 dark:text-blue-400 dark:decoration-blue-600 dark:hover:text-blue-300"
+                  className="relative font-semibold underline decoration-blue-300 underline-offset-2 transition-colors hover:text-blue-800 hover:decoration-blue-500 dark:text-blue-400 dark:decoration-blue-600 dark:hover:text-blue-300"
                 >
                   {children}
                 </a>
@@ -259,7 +259,13 @@ export default async function BlogSlugPage({
 
               /* ── H3 ── */
               h3: ({ children }) => (
-                <h3 className="font-['Playfair_Display',Georgia,serif] mt-10 mb-4 text-xl font-bold text-gray-800 dark:text-gray-200 sm:text-2xl">
+                <h3 className="font-['Playfair_Display',Georgia,serif] mt-10 mb-4 text-xl font-bold text-gray-800 dark:text-gray-200 sm:text-1xl">
+                  {children}
+                </h3>
+              ),
+              /* ── H3 ── */
+              h4: ({ children }) => (
+                <h3 className="text-md font-semibold text-gray-800 dark:text-gray-200 ">
                   {children}
                 </h3>
               ),
